@@ -20,19 +20,27 @@ function adjustAccessoryVisibility() {
 }
 
 function updateAccessoryVisibility(accessoryCardFit) {
-    // Update visibility based on the current position and number of cards that fit
+    const totalDivs = productAccessoryCard.length;
+
     productAccessoryCard.forEach((div, index) => {
-       var newcurrentPosition = currentPosition;
-    //     if((productAccessoryCard.length-accessoryCardFit-1)<newcurrentPosition){
-    //         newcurrentPosition = currentPosition-1;
-    //     }
-        if (index >= newcurrentPosition && index < newcurrentPosition + accessoryCardFit) {
+        const endIndex = (currentPosition + accessoryCardFit - 1) % totalDivs;
+
+        if (isWithinRange(index, currentPosition, endIndex, totalDivs)) {
             div.style.display = 'block'; // Show the card
         } else {
             div.style.display = 'none'; // Hide the card
         }
     });
 }
+
+function isWithinRange(index, start, end, total) {
+    if (start <= end) {
+        return index >= start && index <= end;
+    } else {
+        return index >= start || index <= end;
+    }
+}
+
 
 function scrollLeft() {
     const totalDivs = document.querySelectorAll('.product_accessory_card').length;
@@ -49,6 +57,7 @@ function scrollRight() {
 
     updateAccessoryVisibility(accessoryCardFit);
 }
+
 
 
 // Add event listeners to left and right arrow buttons for large and small screens
