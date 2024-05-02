@@ -1624,8 +1624,8 @@ exp_360_bookNow_btn:hover {
 
 .floatingButton {
   display: block;
-  width: 48px;
-  height: 130px;
+  width: 42px;
+  height: 110px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1645,10 +1645,16 @@ exp_360_bookNow_btn:hover {
   /* border: 1px solid #0001a0; */
 }
 
+@media screen and (max-width: 598px) {
+  .floatingButton>span {
+      font-size: 14px;
+  }
+}
+
 .floatingButton>span {
   /* color: #fff; */
   line-height: 40px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
