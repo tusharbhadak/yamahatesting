@@ -21,43 +21,30 @@ function adjustAccessoryVisibility() {
 
 function updateAccessoryVisibility(accessoryCardFit) {
     const totalDivs = productAccessoryCard.length;
+    const endIndex = (currentPosition + accessoryCardFit - 1) % totalDivs;
 
     productAccessoryCard.forEach((div, index) => {
-        const endIndex = (currentPosition + accessoryCardFit - 1) % totalDivs;
+        const isVisible =
+            currentPosition <= endIndex
+                ? index >= currentPosition && index <= endIndex
+                : index >= currentPosition || index <= endIndex;
 
-        if (isWithinRange(index, currentPosition, endIndex, totalDivs)) {
-            div.style.display = 'block'; // Show the card
-        } else {
-            div.style.display = 'none'; // Hide the card
-        }
+        div.style.display = isVisible ? 'block' : 'none';
     });
-}
-
-function isWithinRange(index, start, end, total) {
-    if (start <= end) {
-        return index >= start && index <= end;
-    } else {
-        return index >= start || index <= end;
-    }
 }
 
 
 function scrollLeft() {
-    const totalDivs = document.querySelectorAll('.product_accessory_card').length;
-
-    currentPosition = (currentPosition - 1 + totalDivs) % totalDivs; // Wrap around to the last card if at the beginning
-
+    const totalDivs = productAccessoryCard.length;
+    currentPosition = (currentPosition - 1 + totalDivs) % totalDivs;
     updateAccessoryVisibility(accessoryCardFit);
 }
 
 function scrollRight() {
-    const totalDivs = document.querySelectorAll('.product_accessory_card').length;
-
-    currentPosition = (currentPosition + 1) % totalDivs; // Wrap around to the first card if at the end
-
+    const totalDivs = productAccessoryCard.length;
+    currentPosition = (currentPosition + 1) % totalDivs;
     updateAccessoryVisibility(accessoryCardFit);
 }
-
 
 
 // Add event listeners to left and right arrow buttons for large and small screens
