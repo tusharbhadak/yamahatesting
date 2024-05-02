@@ -1236,9 +1236,8 @@ body {
 
 .gallery-active {
   color: $color_7;
-  font-size: 19.369px;
-  font-weight: 700;
-  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 500;
   background-color: #28348a;
 }
 @media screen and (max-width: 714px) {
@@ -1247,7 +1246,7 @@ body {
       height: calc(100vw* 1.25) !important;
   }
 }
-@media (max-width: 714px) {
+@media screen and (max-width: 598px) {
   .product_slider_video {
     display: block;
       height: calc(100vw* 1.25) !important;
@@ -1318,7 +1317,7 @@ body {
     max-width: 230px;
   }
   .product_accessory_heading {
-    font-size: 30px;
+    font-size: 25px;
   }
   .product_accessories_nav_container_sm {
     display: none;
@@ -1511,8 +1510,9 @@ body {
     font-size: 25px;
   }
   .exp_360_price_color {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 15px;
+    font-family: Encode Sans Semi Expanded;
   }
   .exp_360_color_details {
     font-size: 14px;
