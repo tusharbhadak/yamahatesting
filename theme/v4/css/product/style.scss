@@ -630,6 +630,7 @@ body {
   display: flex;
   align-items: center;
   color: $color_8;
+  user-select: none;
 }
 .exp_360_bike_name {
   font-size: 50px;
@@ -1291,6 +1292,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2%;
+    user-select: none;
   }
   .exp_360_bike_color {
     img {
