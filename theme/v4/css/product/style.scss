@@ -1599,7 +1599,7 @@ exp_360_bookNow_btn:hover {
   background-color: #f0f1f6;
 }
 
-.gallery-button:hover:not(.active) {
+.gallery-button:hover:not(.gallery-active) {
   border: 1px solid #0001a0;
   color: #0001a0;
 }
