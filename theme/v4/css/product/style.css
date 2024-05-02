@@ -1354,9 +1354,16 @@ body {
   background-color: #28348a;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 714px) {
+  .mobile-view-banner, .product_hero_slider_track .product_slider_video {
+    display: block;
+    height: 125vw !important;
+  }
+}
+@media (max-width: 714px) {
   .product_slider_video {
-    height: 300px;
+    display: block;
+    height: 125vw !important;
   }
   .exp_360_background_img_container {
     display: flex;
@@ -1702,7 +1709,7 @@ exp_360_bookNow_btn:hover {
   background-color: #f0f1f6;
 }
 
-.gallery-button:hover {
+.gallery-button:hover:not(.active) {
   border: 1px solid #0001a0;
   color: #0001a0;
 }
