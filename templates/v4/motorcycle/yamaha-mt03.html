@@ -71,6 +71,40 @@
                 </div>
             </div>
         </header>
+        <div class="click-now-container">
+            <!-- <div id="fixed-click-now-button" class="hero-slider-click-now">
+                <p>Click<br />Now</p>
+            </div>
+            <div class="click-now-slider">
+                <div class="click-now-slider-button">
+                    <p class="">Enquiry<br /> Now</p>
+                </div>
+                <div class="click-now-slider-button">
+                    <p>Buy<br /> Now</p>
+                </div>
+            </div> -->
+            <div class="floatingButtonWrap">
+                <div class="floatingButtonInner">
+                    <a href="#" class="floatingButton" style="background-color: #0001a0;" id="bg-color"
+                        onclick="changeText()">
+                        <!-- <i class="fa fa-plus icon-default"></i> -->
+                        <span id="buttonText" style="color: white;">Click Now</span>
+                    </a>
+                    <ul class="floatingMenu">
+                        <li>
+                            <a href="#">Enquire Now <div class="icon-menus"><img
+                                        src="/theme/v4/images/icons/headphones.png" alt="">
+                                </div></a>
+                        </li>
+                        <li>
+                            <a href="#">Buy Now <div class="icon-menus"><img
+                                        src="/theme/v4/images/icons/shopping-cart.png" alt="">
+                                </div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="side-menu">
             <nav class="side-nav">
                 <div class="close-icon">×</div>
@@ -390,7 +424,7 @@
                                 <option value="west-bengal">West Bengal</option>
                             </select>
                         </div>
-                        <div class="exp_360_bookingNowbtn">
+                        <div>
                             <button class="exp_360_bookNow_btn">Book Now</button>
                         </div>
                     </div>
@@ -1113,5 +1147,76 @@
     //         });
     //     })
     //     .catch(error => console.error('Error fetching hero content:', error));
+
+    
+$(document).ready(function () {
+
+
+// document.getElementById("motorcycle_mt_series_select").innerHTML = " ";
+// document.getElementById("motorcycle_fz_series_select").innerHTML = " ";
+
+
+$('.floatingButton').on('click',
+  function (e) {
+    e.preventDefault();
+    $(this).toggleClass('open');
+    if ($(this).children('.fa').hasClass('fa-plus')) {
+      $(this).children('.fa').removeClass('fa-plus');
+      $(this).children('.fa').addClass('fa-close');
+    }
+    else if ($(this).children('.fa').hasClass('fa-close')) {
+      $(this).children('.fa').removeClass('fa-close');
+      $(this).children('.fa').addClass('fa-plus');
+    }
+    $('.floatingMenu').stop().slideToggle();
+    $('.floatingMenu').stop().animate({
+      right: $(this).hasClass('open') ? '50px' : '-270px'
+    }, 400);
+  }
+);
+$(this).on('click', function (e) {
+
+  var container = $(".floatingButton");
+  // if the target of the click isn't the container nor a descendant of the container
+  if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) {
+    if (container.hasClass('open')) {
+      container.removeClass('open');
+    }
+    if (container.children('.fa').hasClass('fa-close')) {
+      container.children('.fa').removeClass('fa-close');
+      container.children('.fa').addClass('fa-plus');
+    }
+    // $('.floatingMenu').hide();
+  }
+
+  // if the target of the click isn't the container and a descendant of the menu
+  if (!container.is(e.target) && ($('.floatingMenu').has(e.target).length > 0)) {
+    $('.floatingButton').removeClass('open');
+    // $('.floatingMenu').stop().slideToggle();
+  }
+});
+});
+
+
+function changeText() {
+var buttonText = document.getElementById("buttonText");
+var bg = document.getElementById('bg-color')
+buttonText.innerHTML = buttonText.innerHTML === 'Click Now' ? "<img src='/theme/v4/images/icons/Group 2.png' />" : 'Click Now';
+bg.style.backgroundColor = buttonText.innerHTML === "Click Now" ? "#0001a0" : "white"
+buttonText.style.color = buttonText.innerHTML === "Click Now" ? "white" : "#0001a0"
+// button.classList.add("clicked");
+
+
+}
+
+
+$(document).ready(function () {
+$('.carousels-container').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+});
 
 </script>

@@ -657,6 +657,16 @@ body {
 .exp_360_bike_color img {
   width: 70%;
   text-align: center;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform-origin: center center;
+}
+.exp_360_bike_color img.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+.exp_360_bike_color img.visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .exp_360_content_container {
@@ -1093,6 +1103,7 @@ body {
   font-family: "Encode Sans Semi Expanded";
   font-size: 40px;
   font-weight: 700;
+  margin-top: -3%;
 }
 
 .product_accessory_content {
@@ -1228,6 +1239,14 @@ body {
   scroll-snap-align: start;
 }
 
+.video-container {
+  width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+}
+
 .gallery-carousel {
   width: 100%;
   overflow: hidden;
@@ -1342,6 +1361,8 @@ body {
     width: 100%;
     position: relative;
     height: 270px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
   }
   .exp_360_upper_container {
     height: 250px;
@@ -1392,7 +1413,6 @@ body {
     margin: 0 auto;
     max-width: 100%;
   }
-
   .product_specification_title {
     font-size: 25px;
   }
@@ -1685,4 +1705,159 @@ exp_360_bookNow_btn:hover {
   border: 1px solid #0001a0;
   color: #0001a0;
   background-color: #f0f1f6;
+}
+
+.floatingButtonWrap {
+  display: block;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  z-index: 999999999;
+}
+
+.floatingButtonInner {
+  position: relative;
+}
+
+.floatingButton {
+  display: block;
+  width: 48px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+  /* background-color: #0018CE; */
+  position: absolute;
+  bottom: 0px;
+  right: -45px;
+  z-index: 9999999;
+  /* opacity: 0.3; */
+  opacity: 1;
+  transition: all 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px -2px;
+  /* border: 1px solid #0001a0; */
+}
+
+.floatingButton > span {
+  /* color: #fff; */
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  display: flex;
+  font-weight: 700;
+}
+
+.icon-menus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #0001a0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+}
+
+.icon-menus > img {
+  width: 20px;
+}
+
+.floatingButton .fa {
+  font-size: 15px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+  opacity: 1;
+  color: #fff;
+}
+
+.floatingButton .fa {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+  transform: rotate(270deg);
+}
+
+/* .floatingButton.open{
+background-color: white;
+color: #0001a0 !important;
+} */
+.floatingMenu {
+  position: absolute;
+  bottom: 104px;
+  right: 10px;
+  /* width: 200px; */
+  display: none;
+}
+
+.floatingMenu li {
+  width: 100%;
+  float: right;
+  list-style: none;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.floatingMenu li a {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  text-decoration: none;
+  padding: 8px 40px;
+  display: inline-block;
+  background: white;
+  /* border: 1px solid #0001a0; */
+  color: #0001a0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px -2px;
+  border-radius: 50px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  transition: all 0.4s;
+  /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
+  /* -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+  box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5); */
+}
+
+.icon-menus {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.floatingMenu li a:hover {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* CSS for fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
