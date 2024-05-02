@@ -1,9 +1,9 @@
-/********************************** ellipse carousel section css *************************************/
-/********************************** motorcycle_connect css *************************************/
-/********************************** 360 experience section css *************************************/
-/********************************** specification section css *************************************/
-/********************************** accessories section css *************************************/
-/********************************** agallery carousel section css *************************************/
+/************ ellipse carousel section css *************/
+/************ motorcycle_connect css *************/
+/************ 360 experience section css *************/
+/************ specification section css *************/
+/************ accessories section css *************/
+/************ agallery carousel section css *************/
 body {
   margin: 0;
   width: 100%;
@@ -1335,7 +1335,7 @@ body {
   width: 226.37px;
   padding: 12.105px;
   background: transparent;
-  color: rgba(0, 0, 0, 0.4);
+  color: #1b1b1b;
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
@@ -1348,8 +1348,9 @@ body {
 
 .gallery-active {
   color: #fff;
-  font-size: 26px;
+  font-size: 19.369px;
   font-weight: 500;
+  text-transform: capitalize;
   background-color: #28348a;
 }
 
@@ -1359,10 +1360,9 @@ body {
     height: 125vw !important;
   }
 }
-@media screen and (max-width: 598px) {
+@media (max-width: 768px) {
   .product_slider_video {
-    display: block;
-    height: 125vw !important;
+    height: 300px;
   }
   .exp_360_background_img_container {
     display: flex;
@@ -1395,11 +1395,11 @@ body {
     margin: 25px auto;
   }
   .gallery-tab-box {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
@@ -1432,7 +1432,7 @@ body {
     max-width: 230px;
   }
   .product_accessory_heading {
-    font-size: 25px;
+    font-size: 30px;
   }
   .product_accessories_nav_container_sm {
     display: none;
@@ -1620,9 +1620,8 @@ body {
     font-size: 25px;
   }
   .exp_360_price_color {
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 15px;
-    font-family: Encode Sans Semi Expanded;
   }
   .exp_360_color_details {
     font-size: 14px;
@@ -1661,7 +1660,7 @@ body {
     display: flex;
   }
   .gallery-button {
-    font-size: 9.5px;
+    font-size: 16px;
   }
 }
 @media (max-width: 450px) {

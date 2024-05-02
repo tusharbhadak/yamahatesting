@@ -39,12 +39,12 @@ $background-color_17: #8190fa;
 $background-color_18: black;
 $border-color_1: #ffffff;
 
-/********************************** ellipse carousel section css *************************************/
-/********************************** motorcycle_connect css *************************************/
-/********************************** 360 experience section css *************************************/
-/********************************** specification section css *************************************/
-/********************************** accessories section css *************************************/
-/********************************** agallery carousel section css *************************************/
+/************ ellipse carousel section css *************/
+/************ motorcycle_connect css *************/
+/************ 360 experience section css *************/
+/************ specification section css *************/
+/************ accessories section css *************/
+/************ agallery carousel section css *************/
 body {
   margin: 0;
   width: 100%;
@@ -503,6 +503,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .exp_360_rotate_image_nav {
   position: absolute;
   right: 5%;
@@ -1220,36 +1221,37 @@ body {
   margin-bottom: 24px;
 }
 .gallery-button {
-  width: 226.37px;
-  padding: 12.105px;
-  background: transparent;
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border: 1px solid rgb(204, 204, 204);
-  margin: 0px 5px;
-  border-radius: 50px;
-  transition: .5s ease-in-out;
+ width: 226.37px;
+	padding: 12.105px;
+	background: transparent;
+	color: $color_14;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border: 1px solid rgb(204, 204, 204);
+	margin: 0px 5px;
+	border-radius: 50px;
+	transition: .5s ease-in-out;
 }
 
 .gallery-active {
   color: $color_7;
-  font-size: 26px;
+  font-size: 19.369px;
   font-weight: 500;
+  text-transform: capitalize;
   background-color: #28348a;
 }
 @media screen and (max-width: 714px) {
   .mobile-view-banner, .product_hero_slider_track .product_slider_video {
       display: block;
-      height: calc(100vw* 1.25) !important;
+      height: 125vw !important;
   }
 }
-@media screen and (max-width: 598px) {
+
+@media (max-width: 768px) {
   .product_slider_video {
-    display: block;
-      height: calc(100vw* 1.25) !important;
+    height: 300px;
   }
   .exp_360_background_img_container {
     display: flex;
@@ -1280,11 +1282,11 @@ body {
     margin: 25px auto;
   }
   .gallery-tab-box {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
@@ -1317,7 +1319,7 @@ body {
     max-width: 230px;
   }
   .product_accessory_heading {
-    font-size: 25px;
+    font-size: 30px;
   }
   .product_accessories_nav_container_sm {
     display: none;
@@ -1510,9 +1512,8 @@ body {
     font-size: 25px;
   }
   .exp_360_price_color {
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 15px;
-    font-family: Encode Sans Semi Expanded;
   }
   .exp_360_color_details {
     font-size: 14px;
@@ -1551,7 +1552,7 @@ body {
     display: flex;
   }
   .gallery-button{
-    font-size: 9.5px;
+    font-size: 16px;
   }
 }
 @media (max-width: 450px) {
@@ -1599,11 +1600,10 @@ exp_360_bookNow_btn:hover {
   background-color: #f0f1f6;
 }
 
-.gallery-button:hover:not(.gallery-active) {
+.gallery-button:hover:not(.gallery-active){
   border: 1px solid #0001a0;
   color: #0001a0;
 }
-
 .exp_360_bookNow_btn:hover {
   border: 1px solid #0001a0;
   color: #0001a0;
