@@ -1,0 +1,588 @@
+.footer_section_lg {
+    background-color: #000;
+    display: block;
+    background-image: url(../images/icons/Vector\ 4.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1580px;
+    margin: auto;
+}
+
+.line {
+    margin-top: 3%;
+    height: 14vh;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.rec {
+    width: 75%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+    margin: 30px 0;
+}
+
+.footer_logo {
+    width: 40%;
+    display: block;
+    padding: 30px 0px 0px 60px;
+    position: relative;
+}
+
+.logo {
+    width: 15vh;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+}
+
+.bike_container_lg {
+    /* display: none; */
+    position: absolute;
+    bottom: 30%;
+    width: 420px;
+}
+
+.bike {
+    height: 85%;
+    /* width: 55vh; */
+    position: absolute;
+    right: 0px;
+}
+
+.para {
+    width: 240px;
+    color: #FFF;
+    text-align: justify;
+    font-family: "Poppins";
+    font-size: 12.773px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.parentproduct {
+    width: 25%;
+    display: block;
+
+}
+
+.product {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.product h1 {
+    margin-bottom: 2px;
+    font-size: 15.902px;
+    color: #FFF;
+    font-family: 'Krona One';
+    font-weight: 800;
+}
+
+
+
+.product span {
+    color: #B0B0B0;
+    font-size: 12.773px;
+    font-weight: 400;
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    line-height: 23.417px;
+}
+
+.parentservice {
+    width: 25%;
+    display: block;
+}
+
+.socialmediaicon {
+    height: 21px;
+    width: 21px;
+    margin: 0px 5px;
+}
+
+.socialmediaicons {
+    height: 21px;
+    width: 21px;
+    margin: 0px 5px 0px 0px;
+}
+
+.contact {
+    /* width:80vh; */
+    width: 90%;
+}
+
+.contacttext_heading {
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 17.031px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contacttext {
+    color: #FFF;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: normal;
+}
+
+.contact_value {
+    font-size: 12.773px;
+    font-weight: 600;
+    color: white;
+    font-size: 12.773px;
+    font-weight: 800;
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    line-height: 23.417px;
+}
+
+.contact_label {
+    font-size: 12.773px;
+    font-weight: 500;
+}
+
+.width80 {
+    margin: 0px 60px;
+}
+
+.width60 {
+    margin: 0px 40px;
+}
+
+.footer_copyright_container {
+    padding: 5px 20px;
+    width: 100%;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.footer_copyright_text {
+    text-align: center;
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 12.773px;
+    font-weight: 400;
+    padding-top: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.footer_privacy_text {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 12.773px;
+    font-weight: 400;
+}
+
+.footer_privacy_text span {
+    margin-left: 5px;
+}
+
+.footer_privacy_text :nth-child(2) {
+    border-left: 2px solid #FFFFFF;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer_section_lg {
+        background-size: auto 100%;
+        object-fit: cover;
+        height: auto;
+        padding-bottom: 2%;
+    }
+
+    .bike_container_lg {
+        display: block;
+    }
+
+    .bike {
+        /* display: none; */
+        width: 70%;
+        height: auto;
+    }
+
+    .rec {
+        display: flex;
+        /* flex-wrap:wrap; */
+        height: auto;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+
+    .footer_logo {
+        width: auto;
+    }
+
+    .parentproduct {
+        width: 130px;
+        margin-top: 2vh;
+        margin-left: 0;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .parentservice {
+        width: 130px;
+        margin-top: 2vh;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .parentproduct .product {
+        width: 130px;
+        margin-left: 0;
+        height: auto;
+        align-items: start;
+    }
+
+    .parentservice .product {
+        width: 130px;
+        height: auto;
+        align-items: start;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-container {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .para {
+        margin: 0% 30%;
+    }
+
+    .footer_logo {
+        margin-bottom: 14vh;
+    }
+
+    .rec {
+        width: 100%;
+        display: flex;
+    }
+
+    .parentproduct {
+        width: 20%;
+        margin: 0% 2%;
+    }
+
+    .parentservice {
+        width: 20%;
+        margin: 0% 2%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .para {
+        margin: 0% 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer_section_lg {
+        display: none;
+    }
+}
+
+
+/* mobile css start */
+
+.footer_section_md {
+    background-color: #000;
+    /* height: 78vh; */
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-bottom: 5%; */
+}
+
+.footer-container_md {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.line_md {
+    /* background-image: url(../images/header-footer/Rectangle\ 30.png); */
+    margin-top: 3%;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.line_md::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.rec_md {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.footer_logo_md {
+    width: 40%;
+    display: block;
+    padding: 5% 10%;
+}
+
+.logo_md {
+    width: 15vh;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+}
+
+.bike_md {
+    position: absolute;
+    bottom: -30%;
+    width: auto;
+    height: 370%;
+    z-index: 1;
+}
+
+.para_md {
+    color: white;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.parentproduct_md {
+    display: block;
+}
+
+.product_md {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.product_md h1 {
+    margin-bottom: 2px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product_md span {
+    color: #B0B0B0;
+    font-size: 10px;
+    font-weight: 400;
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    line-height: 23.417px;
+}
+
+.parentservice_md {
+    display: block;
+}
+
+
+.contact_md {
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.width80_md {
+    margin: 0px 60px;
+}
+
+.width20 {
+    margin: 0px 20px;
+}
+
+.width20_sm {
+    margin: 0px 20px;
+}
+
+.contact_container_md {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #28348A;
+    position: relative;
+    margin-top: 210px;
+    padding: 20px 0px 20px 0px;
+}
+
+.footer_absolute_md {
+    position: absolute;
+    background-image: url(../images/icons/Vector\ 4.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    object-fit: cover;
+    bottom: 9%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: end;
+}
+
+.contact_container_md .footer_copyright_container .footer_privacy_text {
+    position: static;
+    transform: none;
+    text-align: end;
+}
+
+@media (max-width: 992px) {
+    .footer-container_md {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .footer_section_md {
+        display: flex;
+        /* height: 155vh; */
+    }
+
+    .footer_logo_md {
+        padding: 5% 20px;
+    }
+
+    .rec_md {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_absolute_md {
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer_absolute_md {
+        height: 30%;
+        bottom: 7%;
+        margin-bottom: 20px;
+    }
+
+    .bike_md {
+        width: auto;
+        height: 350%;
+    }
+
+    .footer_logo_md {
+        width: 50%;
+    }
+
+    .footer_copyright_text {
+        font-size: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer_privacy_text {
+        font-size: 7px;
+    }
+
+    .contacttext_heading {
+        font-size: 13px;
+    }
+
+    .contact_label {
+        font-size: 10px;
+    }
+
+    .contact_value {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer_absolute_md {
+        bottom: 7%;
+    }
+
+    .width20_sm {
+        margin: 0px 2px;
+    }
+
+    .footer_logo_md {
+        width: 80%;
+    }
+
+    .socialmediaicon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .socialmediaicons {
+        height: 20px;
+        width: 20px;
+    }
+
+    .footer_section_md {
+        height: fit-content;
+    }
+
+    /* .rec_md {
+        margin-bottom: 300px;
+    } */
+
+    .bike_md {
+        height: 265%;
+    }
+
+    .contacttext_heading {
+        font-size: 9.5px;
+    }
+
+    .contact_label {
+        font-size: 7.25px;
+    }
+
+    .contact_value {
+        font-size: 8.25px;
+    }
+}
+
+.bottom-content{
+    margin-bottom: -15px;
+}

@@ -1,0 +1,1688 @@
+/********************************** ellipse carousel section css *************************************/
+/********************************** motorcycle_connect css *************************************/
+/********************************** 360 experience section css *************************************/
+/********************************** specification section css *************************************/
+/********************************** accessories section css *************************************/
+/********************************** agallery carousel section css *************************************/
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "poppins", sans-serif;
+}
+
+.product_hero_slider_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.product_hero_slider_track {
+  position: relative;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.product_hero_slider_track .slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.product_slider_img {
+  height: 100%;
+  width: 100%;
+}
+
+.product_slider_video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.connect_section {
+  position: relative;
+  background: #f0f0f0;
+  margin-top: 10%;
+}
+.connect_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.product_connectapp_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product_connectapp_img_container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_connectapp_shadow_img {
+  position: absolute;
+  right: 0;
+}
+
+.product_connectapp_meter_img {
+  position: relative;
+  z-index: 2;
+}
+
+.product_connectapp_details_container {
+  min-height: 65%;
+  width: 100%;
+  z-index: 3;
+}
+
+.product_connect_title_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.product_connect_title_section h3 {
+  color: #1d1d1d;
+  font-family: Encode Sans Semi Expanded;
+  font-size: 35px;
+  margin: 0;
+}
+.product_connect_title_section h1 {
+  color: #28348a;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: Encode Sans Semi Expanded;
+  margin: 0;
+}
+.product_connect_title_section span {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.product_connectapp_cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.product_connectapp_card {
+  width: calc(25% - 60px);
+  margin: 10px 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  aspect-ratio: 1;
+  justify-content: center;
+  background: #f0f0f0;
+}
+.product_connectapp_card h4 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product_connectapp_card p {
+  color: #444444;
+  font-size: 16px;
+  margin: 0;
+}
+
+.product_connectapp_card_containt {
+  height: 55%;
+}
+
+.ellipse_carousel_section {
+  position: relative;
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.ellipse_carousel_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/theme/v4/images/product/ellipse_carousel/BG_5 1.png") lightgray 70%/cover no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.ellipse_carousel_selection_dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #717171;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #999;
+}
+
+.ellipse_carousel_selection_dot.active {
+  background-color: #28348a;
+  box-shadow: 0 0 5px 4px #35419c;
+  height: 17px;
+  width: 17px;
+  border: 0;
+}
+
+.ellipse_carousel_selection_label {
+  position: absolute;
+  color: #464646;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ellipse_carousel_selection_circle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.ellipse_carousel_circle_svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.ellipse_carousel_circle_path {
+  fill: none;
+  stroke: #d9d9d9;
+  stroke-width: 1;
+  stroke-dasharray: 5, 5;
+}
+
+.ellipse_carousel_content_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  padding: 5% 0;
+}
+
+.ellipse_carousel_bike_title {
+  color: #3e3e3e;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.ellipse_carousel_heading {
+  color: #28348a;
+  text-align: center;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #28348a;
+  font-family: "Encode Sans Semi Expanded";
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.ellipse_carousel_sub_heading {
+  color: #2f2f2f;
+  font-family: "Encode Sans Semi Expanded";
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.ellipse_carousel_description {
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  width: 75%;
+  margin: 1% 0;
+}
+
+.ellipse_carousel_img_container_wrapper {
+  width: 100%;
+  max-width: 426px;
+}
+
+.ellipse_carousel_center_img_container {
+  position: relative;
+  width: 100%;
+  max-width: 426px;
+  height: 0;
+  padding-top: 57.28%;
+  margin: 50px 0 2% 0;
+}
+
+.ellipse_carousel_svg_shape {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+}
+
+.ellipse_carousel_bottom_svg {
+  transform: translate(-44%, -6%);
+}
+
+.ellipse_carousel_middle_svg {
+  transform: translate(-47%, -3%);
+}
+
+.ellipse_carousel_top_svg {
+  transform: translateX(-50%);
+}
+
+.ellipse_carousel_centered_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.ellipse_carousel_svg_shape.overlay {
+  transform: translate(-44%, -6%);
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.39);
+}
+
+.ellipse_carousel_bottom_bg_container {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.ellipse_carousel_bottom_bg {
+  width: 100%;
+  z-index: -1;
+  fill: linear-gradient(180deg, rgba(255, 255, 255, 0) 13.17%, rgba(255, 255, 255, 0.66) 43.69%, #fff 80.74%);
+}
+
+.ellipse_carousel_inner_nav {
+  position: relative;
+  height: 30px;
+}
+
+.ellipse_carousel_select_dots_container {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  transform: translate(-50%, -44%);
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  align-items: center;
+}
+.ellipse_carousel_select_dots_container:nth-child(2) .ellipse_carousel_dot_inner {
+  height: 15px;
+  width: 15px;
+}
+.ellipse_carousel_select_dots_container .ellipse_carousel_dot_out {
+  display: flex;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: rgba(210, 210, 210, 0.1);
+  cursor: pointer;
+}
+.ellipse_carousel_select_dots_container .ellipse_carousel_dot_inner {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #7f7b85;
+  margin: 2px;
+}
+.ellipse_carousel_select_dots_container .ellipse_carousel_dot_out.active {
+  background-color: rgb(210, 210, 210);
+}
+.ellipse_carousel_select_dots_container .ellipse_carousel_dot_inner.active {
+  background-color: #28348a;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.ellipse_carousel_info_conataier {
+  position: absolute;
+  width: 100%;
+  padding: 3% 4%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.ellipse_carousel_info_upper {
+  margin-bottom: 15%;
+}
+
+.ellipse_carousel_info_value {
+  color: #28348a;
+  font-family: "Encode Sans Semi Expanded";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ellipse_carousel_info_label {
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.motorcycle_connect_container {
+  position: relative;
+  z-index: 2;
+}
+
+.motorcycle_connect_heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+}
+.motorcycle_connect_heading p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px;
+  width: 75%;
+}
+
+.motorcycle_connect_title {
+  font-family: "Encode Sans Semi Expanded";
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: #1d1d1d;
+}
+
+.motorcycle_connect_carousel_container {
+  overflow: hidden;
+}
+
+.motorcycle_connect_carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.motorcycle_connect_carousel_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motorcycle_connect_carousel_inner.sliding_transition {
+  transition: transform 0.5s ease;
+}
+
+.motorcycle_connect_carousel_slide {
+  flex: 0 0 auto;
+  height: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
+}
+.motorcycle_connect_carousel_slide img {
+  height: 100%;
+  width: auto;
+}
+
+.motorcycle_connect_carousel_slide.active {
+  height: 90%;
+}
+
+.exp_360_container {
+  background: linear-gradient(180deg, #292a2e 0%, #121212 100%);
+}
+
+.exp_360_upper_container {
+  position: relative;
+}
+
+.exp_360_rotate_image_container {
+  position: absolute;
+  width: 75%;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 2%;
+}
+
+.exp_360_rotate_ellipse {
+  width: 100%;
+  height: 100px;
+  border-radius: 100%;
+  border: 1px solid #686868;
+  background: rgba(52, 53, 58, 0.18);
+}
+
+.exp_360_rotate_image {
+  position: absolute;
+  bottom: 0%;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.exp_360_rotate_image_nav {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  left: 5px;
+}
+
+.exp_360_arrow {
+  cursor: pointer;
+}
+
+.exp_360_arrow {
+  animation: pulseAnimation 1.5s infinite alternate; /* Runs the animation infinitely */
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.exp_360_background_img_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.exp_360_background_img_upper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exp_360_background_dots {
+  mix-blend-mode: multiply;
+  width: 25%;
+}
+
+.exp_360_background_dots.right {
+  transform: scaleX(-1);
+}
+
+.exp_360_background_img_lower {
+  flex-grow: 3;
+  width: 100%;
+  position: relative;
+}
+.exp_360_background_img_lower img {
+  width: 100%;
+}
+
+.exp_360_background_text_container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+}
+
+.exp_background_text {
+  opacity: 0.5;
+  background: linear-gradient(180deg, #ffffff 19.51%, #999999 56.05%, #a6a6a9 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 120px;
+  font-weight: 400;
+}
+.exp_background_text:first-child {
+  background: linear-gradient(180deg, #ffffff 19.51%, #999999 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exp_360_background_text {
+  opacity: 0.5;
+  background: linear-gradient(180deg, #55565b 19.51%, #25272b 56.05%, #1f2022 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 220px;
+  font-weight: 400;
+  line-height: 178px;
+}
+.exp_360_background_text:first-child {
+  background: linear-gradient(180deg, #55565b 19.51%, #424246 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 200px;
+}
+
+.exp_360_select_color_container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.exp_360_select_color_container svg {
+  width: 100%;
+  height: auto;
+}
+
+.exp_360_info_container {
+  display: flex;
+  width: 100%;
+}
+
+.exp_360_heading_container {
+  width: 60%;
+  padding: 2%;
+  color: #fff;
+  font-family: "Encode Sans Semi Expanded";
+}
+
+.exp_360_name_heading_container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.exp_360_bike_name {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.exp_360_price_color {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.exp_360_bike_color {
+  text-align: center;
+}
+.exp_360_bike_color img {
+  width: 70%;
+  text-align: center;
+}
+
+.exp_360_content_container {
+  width: 40%;
+  padding: 2% 0;
+  color: #fff;
+  font-family: "Encode Sans Semi Expanded";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.exp_360_color_details {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.exp_360_exShowroom {
+  color: #7d7d7d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.exp_360_price {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.exp_360_disclaimer {
+  color: #7d7d7d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.exp_360_location_selector {
+  width: 100%;
+}
+
+#exp_360_city_selector {
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #424242;
+  background: #1c1c1d;
+  padding: 14px;
+  font-size: 14px;
+  width: 70%;
+  max-width: 380px;
+  margin: 10px 0;
+}
+
+.exp_360_bookNow_btn {
+  display: inline-flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #28348a;
+  border: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.exp_360_select_color_btns_ {
+  display: flex;
+}
+
+.exp_360_select_color_btns {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+}
+
+.exp_360_select_color_btn {
+  padding: 10px;
+  display: flex;
+}
+
+.exp_360_color_dot_out {
+  display: flex;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.exp_360_color_dot_inner {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.exp_360_color_dot_out.blue {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.blue {
+  background-color: #1c429d;
+}
+
+.exp_360_color_dot_out.cyan {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.cyan {
+  background-color: #53a9c3;
+}
+
+.exp_360_color_dot_out.cybergreen {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.cybergreen {
+  background-color: #5f7945;
+}
+
+.exp_360_color_dot_out.ice {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.ice {
+  background-color: #b0b6bd;
+}
+
+.exp_360_color_dot_out.blackdlx {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.blackdlx {
+  background-color: #151515;
+}
+
+.exp_360_color_dot_out.bluedlx {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.bluedlx {
+  background-color: #b0b6bd;
+}
+
+.exp_360_color_dot_out.motogp {
+  border: 2px solid #102f52;
+}
+
+.exp_360_color_dot_inner.motogp {
+  background: linear-gradient(to right, #333333 50%, #2f288e 50%);
+}
+
+.exp_360_color_dot_out.magenta {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.magenta {
+  background: linear-gradient(90deg, #787878 38%, #81a4c2 60%, #c4508a 40%);
+}
+
+.exp_360_color_dot_out.silver {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.silver {
+  background-color: #b0b6bd;
+}
+
+.exp_360_color_dot_out.gray {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.gray {
+  background-color: #333333;
+}
+
+.exp_360_color_dot_out.white {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.white {
+  background: linear-gradient(90deg, #d3011c 45%, #f9f9f9 55%, #f9f9f9 10%);
+}
+
+.exp_360_color_dot_out.black {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.black {
+  background-color: #464646;
+}
+
+.exp_360_color_dot_out.red {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.red {
+  background-color: #de0022;
+}
+
+.exp_360_color_dot_out.mey1 {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mey1 {
+  background: linear-gradient(to right, #333333 50%, #2f288e 50%);
+}
+
+.exp_360_color_dot_out.mey2 {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mey2 {
+  background: linear-gradient(to right, #333333 50%, #2f288e 50%);
+}
+
+.exp_360_color_dot_out.mey3 {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mey3 {
+  background: linear-gradient(to right, #333333 50%, #2f288e 50%);
+}
+
+.exp_360_color_dot_out.mey4 {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mey4 {
+  background: linear-gradient(to right, #333333 50%, #2f288e 50%);
+}
+
+.exp_360_color_dot_out.mattetitan {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mattetitan {
+  background: #8c8e81;
+}
+
+.exp_360_color_dot_out.mgrey {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mgrey {
+  background: #7f7f7f;
+}
+
+.exp_360_color_dot_out.chrome {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.chrome {
+  background: radial-gradient(#f7f7f7, #999999);
+}
+
+.exp_360_color_dot_out.mattecopper {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mattecopper {
+  background: #b7712b;
+}
+
+.exp_360_color_dot_out.darkblue {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.darkblue {
+  background: #102f52;
+}
+
+.exp_360_color_dot_out.mattegrey {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mattegrey {
+  background: #464646;
+}
+
+.exp_360_color_dot_out.mattered {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mattered {
+  background: #a72229;
+}
+
+.exp_360_color_dot_out.mattecyan {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.mattecyan {
+  background: #53a9c3;
+}
+
+.exp_360_color_dot_out.copper {
+  border: 2px solid #28348a;
+}
+
+.exp_360_color_dot_inner.copper {
+  background-color: #ce7729;
+}
+
+.exp_360_select_color_btn.active .exp_360_color_dot_out {
+  border-color: #ffffff;
+}
+
+.exp_360_details_container {
+  width: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+}
+
+.exp_360_details_heading {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.exp_360_details_info {
+  color: #868686;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.exp_360_tyre_size {
+  top: -70%;
+  text-align: right;
+  left: -2%;
+}
+
+.exp_360_fuel_system {
+  right: 0;
+  top: -140%;
+}
+
+.exp_360_suspension {
+  right: -5%;
+  top: -15%;
+}
+
+.product_specification_container {
+  background-color: #28348a;
+  padding: 20px;
+  position: relative;
+}
+
+.product_specification_title {
+  font-family: Encode Sans Semi Expanded;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.product_specification_button_container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.product_specification_button {
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.product_specification_button.active {
+  background-color: #8190fa;
+}
+
+.product_specification_details {
+  margin: 10px 0;
+  padding: 10px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-left: auto;
+}
+
+.product_specification_item {
+  padding: 10px;
+}
+
+.product_item_title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #7583e8;
+}
+
+.product_item_value {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.product_specification_img_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32%;
+}
+.product_specification_img_container img {
+  width: 100%;
+  height: auto;
+}
+
+.product_accessories_container {
+  width: 100%;
+}
+
+.product_accessory_heading {
+  color: #1b1b1b;
+  text-align: center;
+  font-family: "Encode Sans Semi Expanded";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.product_accessory_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.product_accessories_nav_container_lg {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product_accessories_nav_container_lg img {
+  cursor: pointer;
+}
+
+.product_accessories {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.product_accessories::-webkit-scrollbar {
+  display: none;
+}
+
+.product_accessory_card {
+  min-width: 300px;
+  height: 330px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #efefef;
+  background: #fff;
+}
+
+.product_accessory_img_container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product_accessory_img_container img {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+.product_accessory_info {
+  padding: 0 20px;
+}
+
+.product_accessory_info_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_accessory_title {
+  color: #1b1b1b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product_accessory_price {
+  color: #28348a;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product_accessory_details {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.product_accessory_control {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product_accessories_book_btn {
+  width: 75%;
+  flex-shrink: 0;
+  background-color: #28348a;
+  padding: 5px 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+}
+
+.product_accessory_icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #28348a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_accessories_nav_container_sm {
+  display: none;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.product_accessories_nav_container_sm img {
+  cursor: pointer;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 70px auto;
+}
+.gallery-container .carousel-control-imgs {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+.gallery-container .carousel-control-img {
+  flex: 0 0 33.33%;
+  scroll-snap-align: start;
+}
+
+.gallery-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-carousel .gallery-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.gallery-carousel .gallery-slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+.gallery-carousel .gallery-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-carousel .carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.gallery-carousel .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  left: 0;
+}
+.gallery-carousel .prev img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  right: 0;
+}
+.gallery-carousel .next img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-carousel .carousel-control-img.active {
+  background-color: black;
+}
+
+.carousel-control-imgs::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-control-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-tab-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.gallery-button {
+  width: 226.37px;
+  padding: 12.105px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: 1px solid rgb(204, 204, 204);
+  margin: 0px 5px;
+  border-radius: 50px;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-active {
+  color: #fff;
+  font-size: 19.369px;
+  font-weight: 700;
+  text-transform: capitalize;
+  background-color: #28348a;
+}
+
+@media (max-width: 768px) {
+  .product_slider_video {
+    height: 300px;
+  }
+  .exp_360_background_img_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: 270px;
+  }
+  .exp_360_upper_container {
+    height: 250px;
+  }
+  .exp_360_background_text_container {
+    bottom: 15%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .exp_360_bookingNowbtn {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  .gallery-tab-box {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .exp_background_text {
+    font-size: 24px;
+    margin-top: 9px;
+  }
+  .exp_360_info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  .exp_360_bike_color img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .product_specification_title {
+    font-size: 25px;
+  }
+  .product_accessory_card {
+    max-width: 230px;
+  }
+  .product_accessory_heading {
+    font-size: 30px;
+  }
+  .product_accessories_nav_container_sm {
+    display: none;
+    width: 96%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  .product_accessories_nav_container_sm img {
+    cursor: pointer;
+    margin-top: -540px;
+    width: 25px;
+  }
+  .video-container {
+    height: 234px;
+  }
+  .video-container video {
+    height: 234px;
+  }
+}
+@media (max-width: 1200px) {
+  .product_connectapp_card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+  }
+  .product_connectapp_card_containt {
+    height: auto;
+  }
+  .exp_360_tyre_size {
+    left: -10%;
+  }
+  .exp_360_fuel_system {
+    right: -10%;
+  }
+  .exp_360_suspension {
+    right: -15%;
+  }
+  .product_specification_img_container {
+    width: 39%;
+  }
+}
+@media (max-width: 992px) {
+  .product_connectapp_card {
+    justify-content: flex-start;
+  }
+  .connect_section {
+    margin-top: 12%;
+  }
+  .ellipse_carousel_info_conataier {
+    display: none;
+  }
+  .ellipse_carousel_img_container_wrapper {
+    width: 60%;
+  }
+  .ellipse_carousel_center_img_container {
+    margin: 25px 0 2% 0;
+  }
+  .ellipse_carousel_description {
+    width: 100%;
+  }
+  .motorcycle_connect_heading {
+    padding-top: 13%;
+  }
+  .exp_360_info_container {
+    flex-direction: column;
+  }
+  .exp_360_heading_container {
+    padding: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .connect_section {
+    display: none;
+  }
+  .product_connectapp_card {
+    width: calc(50% - 20px);
+    justify-content: center;
+  }
+  .product_connectapp_card_containt {
+    height: 30%;
+  }
+  .ellipse_carousel_description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ellipse_carousel_img_container_wrapper {
+    width: 50%;
+  }
+  .ellipse_carousel_bike_title {
+    font-size: 10px;
+  }
+  .ellipse_carousel_heading {
+    font-size: 15px;
+  }
+  .ellipse_carousel_sub_heading {
+    font-size: 20px;
+  }
+  .exp_360_rotate_image_container {
+    bottom: 15%;
+  }
+  .exp_360_rotate_image {
+    width: 100%;
+  }
+  .exp_360_details_heading {
+    font-size: 10px;
+  }
+  .exp_360_details_info {
+    font-size: 12px;
+  }
+  .exp_360_tyre_size {
+    left: -25%;
+  }
+  .exp_360_fuel_system {
+    right: -25%;
+    top: -160%;
+  }
+  .exp_360_suspension {
+    right: -27%;
+    top: 10%;
+  }
+  .product_specification_button {
+    font-size: 12px;
+  }
+  .product_specification_details {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product_specification_img_container {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .product_connect_title_section h3 {
+    font-size: 25px;
+  }
+  .product_connect_title_section h1 {
+    font-size: 28px;
+    margin: 5px 0;
+  }
+  .product_connect_title_section span {
+    font-size: 14px;
+  }
+  .product_connectapp_card {
+    padding: 20px 10px;
+  }
+  .product_connectapp_card h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .product_connectapp_card p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .product_connectapp_card_containt {
+    height: 55%;
+  }
+  .ellipse_carousel_content_container {
+    width: 90%;
+    padding: 10% 0;
+  }
+  .ellipse_carousel_selection_label {
+    font-size: 10px;
+  }
+  .ellipse_carousel_center_img_container {
+    margin: 15px 0 2% 0;
+  }
+  .exp_360_background_text {
+    font-size: 90px;
+    line-height: 74px;
+  }
+  .exp_360_background_text:first-child {
+    font-size: 50px;
+  }
+  .exp_360_content_container {
+    width: 100%;
+    margin-left: 20px;
+  }
+  #exp_360_city_selector {
+    width: 65%;
+  }
+  .exp_360_select_color_container {
+    width: 50%;
+  }
+  .exp_360_bike_name {
+    font-size: 25px;
+  }
+  .exp_360_price_color {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  .exp_360_color_details {
+    font-size: 14px;
+  }
+  .exp_360_exShowroom {
+    font-size: 12px;
+  }
+  .exp_360_price {
+    font-size: 35px;
+  }
+  .exp_360_disclaimer {
+    font-size: 12px;
+  }
+  .exp_360_select_color_btn {
+    padding: 7px;
+  }
+  .exp_360_details_container {
+    display: none;
+  }
+  .exp_360_rotate_image_nav {
+    display: none;
+  }
+  .product_specification_button {
+    padding: 4px 8px;
+  }
+  .product_item_title {
+    font-size: 14px;
+  }
+  .product_item_value {
+    font-size: 12px;
+  }
+  .product_accessories_nav_container_lg {
+    display: none;
+  }
+  .product_accessories_nav_container_sm {
+    display: flex;
+  }
+  .gallery-button {
+    font-size: 9.5px;
+  }
+}
+@media (max-width: 450px) {
+  .ellipse_carousel_center_img_container {
+    margin: 5px 0 2% 0;
+  }
+  .exp_360_color_dot_inner {
+    height: 12px;
+    width: 12px;
+  }
+  .exp_360_select_color_btn {
+    padding: 5px;
+  }
+}
+@media (max-width: 380px) {
+  .product_specification_button {
+    margin: 0 0 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .product_specification_button {
+    padding: 3px 4px;
+    font-size: 11px;
+  }
+}
+.exp_360_arrow:hover {
+  transform: scale(1.2);
+}
+
+exp_360_bookNow_btn:hover {
+  border: 1px solid #0001a0;
+  color: #0001a0;
+  background-color: #f0f1f6;
+}
+
+.product_specification_button:hover {
+  border: 1px solid #0001a0;
+  color: #0001a0;
+  background-color: #bac2fa;
+}
+
+.product_accessories_book_btn:hover {
+  border: 1px solid #0001a0;
+  color: #0001a0;
+  background-color: #f0f1f6;
+}
+
+.gallery-button:hover {
+  border: 1px solid #0001a0;
+  color: #0001a0;
+}
+
+.exp_360_bookNow_btn:hover {
+  border: 1px solid #0001a0;
+  color: #0001a0;
+  background-color: #f0f1f6;
+}/*# sourceMappingURL=style.css.map */
