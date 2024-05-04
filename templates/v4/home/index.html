@@ -53,7 +53,54 @@
 </head>
 
 <body>
-    <header id="header_component"></header>
+    <header id="header_component">
+        <header class="header_section flex align_items_center justify_content_space_between">
+            <div class="icons-mobile flex align_items_center">
+                <img src="/theme/v4/images/icons/jam_menu.svg" alt="Menu Icon" class="menu-icon" id="hamburger_menu">
+            </div>
+        
+            <div class="logo">
+                <img src="https://www.yamaha-motor-india.com/theme/v3/image/header-footer/yamaha-motor.png" alt="Logo">
+            </div>
+        
+            <div class="flex align-items-center gap35">
+                <nav class="main-nav">
+                    <ul class="flex align_items_center gap35">
+                        <li><a href="/templates/v4/motorcycle/yamaha-mt03.html">Products</a></li>
+                        <li><a href="#">Dealers</a></li>
+                        <li><a href="#">Buyer's Guide</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Parts</a></li>
+                        <li><a href="#">Moto GP</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contest</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="icons-desktop flex align_items_center">
+                    <img src="/theme/v4/images/icons/search.svg" alt="Search Icon" class="search-icon">
+                </div>
+                <div class="main-nav">
+                    <img src="/theme/v4/images/icons/jam_menu.svg" alt="menu Icon">
+                </div>
+            </div>
+        </header>
+        <div class="side-menu">
+            <nav class="side-nav">
+                <div class="close-icon">×</div>
+                <ul class="flex flex-column">
+                    <li><a href="/templates/v4/motorcycle/yamaha-mt03.html">Products</a></li>
+                    <li><a href="#">Dealers</a></li>
+                    <li><a href="#">Buyer's Guide</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Moto GP</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contest</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!-- Hero section starts -->
     <section>
         <div class="hero-slider-container">
@@ -1518,18 +1565,6 @@
 
     <script>
         // Fetch and insert hero content
-        fetch('/templates/v4/header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header_component').innerHTML = html;
-                const scripts = Array.from(new DOMParser().parseFromString(html, 'text/html').querySelectorAll('script'));
-                scripts.forEach(script => {
-                    const newScript = document.createElement('script');
-                    newScript.innerHTML = script.innerHTML;
-                    document.body.appendChild(newScript);
-                });
-            })
-            .catch(error => console.error('Error fetching hero content:', error));
 
         fetch('/templates/v4/footerMobile.html')
             .then(response => response.text())
@@ -1571,6 +1606,7 @@
     <script src="../../../theme/v4/js/home/slick.min.js"></script>
     <script src="../../../theme/v4/js/home/select_your.js"></script>
     <script src="../../../theme/v4/js/home/whats_new_mobile.js"></script>
+    <script src="../../../theme/v4/js/header.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="../../../theme/v4/js/home/gallery_carousel.js"></script>
