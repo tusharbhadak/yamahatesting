@@ -140,3 +140,19 @@ function simulateKeydown(keyCode) {
 
     target.dispatchEvent(event);
 }
+
+const image = document.querySelectorAll('.cloudimage-360');
+
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+
+    image.forEach((image, index) => {
+        const rotation = scrollPosition * 0.2; // Adjust the scroll speed multiplier
+
+        // Calculate rotation angle based on image index
+        const angle = (index * 120 - rotation) % 360;
+
+        // Apply rotation to the image
+        image.style.transform = `rotateY(${angle}deg)`;
+    });
+});
