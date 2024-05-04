@@ -109,7 +109,7 @@
             <nav class="side-nav">
                 <div class="close-icon">×</div>
                 <ul class="flex flex-column">
-                    <li><a href="#">Products</a></li>
+                    <li><a href="/templates/v4/motorcycle/yamaha-mt03.html">Products</a></li>
                     <li><a href="#">Dealers</a></li>
                     <li><a href="#">Buyer's Guide</a></li>
                     <li><a href="#">Services</a></li>
@@ -351,10 +351,10 @@
                 <div class="exp_360_info_container">
                     <div class="exp_360_heading_container">
                         <div class="exp_360_bike_color bike_color_cyan">
-                            <img src="/theme/v4/images/product/MT03/mt03_5.png" alt="Yamaha MT-03 specification">
+                            <img src="/theme/v4/images/webp images/MT Series/mt03/color/mt03-cyan.webp" alt="Yamaha MT-03 specification">
                         </div>
                         <div class="exp_360_bike_color bike_color_black d-none">
-                            <img src="/theme/v4/images/product/MT03/mt03_6.png" alt="Yamaha MT-03 specification">
+                            <img src="/theme/v4/images/webp images/MT Series/mt03/color/mt03-black.webp" alt="Yamaha MT-03 specification">
                         </div>
                     </div>
                     <div class="exp_360_content_container">
@@ -1208,6 +1208,28 @@ buttonText.style.color = buttonText.innerHTML === "Click Now" ? "white" : "#0001
 
 
 }
+
+let currentIndex = 0;
+const imageCount = 23; // Total number of images
+const rotationSpeed = 200; // Speed of rotation in milliseconds (adjust as needed)
+
+function rotateImages() {
+    // Hide all images
+    const images = document.querySelectorAll('.cloudimage-360 img');
+    images.forEach(image => {
+        image.style.opacity = 0; // Hide image
+    });
+
+    // Show the next image
+    currentIndex = (currentIndex + 1) % imageCount;
+    images[currentIndex].style.opacity = 1; // Show next image
+
+    // Schedule the next rotation
+    setTimeout(rotateImages, rotationSpeed);
+}
+
+// Call the rotateImages function to start the rotation
+rotateImages();
 
 
 $(document).ready(function () {

@@ -20,6 +20,10 @@
         href="https://fonts.googleapis.com/css2?family=Krona+One&family=Londrina+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
@@ -57,9 +61,8 @@
             <div class="slide-track">
                 <div class="slide">
                     <!-- <img class="slider_img" src="/images/banner/bannerDemo.png" alt="Image 1"> -->
-                    <video class="slider_vedio" autoplay loop muted>
-                        <source src="../../../theme/v4/videos/98b4c4ed-338c-443d-b8ea-af7520eb4832.mp4"
-                            type="video/mp4">
+                    <video id="banner_video" class="slider_vedio" autoplay loop muted playsinline>
+                        <source src="../../../theme/v4/videos/98b4c4ed-338c-443d-b8ea-af7520eb4832.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <!-- <h2><span>The Game Changer</span><br />NEW BEAST</h2> -->
@@ -72,21 +75,31 @@
                     </video>
                 </div> -->
                 <div class="slide">
-                    <img class="slider_img" src="../../../theme/v4/images/banner/r3-home-pc.webp" alt="aeroxBanner">
+                    <img class="slider_img desktop-mobile-banner" src="../../../theme/v4/images/banner/r3-home-pc.webp"
+                        alt="aeroxBanner">
+                    <img class="slider_img mobile-view-banner"
+                        src="../../../theme/v4/images/banner/Mobile/R3-homepage-mobile-banner (2).webp" alt="aeroxBanner">
                 </div>
                 <div class="slide">
-                    <img class="slider_img" src="../../../theme/v4/images/banner/mt03-home-pc.webp"
+                    <img class="slider_img desktop-mobile-banner" src="../../../theme/v4/images/banner/mt03-home-pc.webp"
+                        alt="predict_win-banner">
+                    <img class="slider_img mobile-view-banner"
+                        src="../../../theme/v4/images/banner/Mobile/mt03-homepage-mobile-banner (2).webp"
                         alt="predict_win-banner">
                 </div>
                 <div class="slide">
-                    <img class="slider_img" src="../../../theme/v4/images/banner/event-homepage-desktop-banner (2).webp"
-                        alt="aeroxBanner">
+                    <img class="slider_img desktop-mobile-banner"
+                        src="../../../theme/v4/images/banner/event-homepage-desktop-banner (2).webp" alt="aeroxBanner">
+                    <img class="slider_img mobile-view-banner"
+                        src="../../../theme/v4/images/banner/Mobile/event-homepage-mobile-banner (2).webp" alt="aeroxBanner">
                     <!-- <h2><span>The Game Changer</span><br />NEW BEAST</h2>
                     <img class="slide_right_arrow" src="/images/icons/rightArrow.svg" alt="rightArrow" /> -->
                 </div>
                 <div class="slide">
-                    <img class="slider_img last_child"
+                    <img class="slider_img desktop-mobile-banner last_child"
                         src="../../../theme/v4/images/banner/event1-homepage-desktop-banner (2).webp" alt="aeroxBanner">
+                    <img class="slider_img mobile-view-banner last_child"
+                        src="../../../theme/v4/images/banner/Mobile/event2-homepage-desktop-banner (2).webp" alt="aeroxBanner">
                     <!-- <h2><span>The Game Changer</span><br />NEW BEAST</h2>
                     <img class="slide_right_arrow" src="/images/icons/rightArrow.svg" alt="rightArrow" /> -->
                 </div>
@@ -115,12 +128,12 @@
                         <ul class="floatingMenu">
                             <li>
                                 <a href="#">Enquire Now <div class="icon-menus"><img
-                                            src="../../../theme/v4/images/icons/headphones.png" alt="">
+                                            src="/theme/v4/images/icons/headphones.png" alt="">
                                     </div></a>
                             </li>
                             <li>
                                 <a href="#">Buy Now <div class="icon-menus"><img
-                                            src="../../../theme/v4/images/icons/shopping-cart.png" alt="">
+                                            src="/theme/v4/images/icons/shopping-cart.png" alt="">
                                     </div></a>
                             </li>
                         </ul>
@@ -131,6 +144,7 @@
         </div>
     </section>
     <!-- Hero section ends -->
+
 
     <div id="select_your_component" class="select_your_bike_wrapper container">
         <section>
@@ -221,57 +235,44 @@
                                     <div class="background"></div>
                                     <div class="carousel-track">
                                         <div class="carousel-slide selected_slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/r3-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/R_Series/r3-tv.webp" alt="Image 1">
                                         </div>
                                         <div class="carousel-slide upcomingSlide"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/r15-m-tv.webp"
-                                                alt="Image 2"></div>
-                                        <div class="carousel-slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/r15 V4-tv.webp"
+                                                src="/theme/v4/images/home/select_your_bike/R_Series/r15-m-tv.webp" alt="Image 2"></div>
+                                        <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/R_Series/r15 V4-tv.webp"
                                                 alt="Image 3"></div>
-                                        <div class="carousel-slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/r15s-tv.webp"
+                                        <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/R_Series/r15s-tv.webp"
                                                 alt="Image 4"></div>
                                     </div>
                                 </div>
                                 <div class="carousel-nav-container-lg">
-
+                        
                                     <div class="nav-text top">
-                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg"
-                                            alt="Up Arrow Icon">
+                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg" alt="Up Arrow Icon">
                                         <!-- <span>Swipe up to preview next bike/design</span> -->
                                     </div>
                                     <div id="carousalSclollY" class="carousel-nav flex flex_column align_items_center">
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(0, 'motorcycle_r_series','', 'R3')"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/R3.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot active-thumbnail"
+                                            onclick="handleClick(this,0, 'motorcycle_r_series','', 'R3')"><img
+                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/R3.webp" alt="Image 2">
                                             <span class="carousel-dot-title">R3</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(1, 'motorcycle_r_series', 'R15M','R15M')"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15m.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,1, 'motorcycle_r_series', 'R15M','R15M')"><img
+                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15m.webp" alt="Image 2">
                                             <span class="carousel-dot-title">R15M</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(2, 'motorcycle_r_series', 'R15V4','R15 V4')"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15v4.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,2, 'motorcycle_r_series', 'R15V4','R15 V4')"><img
+                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15v4.webp" alt="Image 2">
                                             <span class="carousel-dot-title">R15 V4</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(3, 'motorcycle_r_series','R15S','R15S')"><img
-                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,3, 'motorcycle_r_series','R15S','R15S')"><img
+                                                src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp" alt="Image 2">
                                             <span class="carousel-dot-title">R15S</span>
                                         </div>
                                     </div>
                                     <div class="nav-text bottom">
                                         <!-- <span>Swipe down to preview previous bike/design</span> -->
-                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg"
-                                            alt="Down Arrow Icon">
+                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg" alt="Down Arrow Icon">
                                     </div>
                                 </div>
                                 <div class="carousel_background_text">R Series</div>
@@ -279,43 +280,34 @@
                             <div class="carousel-nav-container-md">
                                 <div class="nav-text">
                                     <span>Swipe right to<br> preview next bike</span>
-                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg"
-                                        alt="right Arrow Icon" class="rotate_180">
+                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                                        class="rotate_180">
                                 </div>
                                 <div id="carousalSclollX" class="carousel-nav flex align_items_center">
-                                    <div class="carousel-dot" onclick="goToSlide(0, 'motorcycle_r_series','','R3')"><img
-                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/R3.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot active-thumbnail" onclick="handleClick(this,0, 'motorcycle_r_series','','R3')"><img
+                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/R3.webp" alt="Image 2">
                                         <span class="carousel-dot-title">R3</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(1, 'motorcycle_r_series', 'R15M','R15M')"><img
-                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15m.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,1, 'motorcycle_r_series', 'R15M','R15M')"><img
+                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15m.webp" alt="Image 2">
                                         <span class="carousel-dot-title">R15M</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(2, 'motorcycle_r_series', 'R15V4','R15 V4')"><img
-                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15v4.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,2, 'motorcycle_r_series', 'R15V4','R15 V4')"><img
+                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15v4.webp" alt="Image 2">
                                         <span class="carousel-dot-title">R15 V4</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(3, 'motorcycle_r_series', 'R15S','R15S')"><img
-                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,3, 'motorcycle_r_series', 'R15S','R15S')"><img
+                                            src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp" alt="Image 2">
                                         <span class="carousel-dot-title">R15S</span>
                                     </div>
                                 </div>
                                 <div class="nav-text">
-                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg"
-                                        alt="left Arrow Icon" class="rotate_180">
+                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                                        class="rotate_180">
                                     <span>Swipe left to <br> preview next bike</span>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <div id="motorcycle_mt_series_select" class="sub-tab-container" style="display: none;">
                         <div class="carousel-container">
@@ -374,12 +366,10 @@
                                     <div class="background"></div>
                                     <div class="carousel-track">
                                         <div class="carousel-slide selected_slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/MT_Series/Mt03-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/MT_Series/Mt03-tv.webp" alt="Image 1">
                                         </div>
                                         <div class="carousel-slide upcomingSlide"><img
-                                                src="/theme/v4/images/home/select_your_bike/MT_Series/mt15-tv.webp"
-                                                alt="Image 2"></div>
+                                                src="/theme/v4/images/home/select_your_bike/MT_Series/mt15-tv.webp" alt="Image 2"></div>
                                         <!-- <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/R15M_Top_Angel.png"
                                                 alt="Image 3"></div>
                                         <div class="carousel-slide"><img
@@ -388,23 +378,20 @@
                                     </div>
                                 </div>
                                 <div class="carousel-nav-container-lg">
-
+                        
                                     <div class="nav-text top">
-                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg"
-                                            alt="Up Arrow Icon">
+                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg" alt="Up Arrow Icon">
                                         <!-- <span>Swipe up to preview next bike/design</span> -->
                                     </div>
                                     <div id="carousalSclollY" class="carousel-nav flex flex_column align_items_center">
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(0, 'motorcycle_mt_series', '','MT-03')"><img
+                                        <div class="carousel-dot active-thumbnail"
+                                            onclick="handleClick(this,0, 'motorcycle_mt_series', '','MT-03')"><img
                                                 src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/mt03cyan (2) (1).webp"
                                                 alt="Image 2">
                                             <span class="carousel-dot-title">MT-03</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(1, 'motorcycle_mt_series', 'MT15','MT-15 V2.0')"><img
-                                                src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,1, 'motorcycle_mt_series', 'MT15','MT-15 V2.0')">
+                                            <img src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp" alt="Image 2">
                                             <span class="carousel-dot-title">MT-15 V2.0</span>
                                         </div>
                                         <!-- <div class="carousel-dot" onclick="goToSlide(2, 'motorcycle_mt_series', 'R15V74')"><img
@@ -418,8 +405,7 @@
                                     </div>
                                     <div class="nav-text bottom">
                                         <!-- <span>Swipe down to preview previous bike/design</span> -->
-                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg"
-                                            alt="Down Arrow Icon">
+                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg" alt="Down Arrow Icon">
                                     </div>
                                 </div>
                                 <div class="carousel_background_text">MT Series</div>
@@ -427,19 +413,17 @@
                             <div class="carousel-nav-container-md">
                                 <div class="nav-text">
                                     <span>Swipe right to<br> preview next bike</span>
-                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg"
-                                        alt="right Arrow Icon" class="rotate_180">
+                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                                        class="rotate_180">
                                 </div>
                                 <div id="carousalSclollX" class="carousel-nav flex align_items_center">
-                                    <div class="carousel-dot" onclick="goToSlide(0, 'motorcycle_mt_series','','MT-03')">
+                                    <div class="carousel-dot active-thumbnail" onclick="handleClick(this,0, 'motorcycle_mt_series','','MT-03')">
                                         <img src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/mt03cyan (2) (1).webp"
                                             alt="Image 2">
                                         <span class="carousel-dot-title">MT-03</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(1, 'motorcycle_mt_series', 'MT15','MT-15 V2.0')"><img
-                                            src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,1, 'motorcycle_mt_series', 'MT15','MT-15 V2.0')"><img
+                                            src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp" alt="Image 2">
                                         <span class="carousel-dot-title">MT-15 V2.0</span>
                                     </div>
                                     <!-- <div class="carousel-dot" onclick="goToSlide(6, 'motorcycle_mt_series', 'R15V74')"><img
@@ -452,14 +436,12 @@
                                     </div> -->
                                 </div>
                                 <div class="nav-text">
-                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg"
-                                        alt="left Arrow Icon" class="rotate_180">
+                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                                        class="rotate_180">
                                     <span>Swipe left to <br> preview next bike</span>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <div id="motorcycle_fz_series_select" class="sub-tab-container" style="display: none;">
                         <div class="carousel-container">
@@ -518,66 +500,51 @@
                                     <div class="background"></div>
                                     <div class="carousel-track">
                                         <div class="carousel-slide selected_slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fzx-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fzx-tv.webp" alt="Image 1">
                                         </div>
                                         <div class="carousel-slide upcomingSlide"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fzs-led-tv.webp"
-                                                alt="Image 3"></div>
-                                        <div class="carousel-slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fzs-fiv4-tv.webp"
+                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fzs-led-tv.webp" alt="Image 3"></div>
+                                        <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/FZ_Series/fzs-fiv4-tv.webp"
                                                 alt="Image 4"></div>
-                                        <div class="carousel-slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fzs-tv.webp"
+                                        <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/FZ_Series/fzs-tv.webp"
                                                 alt="Image 4"></div>
-                                        <div class="carousel-slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/fz-fi-tv.webp"
+                                        <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/FZ_Series/fz-fi-tv.webp"
                                                 alt="Image 4"></div>
                                     </div>
                                 </div>
                                 <div class="carousel-nav-container-lg">
-
+                        
                                     <div class="nav-text top">
-                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg"
-                                            alt="Up Arrow Icon">
+                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg" alt="Up Arrow Icon">
                                         <!-- <span>Swipe up to preview next bike/design</span> -->
                                     </div>
                                     <div id="carousalSclollY" class="carousel-nav flex flex_column align_items_center">
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(0, 'motorcycle_fz_series', 'FZX','FZ-X')"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZ-X.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot active-thumbnail"
+                                            onclick="handleClick(this,0, 'motorcycle_fz_series', 'FZX','FZ-X')"><img
+                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZ-X.webp" alt="Image 2">
                                             <span class="carousel-dot-title">FZ-X</span>
                                         </div>
                                         <div class="carousel-dot"
-                                            onclick="goToSlide(1, 'motorcycle_fz_series', 'FZFI','FZ-S FI V4.0 DLX')">
-                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI-DLX.webp"
-                                                alt="Image 2">
+                                            onclick="handleClick(this,1, 'motorcycle_fz_series', 'FZFI','FZ-S FI V4.0 DLX')">
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI-DLX.webp" alt="Image 2">
                                             <span class="carousel-dot-title">FZ-S FI V4.0 DLX</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(2, 'motorcycle_fz_series', 'FZSV3','FZ-S FI V4.0')"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,2, 'motorcycle_fz_series', 'FZSV3','FZ-S FI V4.0')">
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI.webp" alt="Image 2">
                                             <span class="carousel-dot-title">FZ-S FI V4.0</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(3, 'motorcycle_fz_series','FZFIV3','FZ-S FI V3.0')"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi-v3.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,3, 'motorcycle_fz_series','FZFIV3','FZ-S FI V3.0')">
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi-v3.webp" alt="Image 2">
                                             <span class="carousel-dot-title">FZ-S FI V3.0</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(4, 'motorcycle_fz_series','FZSV4','FZ-FI')"><img
-                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,4, 'motorcycle_fz_series','FZSV4','FZ-FI')"><img
+                                                src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp" alt="Image 2">
                                             <span class="carousel-dot-title">FZ-FI</span>
                                         </div>
                                     </div>
                                     <div class="nav-text bottom">
                                         <!-- <span>Swipe down to preview previous bike/design</span> -->
-                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg"
-                                            alt="Down Arrow Icon">
+                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg" alt="Down Arrow Icon">
                                     </div>
                                 </div>
                                 <div class="carousel_background_text">FZ Series</div>
@@ -585,53 +552,39 @@
                             <div class="carousel-nav-container-md">
                                 <div class="nav-text">
                                     <!-- <span>Swipe right to<br> preview next bike</span> -->
-                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg"
-                                        alt="right Arrow Icon" class="rotate_180">
+                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                                        class="rotate_180">
                                 </div>
                                 <div id="carousalSclollX" class="carousel-nav flex align_items_center">
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(0, 'motorcycle_fz_series','FZX','FZ-X')"><img
-                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZ-X.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot active-thumbnail"
+                                        onclick="handleClick(this,0, 'motorcycle_fz_series','FZX','FZ-X')"><img
+                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZ-X.webp" alt="Image 2">
                                         <span class="carousel-dot-title">FZ-X</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(1, 'motorcycle_fz_series', 'FZSV3','FZ-S FI V4.0 DLX')"><img
-                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI-DLX.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,1, 'motorcycle_fz_series', 'FZSV3','FZ-S FI V4.0 DLX')">
+                                        <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI-DLX.webp" alt="Image 2">
                                         <span class="carousel-dot-title">FZ-S FI V4.0 DLX</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(2, 'motorcycle_fz_series', 'FZFI','FZ-S FI V4.0')"><img
-                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,2, 'motorcycle_fz_series', 'FZFI','FZ-S FI V4.0')"><img
+                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI.webp" alt="Image 2">
                                         <span class="carousel-dot-title">FZ-S FI V4.0</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(3, 'motorcycle_fz_series', 'FZFIV3','FZ-S FI V3.0')"><img
-                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi-v3.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,3, 'motorcycle_fz_series', 'FZFIV3','FZ-S FI V3.0')">
+                                        <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi-v3.webp" alt="Image 2">
                                         <span class="carousel-dot-title">FZ-S FI V3.0</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(4, 'motorcycle_fz_series', 'FZSV3','FZ-FI')"><img
-                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,4, 'motorcycle_fz_series', 'FZSV3','FZ-FI')"><img
+                                            src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp" alt="Image 2">
                                         <span class="carousel-dot-title">FZ-FI</span>
                                     </div>
                                 </div>
                                 <div class="nav-text">
-                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg"
-                                        alt="left Arrow Icon" class="rotate_180">
+                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                                        class="rotate_180">
                                     <!-- <span>Swipe left to <br> preview next bike</span> -->
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
                     <!-- <div id="motorcycle_moto_gp_select" class="sub-tab-container"></div> -->
                 </div>
@@ -700,12 +653,10 @@
                                     <div class="background"></div>
                                     <div class="carousel-track">
                                         <div class="carousel-slide selected_slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/Maxi/Aerox155s-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/Maxi/Aerox155s-tv.webp" alt="Image 1">
                                         </div>
                                         <div class="carousel-slide upcomingSlide"><img
-                                                src="/theme/v4/images/home/select_your_bike/Maxi/Aerox155s-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/Maxi/Aerox155s-tv.webp" alt="Image 1">
                                         </div>
                                         <!-- <div class="carousel-slide upcomingSlide"><img src="/theme/v4/images/home/select_your_bike/scooter/YAamaha_TOP_ray_zr.png" alt="Image 2"></div>
                                         <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/scooter/YAamaha_TOP_ray_zr.png" alt="Image 3"></div> -->
@@ -713,23 +664,19 @@
                                     </div>
                                 </div>
                                 <div class="carousel-nav-container-lg">
-
+                        
                                     <div class="nav-text top">
-                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg"
-                                            alt="Up Arrow Icon">
+                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg" alt="Up Arrow Icon">
                                         <!-- <span>Swipe up to preview next bike/design</span> -->
                                     </div>
                                     <div id="carousalSclollY" class="carousel-nav flex flex_column align_items_center">
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(0, 'scooter_maxi', 'Aerox155','Aerox 155 Version S')">
-                                            <img src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot active-thumbnail"
+                                            onclick="handleClick(this,0, 'scooter_maxi', 'Aerox155','Aerox 155 Version S')"><img
+                                                src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox.webp" alt="Image 2">
                                             <span class="carousel-dot-title">Aerox 155 Version S</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(1, 'scooter_maxi', 'Aerox155N','Aerox 155')"><img
-                                                src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox155 (4) (1).webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,1, 'scooter_maxi', 'Aerox155N','Aerox 155')"><img
+                                                src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox155 (4) (1).webp" alt="Image 2">
                                             <span class="carousel-dot-title">Aerox 155</span>
                                         </div>
                                         <!-- <div class="carousel-dot" onclick="goToSlide(2, 'scooter_maxi', 'RayZR125')"><img src="/theme/v4/images/home/select_your_bike/scooter/Yamaha_RayZr.png"
@@ -743,8 +690,7 @@
                                     </div>
                                     <div class="nav-text bottom">
                                         <!-- <span>Swipe down to preview previous bike/design</span> -->
-                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg"
-                                            alt="Down Arrow Icon">
+                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg" alt="Down Arrow Icon">
                                     </div>
                                 </div>
                                 <div class="carousel_background_text">Maxi</div>
@@ -752,19 +698,16 @@
                             <div class="carousel-nav-container-md">
                                 <div class="nav-text">
                                     <span>Swipe right to<br> preview next bike</span>
-                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg"
-                                        alt="right Arrow Icon" class="rotate_180">
+                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                                        class="rotate_180">
                                 </div>
                                 <div id="carousalSclollX" class="carousel-nav flex align_items_center">
-                                    <div class="carousel-dot" onclick="goToSlide(0, 'scooter_maxi','Aerox155')"><img
-                                            src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot active-thumbnail" onclick="handleClick(this,0, 'scooter_maxi','Aerox155')"><img
+                                            src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox.webp" alt="Image 2">
                                         <span class="carousel-dot-title">Aerox 155 Version S</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(1, 'scooter_maxi','Aerox155N','Aerox 155')"><img
-                                            src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox155 (4) (1).webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,1, 'scooter_maxi','Aerox155N','Aerox 155')"><img
+                                            src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox155 (4) (1).webp" alt="Image 2">
                                         <span class="carousel-dot-title">Aerox 155</span>
                                     </div>
                                     <!-- <div class="carousel-dot" onclick="goToSlide(1, 'scooter_maxi')"><img src="/theme/v4/images/home/select_your_bike/scooter/04-Yamaha Aerox_0240-final.png" alt="Image 2">
@@ -778,13 +721,12 @@
                                     </div> -->
                                 </div>
                                 <div class="nav-text">
-                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg"
-                                        alt="left Arrow Icon" class="rotate_180">
+                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                                        class="rotate_180">
                                     <span>Swipe left to <br> preview next bike</span>
                                 </div>
                             </div>
-                        </div>
-
+                        </div>                        
                     </div>
                     <div id="scooter_street_select" class="sub-tab-container" style="display: none;">
                         <div class="carousel-container">
@@ -835,21 +777,18 @@
                                     <div class="background"></div>
                                     <div class="carousel-track">
                                         <div class="carousel-slide selected_slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/Street/rayzr-sr-tv.webp"
-                                                alt="Image 2"></div>
+                                                src="/theme/v4/images/home/select_your_bike/Street/rayzr-sr-tv.webp" alt="Image 2"></div>
                                         <div class="carousel-slide upcomingSlide"><img
-                                                src="/theme/v4/images/home/select_your_bike/Street/rayzr-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/Street/rayzr-tv.webp" alt="Image 1">
                                         </div>
                                         <!-- <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/scooter/YAamaha_TOP_ray_zr.png" alt="Image 3"></div> -->
                                         <!-- <div class="carousel-slide"><img src="/theme/v4/images/home/select_your_bike/YAamaha_TOP_SHOTS00460-removebg-preview.png" alt="Image 4"></div> -->
                                     </div>
                                 </div>
                                 <div class="carousel-nav-container-lg">
-
+                        
                                     <div class="nav-text top">
-                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg"
-                                            alt="Up Arrow Icon">
+                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg" alt="Up Arrow Icon">
                                         <!-- <span>Swipe up to preview next bike/design</span> -->
                                     </div>
                                     <div id="carousalSclollY" class="carousel-nav flex flex_column align_items_center">
@@ -857,16 +796,14 @@
                                                 alt="Image 2">
                                                 <span class="carousel-dot-title">Aerox</span>
                                         </div> -->
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(0, 'scooter_street', 'RayZR125SR','RAYZR Street Rally 125 FI')">
-                                            <img src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RZ-Street-Rally.webp"
+                                        <div class="carousel-dot active-thumbnail"
+                                            onclick="handleClick(this,0, 'scooter_street', 'RayZR125SR','RAYZR Street Rally 125 FI')"><img
+                                                src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RZ-Street-Rally.webp"
                                                 alt="Image 2">
                                             <span class="carousel-dot-title">RAYZR Street Rally 125 FI</span>
                                         </div>
-                                        <div class="carousel-dot"
-                                            onclick="goToSlide(1, 'scooter_street', 'RayZR125','RAYZR 125 FI')"><img
-                                                src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RazZR.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot" onclick="handleClick(this,1, 'scooter_street', 'RayZR125','RAYZR 125 FI')">
+                                            <img src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RazZR.webp" alt="Image 2">
                                             <span class="carousel-dot-title">RAYZR 125 FI</span>
                                         </div>
                                         <!-- <div class="carousel-dot" onclick="goToSlide(3)"><img src="/theme/v4/images/home/select_your_bike/motorcycle/DARK MATTE BLUE.png"
@@ -876,8 +813,7 @@
                                     </div>
                                     <div class="nav-text bottom">
                                         <!-- <span>Swipe down to preview previous bike/design</span> -->
-                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg"
-                                            alt="Down Arrow Icon">
+                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg" alt="Down Arrow Icon">
                                     </div>
                                 </div>
                                 <div class="carousel_background_text">Street</div>
@@ -885,23 +821,20 @@
                             <div class="carousel-nav-container-md">
                                 <div class="nav-text">
                                     <span>Swipe right to<br> preview next bike</span>
-                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg"
-                                        alt="right Arrow Icon" class="rotate_180">
+                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                                        class="rotate_180">
                                 </div>
                                 <div id="carousalSclollX" class="carousel-nav flex align_items_center">
                                     <!-- <div class="carousel-dot" onclick="goToSlide(0, 'scooter_street')"><img src="/theme/v4/images/home/select_your_bike/scooter/04-Yamaha Aerox_0174-final.png" alt="Image 2">
                                         <span class="carousel-dot-title">Aerox</span>
                                     </div> -->
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(0, 'scooter_street','RayZR125SR','RAYZR Street Rally 125 FI')">
-                                        <img src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RZ-Street-Rally.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot active-thumbnail"
+                                        onclick="handleClick(this,0, 'scooter_street','RayZR125SR','RAYZR Street Rally 125 FI')">
+                                        <img src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RZ-Street-Rally.webp" alt="Image 2">
                                         <span class="carousel-dot-title">RAYZR Street Rally 125 FI</span>
                                     </div>
-                                    <div class="carousel-dot"
-                                        onclick="goToSlide(1, 'scooter_street','RayZR125','RAYZR 125 FI')"><img
-                                            src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RazZR.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot" onclick="handleClick(this,1, 'scooter_street','RayZR125','RAYZR 125 FI')"><img
+                                            src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RazZR.webp" alt="Image 2">
                                         <span class="carousel-dot-title">RAYZR 125 FI</span>
                                     </div>
                                     <!-- <div class="carousel-dot" onclick="goToSlide(3)"><img src="../images/home/select_your_bike/motorcycle/DARK MATTE BLUE.png" alt="Image 2">
@@ -909,14 +842,12 @@
                                     </div> -->
                                 </div>
                                 <div class="nav-text">
-                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg"
-                                        alt="left Arrow Icon" class="rotate_180">
+                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                                        class="rotate_180">
                                     <span>Swipe left to <br> preview next bike</span>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <div id="scooter_fashion_select" class="sub-tab-container" style="display: none;">
                         <div class="carousel-container">
@@ -968,8 +899,7 @@
                                     <div class="background"></div>
                                     <div class="carousel-track">
                                         <div class="carousel-slide selected_slide"><img
-                                                src="/theme/v4/images/home/select_your_bike/Fashion/Fascino-tv.webp"
-                                                alt="Image 1">
+                                                src="/theme/v4/images/home/select_your_bike/Fashion/Fascino-tv.webp" alt="Image 1">
                                         </div>
                                         <!-- <div class="carousel-slide upcomingSlide"><img
                                                 src="/theme/v4/images/home/select_your_bike/scooter/YAamaha_TOP_ray_zr.png" alt="Image 2"></div>
@@ -979,16 +909,14 @@
                                     </div>
                                 </div>
                                 <div class="carousel-nav-container-lg">
-
+                        
                                     <div class="nav-text top">
-                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg"
-                                            alt="Up Arrow Icon">
+                                        <img id="scrollUpButton" src="/theme/v4/images/icons/upArrow.svg" alt="Up Arrow Icon">
                                         <!-- <span>Swipe up to preview next bike/design</span> -->
                                     </div>
                                     <div id="carousalSclollY" class="carousel-nav flex flex_column align_items_center">
-                                        <div class="carousel-dot" onclick="goToSlide(0, 'scooter_fashion', 'Aerox')">
-                                            <img src="/theme/v4/images/home/select_your_bike/Fashion/Thumbnail/Fascino.webp"
-                                                alt="Image 2">
+                                        <div class="carousel-dot active-thumbnail" onclick="handleClick(this,0, 'scooter_fashion', 'Aerox')">
+                                            <img src="/theme/v4/images/home/select_your_bike/Fashion/Thumbnail/Fascino.webp" alt="Image 2">
                                             <span class="carousel-dot-title">Fascino 125 FI</span>
                                         </div>
                                         <!-- <div class="carousel-dot" onclick="goToSlide(1, 'scooter_fashion', 'RayZR125SR')"><img
@@ -1006,8 +934,7 @@
                                     </div>
                                     <div class="nav-text bottom">
                                         <!-- <span>Swipe down to preview previous bike/design</span> -->
-                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg"
-                                            alt="Down Arrow Icon">
+                                        <img id="scrollDownButton" src="/theme/v4/images/icons/downArrow.svg" alt="Down Arrow Icon">
                                     </div>
                                 </div>
                                 <div class="carousel_background_text">Fashion</div>
@@ -1015,13 +942,12 @@
                             <div class="carousel-nav-container-md">
                                 <div class="nav-text">
                                     <span>Swipe right to<br> preview next bike</span>
-                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg"
-                                        alt="right Arrow Icon" class="rotate_180">
+                                    <img id="scrollRightButton" src="/theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                                        class="rotate_180">
                                 </div>
                                 <div id="carousalSclollX" class="carousel-nav flex align_items_center">
-                                    <div class="carousel-dot" onclick="goToSlide(0, 'scooter_fashion')"><img
-                                            src="/theme/v4/images/home/select_your_bike/scooter/FASCINO 125 Fi-Hybrid.webp"
-                                            alt="Image 2">
+                                    <div class="carousel-dot active-thumbnail" onclick="handleClick(0, 'scooter_fashion')"><img
+                                            src="/theme/v4/images/home/select_your_bike/Fashion/Thumbnail/Fascino.webp" alt="Image 2">
                                         <span class="carousel-dot-title">Fascino 125 FI</span>
                                     </div>
                                     <!-- <div class="carousel-dot" onclick="goToSlide(1, 'scooter_fashion')"><img
@@ -1037,13 +963,12 @@
                                     </div> -->
                                 </div>
                                 <div class="nav-text">
-                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg"
-                                        alt="left Arrow Icon" class="rotate_180">
+                                    <img id="scrollLeftButton" src="/theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                                        class="rotate_180">
                                     <span>Swipe left to <br> preview next bike</span>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1077,9 +1002,8 @@
 
                 <div class="carousel_contest_container">
                     <div class="carousel_contest">
-                        <video class="slider_vedio" autoplay loop muted>
-                            <source src="../../../theme/v4/videos/c0d4ea86-fb15-4728-b2f8-524e461a3e88.mp4"
-                                type="video/mp4">
+                        <video class="slider_vedio" autoplay loop muted playsinline>
+                            <source src="../../../theme/v4/videos/c0d4ea86-fb15-4728-b2f8-524e461a3e88.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <!-- <img class="slider_img" src="../../../theme/v4/images/banner/r3-home-pc.webp" alt="aeroxBanner">
@@ -1104,8 +1028,7 @@
                                     <div>FZ-X <span class="text-capitalize">Ride Free Overnight Tour</span></div>
                                     <div class="date timeline"><span>Guhawati - 27th & 28th April 2024</span></div>
                                     <div class="location"><img class="contest_location_logo"
-                                            src="../../../theme/v4/images/icons/carbon_location-filled.svg"
-                                            alt="location" />
+                                            src="../../../theme/v4/images/icons/carbon_location-filled.svg" alt="location" />
                                         <a target="_blank"
                                             href="https://www.google.com/maps/place/Hawa+Mahal/@26.9240458,75.8267144,17z/data=!3m1!4b1!4m6!3m5!1s0x396db14b1bd30ba5:0x860e5d531eccb20c!8m2!3d26.9240458!4d75.8267144!16zL20vMDZrN3Fj?entry=ttu">Mayang</a>
                                     </div>
@@ -1199,15 +1122,13 @@
                     <div class="event_slide_content">
                         <!-- <h1 class="cot_b flex align_items_center justify_content_end"></h1> -->
                         <div class="flex inner_div">
-                            <img src="../../../theme/v4/images/home/contest/cotb.webp" alt="bike Video"
-                                class="contest_bike" />
+                            <img src="../../../theme/v4/images/home/contest/cotb.webp" alt="bike Video" class="contest_bike" />
                             <div class="right-event-row">
                                 <div class="block flex1 flex justify_content_center flex-column content_absolute_text">
                                     <div>COTB <span class="text-capitalize">Weekend</span></div>
                                     <div class="date timeline"><span>Shillong - 4th May 2024</span></div>
                                     <div class="location"><img class="contest_location_logo"
-                                            src="../../../theme/v4/images/icons/carbon_location-filled.svg"
-                                            alt="location" />
+                                            src="../../../theme/v4/images/icons/carbon_location-filled.svg" alt="location" />
                                         <a target="_blank"
                                             href="https://www.google.com/maps/place/Hawa+Mahal/@26.9240458,75.8267144,17z/data=!3m1!4b1!4m6!3m5!1s0x396db14b1bd30ba5:0x860e5d531eccb20c!8m2!3d26.9240458!4d75.8267144!16zL20vMDZrN3Fj?entry=ttu">Polo
                                             Parking Lot, Golf Link, Shillong</a>
@@ -1245,23 +1166,24 @@
                         </div>
                     </div>
                 </div>
-                <button class="prev carousel_contest_action_button" id="event_prevButton"><img
-                        class="width_30 rotate_180 width_10" src="../../../theme/v4/images/icons/rightArrow.svg"
-                        alt="rightArrow" /></button>
-                <button class="next carousel_contest_action_button" id="event_nextButton"><img class="width_30 width_10"
-                        src="../../../theme/v4/images/icons/rightArrow.svg" alt="rightArrow" /></button>
+                <button class="prev carousel_contest_action_button" id="event_prevButton"><img id="scrollRightButton"
+                        src="../../../theme/v4/images/icons/upArrow.svg" alt="right Arrow Icon"
+                        class="rotate_270 invert_color ro_invert"></button>
+                <button class="next carousel_contest_action_button" id="event_nextButton"><img id="scrollLeftButton"
+                        src="../../../theme/v4/images/icons/downArrow.svg" alt="left Arrow Icon"
+                        class="rotate_270 invert_color ro_invert"></button>
             </div>
         </div>
     </section>
 
 
-    <section class="about_section ">
+    <section class="about_section" id="about_us_desktop">
 
         <h1 class="flex align_items_center justify_content_center about_heading ">About Us</h1>
         <div class="about_box">
             <div class="about_first_box">
                 <div class="about_bg_container">
-                    <video autoplay muted loop class="about_background_video">
+                    <video autoplay loop muted playsinline class="about_background_video">
                         <source src="../../../theme/v4/videos/aboutus/ff6c1719-251c-4e34-adad-9f9127520a67.mp4"
                             type="video/mp4">
                     </video>
@@ -1280,14 +1202,13 @@
                     </div>
                 </div>
 
-                <img src="../../../theme/v4/images/home/about_us/YAM-R15-RcngBlu.png" alt="yamaha"
-                    class="absolute_bike" />
+                <img src="../../../theme/v4/images/home/about_us/YAM-R15-RcngBlu.png" alt="yamaha" class="absolute_bike" />
 
 
             </div>
             <div class="about_first_box first_box_vedio">
                 <div class="about_bg_container">
-                    <video autoplay muted loop class="about_background_video">
+                    <video autoplay loop muted playsinline class="about_background_video">
                         <source src="../../../theme/v4/videos/aboutus/a14ea74c-59a2-4d1a-b0ee-2af88b9e72df.mp4"
                             type="video/mp4">
                     </video>
@@ -1320,10 +1241,10 @@
                             <hr class="about_hr" />
                         </div>
                         <div class="about_gapping">
-                            <div class="flex align_items_center justify_content_space_between"> <span class="">Yamaha’s
+                            <div class="flex align_items_center justify_content_space_between"> <span
+                                    class="about_second_box_text">Yamaha’s
                                     Event
-                                </span> <img src="../../../theme/v4/images/icons/doubleleftarrow.svg"
-                                    class="arrow_img" /></div>
+                                </span> <img src="../../../theme/v4/images/icons/doubleleftarrow.svg" class="arrow_img" /></div>
                             <hr class="about_hr" />
                         </div>
 
@@ -1338,7 +1259,7 @@
             </div>
             <div class="about_first_box">
                 <div class="about_bg_container">
-                    <video autoplay muted loop class="about_background_video">
+                    <video autoplay loop muted playsinline class="about_background_video">
                         <source src="../../../theme/v4/videos/aboutus/VID-20240427-WA0005.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -1361,11 +1282,117 @@
 
             </div>
         </div>
-
     </section>
 
+
+    <!-- carousel component starts here -->
+    <div class="wrapper">
+        <h1 class="flex align_items_center justify_content_center about_heading ">About Us</h1>
+        <div class="abouts-us-carousel">
+            <div class="carousel-container-relative">
+                <div class="about_first_box">
+                    <div class="about_bg_container">
+                        <video autoplay loop muted playsinline class="about_background_video">
+                            <source src="../../../theme/v4/videos/aboutus/ff6c1719-251c-4e34-adad-9f9127520a67.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="relative-height-carousel">
+                        <h1></h1>
+                        <div class="about_content">
+                            <img src="../../../theme/v4/images/home/about_us/image 13.png" alt="The Call of the blue"
+                                class="about_pic mobile_carousel_icon" />
+                            <p class="about_paragraph">Feel the excitement and rush that is unique to Yamaha. It's the
+                                call of
+                                the blue.</p>
+                            <!-- <button class="button-86">See More</button> -->
+                            <!-- <button class="btn ripple">See More</button> -->
+                            <button class="btn-ripple">See More</button>
+                        </div>
+                    </div>
+                    <img src="../../../theme/v4/images/home/about_us/YAM-R15-RcngBlu.png" alt="yamaha"
+                        class="carousel_bike_img" />
+                </div>
+            </div>
+            <div class="carousel-container-relative">
+                <div class="about_first_box">
+                    <div class="about_bg_container">
+                        <video autoplay loop muted playsinline class="about_background_video">
+                            <source src="../../../theme/v4/videos/aboutus/a14ea74c-59a2-4d1a-b0ee-2af88b9e72df.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="relative-height-carousel">
+                        <h1></h1>
+                        <div class="about_content_second
+                        ">
+                            <div class="about_gapping">
+                                <div class="flex align_items_center justify_content_space_between"> <span
+                                        class="about_second_box_text">Yamaha’s
+                                        Manufacturing </span><img src="../../../theme/v4/images/icons/doubleleftarrow.svg"
+                                        class="arrow_img" />
+                                </div>
+                                <hr class="about_hr" />
+                            </div>
+                            <div class="about_gapping">
+                                <div class="flex align_items_center justify_content_space_between"> <span
+                                        class="about_second_box_text">Founding
+                                        History </span><img src="../../../theme/v4/images/icons/doubleleftarrow.svg"
+                                        class="arrow_img" />
+                                </div>
+                                <hr class="about_hr" />
+                            </div>
+                            <div class="about_gapping">
+                                <div class="flex align_items_center justify_content_space_between"> <span
+                                        class="about_second_box_text">Racing</span>
+                                    <img src="../../../theme/v4/images/icons/doubleleftarrow.svg" class="arrow_img" />
+                                </div>
+                                <hr class="about_hr" />
+                            </div>
+                            <div class="about_gapping">
+                                <div class="flex align_items_center justify_content_space_between"> <span
+                                        class="about_second_box_text">Yamaha’s
+                                        Event
+                                    </span> <img src="../../../theme/v4/images/icons/doubleleftarrow.svg" class="arrow_img" />
+                                </div>
+                                <hr class="about_hr" />
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../../../theme/v4/images/home/about_us/04-Yamaha Aerox_0174-final copy.webp" alt="yamaha"
+                        class="carousel_bike_img middle_carousel_bike" />
+                </div>
+            </div>
+            <div class="carousel-container-relative">
+                <div class="about_first_box">
+                    <div class="about_bg_container">
+                        <video autoplay loop muted playsinline class="about_background_video">
+                            <source src="../../../theme/v4/videos/aboutus/VID-20240427-WA0005.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="relative-height-carousel">
+                        <h1></h1>
+                        <div class="about_content">
+                            <img src="../../../theme/v4/images/home/about_us/image 14.png" alt="The Call of the blue"
+                                class="about_pic mobile_carousel_icon" />
+                            <p class="about_paragraph">Bring out the biker in you as we build our community of people
+                                who live,
+                                love, and breathe bikes.</p>
+                            <!-- <button class="button-86">See More</button> -->
+                            <!-- <button class="btn ripple">See More</button> -->
+                            <button class="btn-ripple">See More</button>
+
+                        </div>
+                    </div>
+                    <img src="../../../theme/v4/images/home/about_us/CYAN-STORM-DLX.png" alt="yamaha"
+                        class="carousel_bike_img last_carousel_bike" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carousel component ends here -->
+
     <!-- contest section ends -->
-    <!-- <section id="whats_new"></section> -->
     <section>
         <div class="whats_new_container">
             <h1 class="whats_new_heading">What's New?</h1>
@@ -1393,69 +1420,96 @@
                         <div>
                             <button class="btn-ripples mt-2 mb-3">Read More</button>
                         </div>
-                        <span class="icon_container"><img id="whats_new_next"
-                                src="../../../theme/v4/images/icons/rightArrowBlack.svg" /></span>
+                        <span class="icon_container"><img id="whats_new_next" src="../../../theme/v4/images/icons/rightArrowBlack.svg" /></span>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="../../../theme/v4/js/home/whats_new.js"></script>
     </section>
-    <section id="img_gallery_carousel">
 
+    <section class="whats_new_mobile_view_wrapper">
+        <div class="header_whats_new">
+            <h1 class="whats_new_heading">What's New?</h1>
+            <button class="btn-ripples">View All</button>
+        </div>
+        <div class="whats_new_bg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 495 660" fill="none"
+                preserveAspectRatio="none">
+                <path d="M-130 660L495 660L255.127 0L-130 0L-130 660Z" fill="#0002D7" />
+            </svg>
+        </div>
+        <div class="what_new_mobile">
+            <!-- dynamic content -->
+        </div>
+    </section>
+
+
+    <!-- <section>
         <div class="gallery-container">
             <div class="gallery-tab-box">
                 <button class="gallery-button gallery-active">Photos</button>
                 <button class="gallery-button">Videos</button>
             </div>
             <div class="gallery-carousel">
-                <span class="prev" id="gallery_prev"><img class="rotate_180" src="/theme/v4/images/icons/rightArrow.svg"
+                <span class="prev" id="gallery_prev"><img class="rotate_180" src="../../../theme/v4/images/icons/rightArrow.svg"
                         alt="Left Arrow Icon"></span>
-                <span class="next" id="gallery_next"><img src="/theme/v4/images/icons/rightArrow.svg"
+                <span class="next" id="gallery_next"><img src="../../../theme/v4/images/icons/rightArrow.svg"
                         alt="Right Arrow Icon"></span>
                 <div class="gallery-slides">
                     <div class="gallery-slide">
-                        <img src="/theme/v4/images/home/gallery_carousel/gallery_r3.jpg" alt="Slide 1">
+                        <img src="../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg" alt="Slide 1">
                     </div>
                     <div class="gallery-slide">
-                        <img src="/theme/v4/images/home/gallery_carousel/gallery_mt03.jpg" alt="Slide 2">
+                        <img src="../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg" alt="Slide 2">
                     </div>
                     <div class="gallery-slide">
-                        <img src="/theme/v4/images/home/gallery_carousel/gallery_R15.jpg" alt="Slide 3">
+                        <img src="../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg" alt="Slide 3">
                     </div>
                     <div class="gallery-slide">
-                        <img src="/theme/v4/images/home/gallery_carousel/gallery_aerox.jpg" alt="Slide 4">
+                        <img src="../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg" alt="Slide 4">
                     </div>
                 </div>
             </div>
-            <!-- <div class="carousel-control-imgs">
-                <span class="carousel-control-img"><img src="/theme/v4/images/home/gallery_carousel/gallery_r3.jpg" alt="Slide 1"></span>
-                <span class="carousel-control-img"><img src="/theme/v4/images/home/gallery_carousel/gallery_mt03.jpg" alt="Slide 2"></span>
-                <span class="carousel-control-img"><img src="/theme/v4/images/home/gallery_carousel/gallery_R15.jpg" alt="Slide 3"></span>
-                <span class="carousel-control-img"><img src="/theme/v4/images/home/gallery_carousel/gallery_aerox.jpg" alt="Slide 4"></span>
-            </div> -->
         </div>
+    </section> -->
+
+    <section class="top-section">
+        <div class="gallery-tab-box mt-4">
+            <button class="gallery-button gallery-active">Photos</button>
+            <button class="gallery-button">Videos</button>
+        </div>
+        <img id="selectedImage" class="selected_gallery_img" src="../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg"
+            alt="Selected Image">
     </section>
 
     <div class="carousels-container">
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg"></div>
-        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_r3.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_mt03.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_R15.jpg')"></div>
+        <div><img src="../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg"
+                onclick="displayImage('../../../theme/v4/images/home/gallery_carousel/gallery_aerox.jpg')"></div>
     </div>
 
-    <!-- <script src="../../../theme/v4/components/home/"></script> -->
-    <section id="Announcement">
-        <div class="announcement_innerdiv">
-            <div class="announcement_header">Announcement</div>
-            <div class="announcement_context">Caution! Beware of Fake Facebook Account Pretending to be<br /> Yamaha
-                Motor Executive</div>
-            <!-- <button class="announcement_button">Read More</button> -->
-            <button class="btn-ripples">Read More</button>
-        </div>
+    <!-- <script src="../..../../../theme/v4/components/home/"></script> -->
+    <section>   
+    <div class="announcement_innerdiv">
+        <div class="announcement_header">Announcement</div>
+        <div class="announcement_context">Caution! Beware of Fake Facebook Account Pretending to be<br/> Yamaha Motor Executive</div>
+        <!-- <button class="announcement_button">Read More</button> -->
+        <button class="btn-ripples">Read More</button>
+    </div>
     </section>
 
 
@@ -1492,122 +1546,140 @@
             .catch(error => console.error('Error fetching hero content:', error));
 
 
-        // fetch('../../../theme/v4/components/home/gallery_carousel.html')
-        //     .then(response => response.text())
-        //     .then(html => {
-        //         document.getElementById("img_gallery_carousel").innerHTML = html;
-        //         const scripts = Array.from(new DOMParser().parseFromString(html, 'text/html').querySelectorAll('script'));
-        //         scripts.forEach(script => {
-        //             const newScript = document.createElement('script');
-        //             if (script.src) {
-        //                 newScript.src = script.getAttribute('src');  // Set the src attribute if it's an external script
-        //                 newScript.onerror = () => console.error(`Error loading script with src ${script.src}`);
-        //             } else {
-        //                 newScript.innerHTML = script.innerHTML;  // Copy the inline script content
-        //             }
-        //             document.body.appendChild(newScript);
-        //         });
-        //     })
-        //     .catch(error => console.error('Error fetching hero content:', error));
+        fetch('../..../../../theme/v4/components/home/gallery_carousel.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("img_gallery_carousel").innerHTML = html;
+                const scripts = Array.from(new DOMParser().parseFromString(html, 'text/html').querySelectorAll('script'));
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    if (script.src) {
+                        newScript.src = script.getAttribute('src');  // Set the src attribute if it's an external script
+                        newScript.onerror = () => console.error(`Error loading script with src ${script.src}`);
+                    } else {
+                        newScript.innerHTML = script.innerHTML;  // Copy the inline script content
+                    }
+                    document.body.appendChild(newScript);
+                });
+            })
+            .catch(error => console.error('Error fetching hero content:', error));
 
-        // fetch('/theme/v4/components/home/announcement.html')
-        //     .then(response => response.text())
-        //     .then(html => {
-        //         document.getElementById('Announcement').innerHTML = html;
-        //     })
-        //     .catch(error => console.error('Error fetching hero content:', error));
-
-        // fetch('/theme/v4/components/home/whats_new.html')
-        //     .then(response => response.text())
-        //     .then(html => {
-        //         document.getElementById('whats_new').innerHTML = html;
-        //         const scripts = Array.from(new DOMParser().parseFromString(html, 'text/html').querySelectorAll('script'));
-        //         scripts.forEach(script => {
-        //             const newScript = document.createElement('script');
-        //             if (script.src) {
-        //                 newScript.src = script.getAttribute('src');  // Set the src attribute if it's an external script
-        //                 newScript.onerror = () => console.error(`Error loading script with src ${script.src}`);
-        //             } else {
-        //                 newScript.innerHTML = script.innerHTML;  // Copy the inline script content
-        //             }
-        //             document.body.appendChild(newScript);
-        //         });
-        //     })
-        //     .catch(error => console.error('Error fetching hero content:', error));
-
-    </script>
+        </script>
+    
     <script src="../../../theme/v4/js/home/carousel.js"></script>
-    <script src="../../../theme/v4/js/home/whats_new.js"></script>
-    <script src="../../../theme/v4/js/home/gallery_carousel.js"></script>
     <script src="../../../theme/v4/js/home/jquery.min.js"></script>
     <script src="../../../theme/v4/js/home/slick.min.js"></script>
     <script src="../../../theme/v4/js/home/select_your.js"></script>
+    <script src="../../../theme/v4/js/home/whats_new_mobile.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../../theme/v4/js/home/gallery_carousel.js"></script>
 
     <script>
-        // $(document).ready(function () {
-        //     $('.floatingButton').on('click',
-        //         function (e) {
-        //             e.preventDefault();
-        //             $(this).toggleClass('open');
-        //             if ($(this).children('.fa').hasClass('fa-plus')) {
-        //                 $(this).children('.fa').removeClass('fa-plus');
-        //                 $(this).children('.fa').addClass('fa-close');
-        //             }
-        //             else if ($(this).children('.fa').hasClass('fa-close')) {
-        //                 $(this).children('.fa').removeClass('fa-close');
-        //                 $(this).children('.fa').addClass('fa-plus');
-        //             }
-        //             $('.floatingMenu').stop().slideToggle();
-        //             $('.floatingMenu').stop().animate({
-        //                 right: $(this).hasClass('open') ? '50px' : '-270px'
-        //             }, 400);
-        //         }
-        //     );
-        //     $(this).on('click', function (e) {
+        $(document).ready(function () {
+            $('.floatingButton').on('click', function (e) {
+                e.preventDefault();
+                $(this).toggleClass('opens');
+                if ($(this).children('.fa').hasClass('fa-plus')) {
+                    $(this).children('.fa').removeClass('fa-plus').addClass('fa-close');
+                } else if ($(this).children('.fa').hasClass('fa-close')) {
+                    $(this).children('.fa').removeClass('fa-close').addClass('fa-plus');
+                }
+                $('.floatingMenu').stop().slideToggle();
+                $('.floatingMenu').stop().animate({
+                    right: $(this).hasClass('opens') ? '50px' : '-270px'
+                }, 400);
+            });
 
-        //         var container = $(".floatingButton");
-        //         // if the target of the click isn't the container nor a descendant of the container
-        //         if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) {
-        //             if (container.hasClass('open')) {
-        //                 container.removeClass('open');
-        //             }
-        //             if (container.children('.fa').hasClass('fa-close')) {
-        //                 container.children('.fa').removeClass('fa-close');
-        //                 container.children('.fa').addClass('fa-plus');
-        //             }
-        //             // $('.floatingMenu').hide();
-        //         }
+        });
 
-        //         // if the target of the click isn't the container and a descendant of the menu
-        //         if (!container.is(e.target) && ($('.floatingMenu').has(e.target).length > 0)) {
-        //             $('.floatingButton').removeClass('open');
-        //             // $('.floatingMenu').stop().slideToggle();
-        //         }
-        //     });
-        // });
+        function changeText() {
+            var buttonText = $("#buttonText");
+            var bg = $("#bg-color");
+            buttonText.html(buttonText.html() === 'Click Now' ? '<i class="fa-solid fa-xmark cross-icon-cta"></i>' : 'Click Now');
+            bg.css('backgroundColor', buttonText.html() === "Click Now" ? "#0001a0" : "white");
+            buttonText.css('color', buttonText.html() === "Click Now" ? "white" : "#0001a0");
+        }
 
-
-        // function changeText() {
-        //     var buttonText = document.getElementById("buttonText");
-        //     var bg = document.getElementById('bg-color')
-        //     buttonText.innerHTML = buttonText.innerHTML === 'Click Now' ? "<img src='/theme/v4/images/icons/Group 2.png' />" : 'Click Now';
-        //     bg.style.backgroundColor = buttonText.innerHTML === "Click Now" ? "#0001a0" : "white"
-        //     buttonText.style.color = buttonText.innerHTML === "Click Now" ? "white" : "#0001a0"
-        //     // button.classList.add("clicked");
-
-
-        // }
     </script>
 
     <script>
-        // $(document).ready(function () {
-        //     $('.carousels-container').slick({
-        //         slidesToShow: 3,
-        //         slidesToScroll: 1,
-        //         autoplay: true,
-        //         autoplaySpeed: 2000,
+        $(document).ready(function () {
+            $('.carousels-container').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 598,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.abouts-us-carousel').slick({
+                slidesToShow: 1,
+                dots: true,
+                centerMode: true,
+                // prevArrow: '<img id="scrollLeftButton" src="/theme/v4/images/icons/upArrow.svg" alt="left Arrow Icon" class="rotate_270 prev up-arrow">',
+                // nextArrow: '<img id="scrollRightButton" src="/theme/v4/images/icons/downArrow.svg" alt="right Arrow Icon" class="rotate_270 next down-arrow">'
+            });
+        });
+
+    </script>
+
+    <script>
+        function displayImage(imageUrl) {
+            const selectedImage = document.getElementById('selectedImage');
+            selectedImage.style.opacity = 0;
+            setTimeout(() => {
+                selectedImage.src = imageUrl;
+                selectedImage.style.opacity = 1;
+            }, 500); // 500ms is the transition duration
+        }
+
+
+        // document.querySelectorAll('video').forEach(function (video) {
+        //     video.addEventListener('click', function (event) {
+        //         event.preventDefault(); // Prevent default behavior
+        //         event.stopPropagation(); // Stop event from propagating
+
+        //         // Additional logic can be added here if needed
         //     });
         // });
+
+    </script>
+
+    <script>
+        var vdo = document.getElementById('banner_video');
+        vdo.src = '/theme/v4/videos/98b4c4ed-338c-443d-b8ea-af7520eb4832.mp4';
+        vdo.play();
     </script>
 </body>
 

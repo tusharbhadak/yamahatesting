@@ -129,7 +129,7 @@ function initializeDots() {
     let labelWidth = $label.width();
     $label.css({
       left: x - labelWidth / 2 + "px",
-      top: y - 22 + "px",
+      top: y - 35 + "px",
     });
   });
   if (currentActiveDot === null) {

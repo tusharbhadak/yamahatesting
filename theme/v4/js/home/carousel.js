@@ -297,7 +297,23 @@ let bikes_alternate_name_data;
 // }
 
 
+function handleClick(element, index, series, model, modelName) {
+    // Remove active class from all dots
+    var dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach(function (dot) {
+        dot.classList.remove('active-thumbnail');
+    });
+
+    // Add active class to clicked dot
+    element.classList.add('active-thumbnail');
+
+    // Call your existing goToSlide function with parameters
+    goToSlide(index, series, model, modelName);
+}
+
+
 function goToSlide(index, seriesName, bikeName, bike) {
+    console.log(index, seriesName, bikeName, bike)
     bikes_alternate_name_data = bike;
     bike_name_data = bikeName;
     const seriesState = window[`${seriesName}_State`];

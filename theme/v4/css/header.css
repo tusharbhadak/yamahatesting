@@ -37,7 +37,7 @@
   display: none; 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1080px) {
   .main-nav {
     display: none; 
   }
@@ -48,7 +48,10 @@
   .header_section {
     padding: 10px 5%;
   }
-  
+  .logo{
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+  }
 }
 
 .side-menu {

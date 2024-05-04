@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateDots() {
     const dots = document.querySelectorAll(".slider-dots span");
     dots.forEach((dot, i) => {
+      console.log(dot)
       if (i === currentSlide) {
         dot.style.backgroundColor = "#0002D7"; // Active dot color
       } else {
@@ -56,26 +57,26 @@ document.addEventListener("DOMContentLoaded", function () {
   function autoSlide() {
     const initialSlideInterval = 30000; // Interval for the first slide
     const subsequentSlideInterval = 3000; // Interval for subsequent slides
-  
+
     let isFirstSlide = true;
-  
+
     function startInterval(interval) {
       return setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
       }, interval);
     }
-  
+
     let slideInterval;
-  
+
     function resetInterval(interval) {
       clearInterval(slideInterval);
       slideInterval = startInterval(interval);
     }
-  
+
     // Display the first slide for a longer duration initially
     resetInterval(initialSlideInterval);
-  
+
     // Event listener for when the slide changes
     function handleSlideChange() {
       if (currentSlide === 0 && !isFirstSlide) {
@@ -85,17 +86,39 @@ document.addEventListener("DOMContentLoaded", function () {
         isFirstSlide = false;
       }
     }
-  
+
     // Update interval when slide changes
     slides.forEach((slide) => {
       slide.addEventListener("transitionend", handleSlideChange);
     });
   }
-  
+
 
   console.log(currentSlide)
 
+
+  function handleSwipe(direction) {
+    if (direction === "left") {
+      currentSlide = (currentSlide + 1) % slides.length;
+    } else if (direction === "right") {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    }
+    showSlide(currentSlide);
+  }
+
+  // Initialize TouchSwipe for swipe detection
+  $(".slide-track").swipe({
+    swipeLeft: function () {
+      handleSwipe("left");
+    },
+    swipeRight: function () {
+      handleSwipe("right");
+    },
+    threshold: 50 // Adjust the swipe threshold as needed
+  });
+
   createDots();
+  showSlide(currentSlide);
   autoSlide();
 });
 
@@ -209,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   document.getElementById("event_prevButton").addEventListener("click", prevEventSlide);
   document.getElementById("event_nextButton").addEventListener("click", nextEventSlide);
-  // eventAutoSlide();
+  eventAutoSlide();
 })
 
 document.addEventListener("DOMContentLoaded", function () {
