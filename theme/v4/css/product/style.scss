@@ -497,6 +497,7 @@ body {
   border: 1px solid #686868;
   background: rgba(52, 53, 58, 0.18);
 }
+
 .exp_360_rotate_image {
   position: absolute;
   bottom: 0%;
@@ -506,6 +507,7 @@ body {
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
 }
+
 
 .exp_360_rotate_image_nav {
   position: absolute;
@@ -1157,7 +1159,7 @@ body {
     position: relative;
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
       display: block;
       object-fit: cover;
     }

@@ -141,18 +141,25 @@ function simulateKeydown(keyCode) {
     target.dispatchEvent(event);
 }
 
-const image = document.querySelectorAll('.cloudimage-360');
+const images = document.querySelectorAll('.cloudimage-360');
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
 
-    image.forEach((image, index) => {
-        const rotation = scrollPosition * 0.2; // Adjust the scroll speed multiplier
+    images.forEach((image, index) => {
+        const maxRotation = 45; // Maximum rotation angle (in degrees)
+        const scrollSpeed = 0.1; // Scroll speed multiplier
 
-        // Calculate rotation angle based on image index
-        const angle = (index * 120 - rotation) % 360;
+        // Calculate rotation angle based on scroll position
+        const rotation = (scrollPosition * scrollSpeed) % 360; // Full rotation with scroll
 
-        // Apply rotation to the image
-        image.style.transform = `rotateY(${angle}deg)`;
+        // Calculate constrained rotation angle within the specified maximum rotation
+        let constrainedRotation = rotation % (maxRotation * 2); // Range from 0 to (maxRotation * 2)
+        if (constrainedRotation > maxRotation) {
+            constrainedRotation = (maxRotation * 2) - constrainedRotation;
+        }
+
+        // Apply the constrained rotation to the image
+        image.style.transform = `rotateY(${constrainedRotation}deg)`; // Anticlockwise rotation
     });
 });
