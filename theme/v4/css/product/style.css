@@ -315,7 +315,7 @@ body {
 }
 
 .ellipse_carousel_top_svg {
-  transform: translateX(-50%) skew(-20deg, 0deg);
+  transform: matrix(-1 0 0 1 459 20);
 }
 
 .ellipse_carousel_centered_image {
@@ -584,7 +584,7 @@ body {
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: "Krona One";
-  font-size: 120px;
+  font-size: 70px;
   font-weight: 400;
 }
 .exp_background_text:first-child {
@@ -602,7 +602,7 @@ body {
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: "Krona One";
-  font-size: 220px;
+  font-size: 120px;
   font-weight: 400;
   line-height: 178px;
 }
@@ -611,7 +611,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 200px;
+  font-size: 120px;
 }
 
 .exp_360_select_color_container {

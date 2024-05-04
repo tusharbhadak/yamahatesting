@@ -183,12 +183,12 @@
                                 fill="#EFEDED" fill-opacity="0.39" />
                         </svg>
         
-                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="20 20 426 244" fill="none"
                             class="ellipse_carousel_svg_shape ellipse_carousel_top_svg">
-                            <rect x="0" y="0" width="426" height="244" fill="url(#ellipse_img1)" />
+                            <rect x="20" y="20" width="426" height="244" fill="url(#ellipse_img1)" />
                             <defs>
                                 <pattern id="ellipse_img1" patternUnits="userSpaceOnUse" width="426" height="244">
-                                    <image href="/theme/v4/images/product/ellipse_carousel/image 43.png" x="0" y="0" width="426"
+                                    <image href="/theme/v4/images/product/ellipse_carousel/image 43.png" x="20" y="20" width="426"
                                         height="244"/>
                                 </pattern>
                             </defs>
@@ -1240,5 +1240,56 @@ $('.carousels-container').slick({
   autoplaySpeed: 2000,
 });
 });
+
+function toggleGallery(type) {
+    const gallerySlides = document.querySelectorAll('.gallery-slides');
+    const galleryButtons = document.querySelectorAll('.gallery-button');
+    const carouselControlImgs = document.querySelector('.carousel-control-imgs');
+    const videos = document.querySelectorAll('.video-container video');
+
+    gallerySlides.forEach(slide => {
+        if (slide.classList.contains(type)) {
+            slide.style.display = 'flex';
+        } else {
+            slide.style.display = 'none';
+        }
+    });
+
+    galleryButtons.forEach(button => {
+        if (button.innerText.toLowerCase() === type.toLowerCase()) {
+            button.classList.add('gallery-active');
+        } else {
+            button.classList.remove('gallery-active');
+        }
+    });
+
+    // Show or hide carousel control images based on the gallery type
+    if (type === 'photos') {
+        carouselControlImgs.style.display = 'flex';
+        // Reinitialize JavaScript specific to photos if not already initialized
+        if (carouselControlImgs.dataset.initialized !== 'true') {
+            initializePhotosCarousel();
+            carouselControlImgs.dataset.initialized = 'true';
+        }
+    } else {
+        carouselControlImgs.style.display = 'none';
+    }
+}
+
+// Function to initialize JavaScript specific to photos
+function initializePhotosCarousel() {
+    const prev = document.getElementById('gallery_prev');
+    const next = document.getElementById('gallery_next');
+    
+    prev.addEventListener('click', () => {
+        // Logic for previous slide in photos carousel
+        console.log('Previous slide clicked in photos carousel');
+    });
+    
+    next.addEventListener('click', () => {
+        // Logic for next slide in photos carousel
+        console.log('Next slide clicked in photos carousel');
+    });
+}
 
 </script>

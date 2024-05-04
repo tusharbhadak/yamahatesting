@@ -163,3 +163,26 @@ window.addEventListener('scroll', () => {
         image.style.transform = `rotateY(${constrainedRotation}deg)`; // Anticlockwise rotation
     });
 });
+
+// // Select the first 11 cloudimage-360 elements
+// const images = document.querySelectorAll('.exp_360_rotate_image .cloudimage-360');
+
+// // Define the number of images to rotate (first 11 images)
+// const numImagesToRotate = 11;
+
+// // Register a scroll event listener
+// window.addEventListener('scroll', () => {
+//     // Calculate the current scroll position
+//     const scrollPosition = window.scrollY;
+
+//     // Iterate over the selected images and apply rotation
+//     images.forEach((image, index) => {
+//         if (index < numImagesToRotate) {
+//             // Calculate rotation angle based on scroll position and index
+//             const rotation = (scrollPosition * 0.2 + index * 20) % 360;
+
+//             // Apply rotation to the image
+//             image.style.transform = `rotateY(${rotation}deg)`;
+//         }
+//     });
+// });
