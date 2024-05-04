@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: "poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product_hero_slider_container {
@@ -102,7 +102,7 @@ body {
 }
 .product_connect_title_section h3 {
   color: #1d1d1d;
-  font-family: Encode Sans Semi Expanded;
+  font-family: "Krona One";
   font-size: 35px;
   margin: 0;
 }
@@ -110,11 +110,11 @@ body {
   color: #28348a;
   font-size: 50px;
   font-weight: 800;
-  font-family: Encode Sans Semi Expanded;
+  font-family: "Krona One";
   margin: 0;
 }
 .product_connect_title_section span {
-  font-family: Poppins;
+  font-family: "Montserrat";
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -254,7 +254,7 @@ body {
   text-align: center;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #28348a;
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 1.8px;
@@ -265,7 +265,7 @@ body {
 
 .ellipse_carousel_sub_heading {
   color: #2f2f2f;
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
   font-size: 35px;
   font-weight: 800;
   margin-top: 2%;
@@ -408,7 +408,7 @@ body {
 
 .ellipse_carousel_info_value {
   color: #28348a;
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
   font-size: 30px;
   font-weight: 700;
 }
@@ -439,7 +439,7 @@ body {
 }
 
 .motorcycle_connect_title {
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
   font-size: 40px;
   font-weight: 800;
   margin: 10px 0;
@@ -583,7 +583,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: "Bebas Neue";
+  font-family: "Krona One";
   font-size: 120px;
   font-weight: 400;
 }
@@ -601,7 +601,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: "Bebas Neue";
+  font-family: "Krona One";
   font-size: 220px;
   font-weight: 400;
   line-height: 178px;
@@ -634,7 +634,7 @@ body {
   width: 60%;
   padding: 2%;
   color: #fff;
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
 }
 
 .exp_360_name_heading_container {
@@ -679,7 +679,7 @@ body {
   width: 40%;
   padding: 2% 0;
   color: #fff;
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -735,7 +735,7 @@ body {
   background: #28348a;
   border: 0;
   color: #fff;
-  font-family: Poppins;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 600;
 }
@@ -993,7 +993,7 @@ body {
 
 .exp_360_details_heading {
   color: #fff;
-  font-family: Poppins;
+  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1002,7 +1002,7 @@ body {
 
 .exp_360_details_info {
   color: #868686;
-  font-family: Poppins;
+  font-family: "Montserrat";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1032,7 +1032,7 @@ body {
 }
 
 .product_specification_title {
-  font-family: Encode Sans Semi Expanded;
+  font-family: "Krona One";
   font-size: 40px;
   font-weight: 700;
   text-align: center;
@@ -1107,7 +1107,7 @@ body {
 .product_accessory_heading {
   color: #1b1b1b;
   text-align: center;
-  font-family: "Encode Sans Semi Expanded";
+  font-family: "Krona One";
   font-size: 40px;
   font-weight: 700;
   margin-top: -3%;
