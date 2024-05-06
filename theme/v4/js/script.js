@@ -1,6 +1,6 @@
 // slider js starts 
 document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll(".slide_header");
   const dotsContainer = document.querySelector(".slider-dots");
   // const heroSliderArrow = document.querySelector(".hero-slider-container .slide_right_arrow")
   // heroSliderArrow.addEventListener('click',()=>{
@@ -136,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//   slider js ends
 //   slider js ends
 
 // contest carousel scripts

@@ -34,93 +34,1165 @@
     <!-- Custom styles for this template -->
     <link href="/theme/v4/css/style.css" rel="stylesheet" />
     <link href="/theme/v4/css/header.css" rel="stylesheet" />
+    <link href="/theme/v4/css/headerMobile.css" rel="stylesheet" />
     <link href="/theme/v4/css/footer.css" rel="stylesheet" />
     <link href="/theme/v4/css/product/style.css" rel="stylesheet" />
+    <link href="../../../theme/v4/css/responsive.css" rel="stylesheet" />
+    <link href="../../../theme/v4/css/home/style.css" rel="stylesheet" />
+    <script src="../../../theme/v4/js/script.js"></script>
+    <script src="../../../theme/v4/js/home/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <header id="header_component">
-        <header class="header_section flex align_items_center justify_content_space_between">
-            <div class="icons-mobile flex align_items_center">
-                <img src="/theme/v4/images/icons/jam_menu.svg" alt="Menu Icon" class="menu-icon" id="hamburger_menu">
+    <!-- Navbar container -->
+    <div class="navbar-container-fluid">
+        <nav class="navbar-container">
+            <div class="brand-and-icon">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://www.yamaha-motor-india.com/theme/v3/image/header-footer/yamaha-motor.png" alt="">
+                </a>
+                <button type="button" class="navbar-toggler">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        
-            <div class="logo">
-                <img src="https://www.yamaha-motor-india.com/theme/v3/image/header-footer/yamaha-motor.png" alt="Logo">
-            </div>
-        
-            <div class="flex align-items-center gap35">
-                <nav class="main-nav">
-                    <ul class="flex align_items_center gap35">
-                        <li><a href="/templates/v4/motorcycle/yamaha-mt03.html">Products</a></li>
-                        <li><a href="#">Dealers</a></li>
-                        <li><a href="#">Buyer's Guide</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Parts</a></li>
-                        <li><a href="#">Moto GP</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Contest</a></li>
-                    </ul>
-                </nav>
-        
-                <div class="icons-desktop flex align_items_center">
-                    <img src="/theme/v4/images/icons/search.svg" alt="Search Icon" class="search-icon">
-                </div>
-                <div class="main-nav">
-                    <img src="/theme/v4/images/icons/jam_menu.svg" alt="menu Icon">
-                </div>
-            </div>
-        </header>
-        <div class="click-now-container">
-            <!-- <div id="fixed-click-now-button" class="hero-slider-click-now">
-                <p>Click<br />Now</p>
-            </div>
-            <div class="click-now-slider">
-                <div class="click-now-slider-button">
-                    <p class="">Enquiry<br /> Now</p>
-                </div>
-                <div class="click-now-slider-button">
-                    <p>Buy<br /> Now</p>
-                </div>
-            </div> -->
-            <div class="floatingButtonWrap">
-                <div class="floatingButtonInner">
-                    <a href="#" class="floatingButton" style="background-color: #0001a0;" id="bg-color"
-                        onclick="changeText()">
-                        <!-- <i class="fa fa-plus icon-default"></i> -->
-                        <span id="buttonText" style="color: white;">Click Now</span>
-                    </a>
-                    <ul class="floatingMenu">
-                        <li>
-                            <a href="#">Enquire Now <div class="icon-menus"><img
-                                        src="/theme/v4/images/icons/headphones.png" alt="">
-                                </div></a>
-                        </li>
-                        <li>
-                            <a href="#">Buy Now <div class="icon-menus"><img
-                                        src="/theme/v4/images/icons/shopping-cart.png" alt="">
-                                </div></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="side-menu">
-            <nav class="side-nav">
-                <div class="close-icon">×</div>
-                <ul class="flex flex-column">
-                    <li><a href="/templates/v4/motorcycle/yamaha-mt03.html">Products</a></li>
-                    <li><a href="#">Dealers</a></li>
-                    <li><a href="#">Buyer's Guide</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Parts</a></li>
-                    <li><a href="#">Moto GP</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Contest</a></li>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="#" class="menu-link">
+                            Products
+                            <!-- <span class="drop-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span> -->
+                        </a>
+                        <div class="sub-menu">
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <ul>
+                                    <li><a href="#"><span id="hoverable">
+                                                <div>MOTORCYCLES</div> <i class="fa-solid fa-chevron-right"></i>
+                                            </span></a></li>
+                                    <li><a href="#"><span id="scooter_hoverable">
+                                                <div>SCOOTERS</div> <i class="fa-solid fa-chevron-right"></i>
+                                            </span></a></li>
+                                </ul>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <div id="hide_initial_menu" style="display: none;">
+                                    <ul>
+                                        <li><a href="#"><span id="hoverable_r_series">
+                                                    <div>R-Series</div> <i class="fa-solid fa-chevron-right"></i>
+                                                </span></a></li>
+                                        <li><a href="#"><span id="hoverable_mt_series">
+                                                    <div>MT-Series</div> <i class="fa-solid fa-chevron-right"></i>
+                                                </span></a></li>
+                                        <li><a href="#"><span id="hoverable_fz_series">
+                                                    <div>FZ Series</div> <i class="fa-solid fa-chevron-right"></i>
+                                                </span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="hide_second_menu" style="display: none;">
+                                    <ul>
+                                        <li><a href="#"><span id="hoverbale_maxi">
+                                                    <div>Maxi</div> <i class="fa-solid fa-chevron-right"></i>
+                                                </span></a></li>
+                                        <li><a href="#"><span id="hoverable_steet">
+                                                    <div>Street</div> <i class="fa-solid fa-chevron-right"></i>
+                                                </span></a>
+                                        </li>
+                                        <li><a href="#"><span id="hoverable_fashion">
+                                                    <div>Fashion</div> <i class="fa-solid fa-chevron-right"></i>
+                                                </span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <img class="opacity_low" src="/theme/v4/images/header-footer/Experience.png" alt="">
+                                <!-- MotorCycle Series Container -->
+                                <div id="r_series" style="display: none;">
+                                    <div class="series-grid-row">
+                                        <div class="product-link">
+                                            <a href="/templates/v4/motorcycle/yamaha-r3.html">
+                                                <img src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/R3.webp" alt="Yamaha R3">
+                                            </a>
+                                            <p>R3</p>
+                                        </div>
+                                        <div class="product-link">
+                                            <a href="/templates/v4/motorcycle/yamaha-r15m.html">
+                                            <img src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15m.webp"
+                                                alt="">
+                                            </a>    
+                                            <p>R15M</p>
+                                        </div>
+                                        <div class="product-link">
+                                            <a href="/templates/v4/motorcycle/yamaha-r15v4.html">
+                                            <img src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15v4.webp"
+                                                alt="">
+                                            </a>    
+                                            <p>R15V4</p>
+                                        </div>
+                                        <div class="product-link">
+                                            <a href="/templates/v4/motorcycle/yamaha-r15s.html">
+                                            <img src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp"
+                                                alt="">
+                                            </a>    
+                                            <p>R15S</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mt_series" style="display: none;">
+                                    <div class="series-grid-row">
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT03.webp"
+                                                alt="">
+                                            <p>MT-03</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp"
+                                                alt="">
+                                            <p>MT-15 V2.0</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="fz_series" style="display: none;">
+                                    <div class="series-grid-row">
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZ-X.webp"
+                                                alt="">
+                                            <p>FZ-X</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
+                                                alt="">
+                                            <p>FZ-S FI V4.0 DLX</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
+                                                alt="">
+                                            <p>FZ-S FI V4.0</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
+                                                alt="">
+                                            <p>FZ-S FI V3.0</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
+                                                alt="">
+                                            <p>FZ-S FI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- MotorCycle Series Container -->
+
+
+                                <!-- Scooters -->
+                                <div id="maxi" style="display: none;">
+                                    <div class="series-grid-row">
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox.webp"
+                                                alt="">
+                                            <p>Aerox 155 Version S</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox155 (4) (1).webp"
+                                                alt="">
+                                            <p>Aerox 155</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="street" style="display: none;">
+                                    <div class="series-grid-row">
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RZ-Street-Rally.webp"
+                                                alt="">
+                                            <p>RAYZR Street Rally 125 FI</p>
+                                        </div>
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RazZR.webp"
+                                                alt="">
+                                            <p>RAYZR 125 FI</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="fashion" style="display: none;">
+                                    <div class="series-grid-row">
+                                        <div>
+                                            <img src="/theme/v4/images/home/select_your_bike/Fashion/Thumbnail/Fascino.webp"
+                                                alt="">
+                                            <p>Fascino 125 FI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Scooters -->
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <!-- <img src="images/car.png" alt="product image"> -->
+
+                            </div>
+                            <!-- end of item -->
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">Dealers</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Buyer's Guide</a>
+                        <div class="sub-menu two-row-sub-menu">
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <ul>
+                                    <li><a href="#"><span id="hoverable_buyers">
+                                                <div>BUYER'S GUIDE</div> <i class="fa-solid fa-chevron-right"></i>
+                                            </span></a></li>
+                                    <li><a href="#"><span id="videos_hoverable">
+                                                <div>VIDEOS</div> <i class="fa-solid fa-chevron-right"></i>
+                                            </span></a></li>
+                                </ul>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <div id="hide_models_buyers" style="display: none;">
+                                    <ul>
+                                        <li><a href="#"><span>Model Comparison</span></a></li>
+                                        <li><a href="#"><span>Getting Started</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <div id="hide_videos_buyers" style="display: none;">
+                                    <ul>
+                                        <li><a href="#"><span>Products</span></a></li>
+                                        <li><a href="#"><span>Technology</span></a>
+                                        </li>
+                                        <li><a href="#"><span>Brand</span></a>
+                                        </li>
+                                        <li><a href="#"><span>Review</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <img class="opacity_low" src="/theme/v4/images/header-footer/buyersguide.png" alt="">
+
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <img class="left_buyers_guide_banner"
+                                    src="https://cdn.shopify.com/s/files/1/0069/6821/3631/files/Banners.jpg?v=1676870787"
+                                    alt="product image">
+                            </div>
+                            <!-- end of item -->
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">Services</a>
+                        <div class="sub-menu two-row-sub-menu">
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <ul>
+                                    <li><a href="#"><span id="hoverable_quality_care">
+                                                <div>
+                                                    LIFETIME QUALITY CARE
+                                                </div> <i class="fa-solid fa-chevron-right"></i>
+                                            </span></a></li>
+                                    <li><a href="#"><span id="videos_hoverable">MAINTENANCE</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="#"><span id="videos_hoverable">SKILL DEVELOPMENT</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item overflow-scroll">
+                                <div id="quality_care" style="display: none;">
+                                    <ul>
+                                        <li><a href="#"><span>Time Commitment Service</span></a></li>
+                                        <li><a href="#"><span>Extended Warranty</span></a></li>
+                                        <li><a href="#"><span>Annual Maintenance Contract (AMC)</span></a></li>
+                                        <li><a href="#"><span>Road Side Assistance</span></a></li>
+                                        <li><a href="#"><span>Pickup and Drop Service</span></a></li>
+                                        <li><a href="#"><span>Insurance Renewal</span></a></li>
+                                        <li><a href="#"><span>Lady Supervisor</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- <div id="hide_videos_buyers">
+                                    <ul>
+                                        <li><a href="#"><span>Products</span></a></li>
+                                        <li><a href="#"><span>Technology</span></a>
+                                        </li>
+                                        <li><a href="#"><span>Brand</span></a>
+                                        </li>
+                                        <li><a href="#"><span>Review</span></a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <img class="opacity_low" src="/theme/v4/images/header-footer/services.png" alt="">
+
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                                <img class="left_buyers_guide_banner"
+                                    src="https://bd.gaadicdn.com/processedimages/yamaha/yamaha-mt-03/source/yamaha-mt-03657c4449354f5.jpg"
+                                    alt="product image">
+                            </div>
+                            <!-- end of item -->
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">Parts</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menu-link">
+                            Moto GP
+                            <!-- <span class="drop-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menu-link">
+                            Events
+                            <!-- <span class="drop-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menu-link">
+                            Contest
+                            <!-- <span class="drop-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menu-link">
+                            <img src="/theme/v4/images/icons/search.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/theme/v4/images/icons/jam_menu.svg" alt="">
+                        </a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar container -->
+    <script>
+        let timeoutId;
+        let rSeriesTimeout;
+        let mSeriesTimeout;
+        let maxiSeriesTimeout;
+        let FzSeriesTimeout;
+        let SteetSeriesTimeout;
+        let FashionSeriesTimeout;
+
+        // Function to show the initial menu and start the timeout
+        function showInitialMenu() {
+            clearTimeout(timeoutId); // Clear any existing timeout
+            document.getElementById("hide_initial_menu").style.display = "block";
+            document.getElementById("hide_second_menu").style.display = "none";
+            document.getElementById("scooter_hoverable").classList.remove("active-text");
+            document.getElementById("hoverable").classList.add("active-text");
+
+        }
+
+        // Function to hide both menus
+        function hideMenus() {
+            document.getElementById("hide_initial_menu").style.display = "none";
+            document.getElementById("hide_second_menu").style.display = "none";
+            document.getElementById("scooter_hoverable").classList.remove("active-text");
+            document.getElementById("hoverable").classList.remove("active-text");
+        }
+
+        // Event listeners for initial menu
+        document.getElementById("hoverable").addEventListener("mouseover", function () {
+            showInitialMenu();
+        });
+
+        document.getElementById("hoverable").addEventListener("click", function () {
+            clearTimeout(timeoutId); // Clear any existing timeout
+            showInitialMenu();
+        });
+
+        document.getElementById("hide_initial_menu").addEventListener("mouseover", function () {
+            clearTimeout(timeoutId); // Clear the timeout
+        });
+
+        document.getElementById("hide_initial_menu").addEventListener("mouseout", function (event) {
+            // Check if the mouse is leaving to a region not covered by the #hide_initial_menu
+            if (!event.relatedTarget || !event.relatedTarget.closest("#hide_initial_menu")) {
+                hideMenus();
+            }
+        });
+
+        // Function to show the second menu
+        function showSecondMenu() {
+            clearTimeout(timeoutId); // Clear any existing timeout
+            document.getElementById("hide_second_menu").style.display = "block";
+            document.getElementById("hide_initial_menu").style.display = "none";
+            document.getElementById("scooter_hoverable").classList.add("active-text");
+            document.getElementById("hoverable").classList.remove("active-text");
+            // timeoutId = setTimeout(function () {
+            //     hideMenus();
+            // }, 3000); // Hide after 3 seconds (adjust as needed)
+        }
+
+        // Event listeners for second menu
+        document.getElementById("scooter_hoverable").addEventListener("mouseover", function () {
+            showSecondMenu();
+        });
+
+
+        document.getElementById("scooter_hoverable").addEventListener("click", function () {
+            clearTimeout(timeoutId); // Clear any existing timeout
+            showSecondMenu();
+        });
+
+        document.getElementById("hide_second_menu").addEventListener("mouseover", function () {
+            clearTimeout(timeoutId); // Clear the timeout
+        });
+
+        document.getElementById("hide_second_menu").addEventListener("mouseout", function (event) {
+            // Check if the mouse is leaving to a region not covered by the #hide_second_menu
+            if (!event.relatedTarget || !event.relatedTarget.closest("#hide_second_menu")) {
+                hideMenus();
+            }
+        });
+
+        // Function to show the r_series div and keep it visible
+        function showRSeries() {
+            clearTimeout(rSeriesTimeout);
+            document.getElementById("r_series").style.display = "block";
+            document.getElementById("hoverable_r_series").classList.add("active-text");
+            showInitialMenu(); // Ensure the initial menu stays visible
+        }
+
+        // Function to hide the r_series div after a timeout
+        function hideRSeries() {
+            rSeriesTimeout = setTimeout(function () {
+                document.getElementById("r_series").style.display = "none";
+                document.getElementById("hoverable_r_series").classList.remove("active-text");
+            }, 500); // Adjust the time (in milliseconds) as needed
+        }
+
+        // Event listeners for hovering over the r_series div
+        document.getElementById("hoverable_r_series").addEventListener("mouseover", function () {
+            showRSeries();
+        });
+
+        document.getElementById("hoverable_r_series").addEventListener("mouseout", function () {
+            hideRSeries();
+        });
+
+        document.getElementById("r_series").addEventListener("mouseover", function () {
+            clearTimeout(rSeriesTimeout);
+            showRSeries();
+        });
+
+        document.getElementById("r_series").addEventListener("mouseout", function () {
+            hideRSeries();
+        });
+
+
+        // Function to show Mt series
+        function showMtSeries() {
+            clearTimeout(mSeriesTimeout);
+            document.getElementById("mt_series").style.display = "block";
+            document.getElementById("hoverable_mt_series").classList.add("active-text");
+            showInitialMenu(); // Ensure the initial menu stays visible
+        }
+
+        // Function to hide the mt_series div after a timeout
+        function hideMtSeries() {
+            mSeriesTimeout = setTimeout(function () {
+                document.getElementById("mt_series").style.display = "none";
+                document.getElementById("hoverable_mt_series").classList.remove("active-text");
+            }, 500); // Adjust the time (in milliseconds) as needed
+        }
+
+        // Event listeners for hovering over the r_series div
+        document.getElementById("hoverable_mt_series").addEventListener("mouseover", function () {
+            showMtSeries();
+        });
+
+        document.getElementById("hoverable_mt_series").addEventListener("mouseout", function () {
+            hideMtSeries();
+        });
+
+        document.getElementById("mt_series").addEventListener("mouseover", function () {
+            clearTimeout(mSeriesTimeout);
+            showMtSeries();
+        });
+
+        document.getElementById("mt_series").addEventListener("mouseout", function () {
+            hideMtSeries();
+        });
+
+
+        // Function to show FZ Series
+        function showFZSeries() {
+            clearTimeout(FzSeriesTimeout);
+            document.getElementById("fz_series").style.display = "block";
+            document.getElementById("hoverable_fz_series").classList.add("active-text");
+            showInitialMenu(); // Ensure the initial menu stays visible
+        }
+
+        // Function to hide the mt_series div after a timeout
+        function hideFZSeries() {
+            FzSeriesTimeout = setTimeout(function () {
+                document.getElementById("fz_series").style.display = "none";
+                document.getElementById("hoverable_fz_series").classList.remove("active-text");
+            }, 500); // Adjust the time (in milliseconds) as needed
+        }
+
+        // Event listeners for hovering over the r_series div
+        document.getElementById("hoverable_fz_series").addEventListener("mouseover", function () {
+            showFZSeries();
+        });
+
+        document.getElementById("hoverable_fz_series").addEventListener("mouseout", function () {
+            hideFZSeries();
+        });
+
+        document.getElementById("fz_series").addEventListener("mouseover", function () {
+            clearTimeout(FzSeriesTimeout);
+            showFZSeries();
+        });
+
+        document.getElementById("fz_series").addEventListener("mouseout", function () {
+            hideFZSeries();
+        });
+
+
+        // Function for displaying the Maxi
+
+        function showMaxiSeries() {
+            clearTimeout(maxiSeriesTimeout);
+            document.getElementById("maxi").style.display = "block";
+            document.getElementById("hoverbale_maxi").classList.add("active-text");
+            showSecondMenu(); // Ensure the initial menu stays visible
+        }
+
+        function hideMaxiSeries() {
+            maxiSeriesTimeout = setTimeout(function () {
+                document.getElementById("maxi").style.display = "none";
+                document.getElementById("hoverbale_maxi").classList.remove("active-text");
+            }, 500); // Adjust the time (in milliseconds) as needed
+        }
+
+        // Event listeners for hovering over the r_series div
+        document.getElementById("hoverbale_maxi").addEventListener("mouseover", function () {
+            showMaxiSeries();
+        });
+
+        document.getElementById("hoverbale_maxi").addEventListener("mouseout", function () {
+            hideMaxiSeries();
+        });
+
+        document.getElementById("maxi").addEventListener("mouseover", function () {
+            clearTimeout(maxiSeriesTimeout);
+            showMaxiSeries();
+        });
+
+        document.getElementById("maxi").addEventListener("mouseout", function () {
+            hideMaxiSeries();
+        });
+
+
+        // Function To Show Street
+
+        function showStreetSeries() {
+            clearTimeout(SteetSeriesTimeout);
+            document.getElementById("street").style.display = "block";
+            document.getElementById("hoverable_steet").classList.add("active-text");
+            showSecondMenu(); // Ensure the initial menu stays visible
+        }
+
+        function hideStreetSeries() {
+            SteetSeriesTimeout = setTimeout(function () {
+                document.getElementById("street").style.display = "none";
+                document.getElementById("hoverable_steet").classList.remove("active-text");
+            }, 500); // Adjust the time (in milliseconds) as needed
+        }
+
+        // Event listeners for hovering over the r_series div
+        document.getElementById("hoverable_steet").addEventListener("mouseover", function () {
+            showStreetSeries();
+        });
+
+        document.getElementById("hoverable_steet").addEventListener("mouseout", function () {
+            // setTimeout(() => {
+            hideStreetSeries();
+            // }, 5000);
+        });
+
+        document.getElementById("street").addEventListener("mouseover", function () {
+            clearTimeout(SteetSeriesTimeout);
+            showStreetSeries();
+        });
+
+        document.getElementById("street").addEventListener("mouseout", function () {
+            // setTimeout(() => {
+            hideStreetSeries();
+            // }, 5000);
+        });
+
+
+        // Function To show Fashion
+
+        function showFashionSeries() {
+            clearTimeout(FashionSeriesTimeout);
+            document.getElementById("fashion").style.display = "block";
+            document.getElementById("hoverable_fashion").classList.add("active-text");
+            showSecondMenu(); // Ensure the initial menu stays visible
+        }
+
+        function hideFashionSeries() {
+            FashionSeriesTimeout = setTimeout(function () {
+                document.getElementById("fashion").style.display = "none";
+                document.getElementById("hoverable_fashion").classList.remove("active-text");
+            }, 500); // Adjust the time (in milliseconds) as needed
+        }
+
+        // Event listeners for hovering over the r_series div
+        document.getElementById("hoverable_fashion").addEventListener("mouseover", function () {
+            showFashionSeries();
+        });
+
+        document.getElementById("hoverable_fashion").addEventListener("mouseout", function () {
+            // setTimeout(() => {
+            hideFashionSeries();
+            // }, 5000);
+        });
+
+        document.getElementById("fashion").addEventListener("mouseover", function () {
+            clearTimeout(FashionSeriesTimeout);
+            showFashionSeries();
+        });
+
+        document.getElementById("fashion").addEventListener("mouseout", function () {
+            // setTimeout(() => {
+            hideFashionSeries();
+            // }, 5000);
+        });
+    </script>
+    <!-- Normal 2 two column script -->
+    <script>
+        let timeoutIdBuyerGuide;
+        let timeoutVideos;
+        let ServiceTimeout;
+
+        document.getElementById("hoverable_buyers").addEventListener("mouseover", function () {
+            clearTimeout(timeoutIdBuyerGuide); // Clear any existing timeout
+            document.getElementById("hide_models_buyers").style.display = "block";
+            document.getElementById("hide_videos_buyers").style.display = "none";
+            document.getElementById("videos_hoverable").classList.remove("active-text");
+            document.getElementById("hoverable_buyers").classList.add("active-text");
+            timeoutIdBuyerGuide = setTimeout(function () {
+                document.getElementById("hide_models_buyers").style.display = "none";
+                document.getElementById("hide_videos_buyers").style.display = "none";
+                document.getElementById("videos_hoverable").classList.remove("active-text");
+                document.getElementById("hoverable_buyers").classList.remove("active-text");
+            }, 3000); // Hide after 1 second (changed for testing)
+        });
+
+        document.getElementById("hoverable_buyers").addEventListener("click", function () {
+            clearTimeout(timeoutIdBuyerGuide); // Clear any existing timeout
+            document.getElementById("hide_models_buyers").style.display = "block";
+            document.getElementById("hide_videos_buyers").style.display = "none";
+            document.getElementById("videos_hoverable").classList.remove("active-text");
+            document.getElementById("hoverable_buyers").classList.toggle("active-text");
+        });
+
+        document.getElementById("hide_models_buyers").addEventListener("mouseover", function () {
+            clearTimeout(timeoutIdBuyerGuide); // Clear the timeout
+        });
+
+        document.getElementById("hide_models_buyers").addEventListener("mouseout", function (event) {
+            // Check if the mouse is leaving to a region not covered by the #hide_initial_menu
+            if (!event.relatedTarget || !event.relatedTarget.closest("#hide_models_buyers")) {
+                document.getElementById("hide_models_buyers").style.display = "none";
+                document.getElementById("hide_videos_buyers").style.display = "none";
+                document.getElementById("videos_hoverable").classList.remove("active-text");
+                document.getElementById("hoverable_buyers").classList.remove("active-text");
+            }
+        });
+
+        // scooters hoverable
+        document.getElementById("videos_hoverable").addEventListener("mouseover", function () {
+            clearTimeout(timeoutVideos); // Clear any existing timeout
+            document.getElementById("hide_videos_buyers").style.display = "block";
+            document.getElementById("hide_models_buyers").style.display = "none";
+            document.getElementById("videos_hoverable").classList.add("active-text");
+            document.getElementById("hoverable_buyers").classList.remove("active-text");
+            timeoutVideos = setTimeout(function () {
+                document.getElementById("hide_videos_buyers").style.display = "none";
+                document.getElementById("hide_models_buyers").style.display = "none";
+                document.getElementById("videos_hoverable").classList.remove("active-text");
+                document.getElementById("hoverable_buyers").classList.remove("active-text");
+            }, 3000); // Hide after 1 second (changed for testing)
+        });
+
+        document.getElementById("videos_hoverable").addEventListener("click", function () {
+            clearTimeout(timeoutVideos); // Clear any existing timeout
+            document.getElementById("hide_videos_buyers").style.display = "block";
+            document.getElementById("hide_models_buyers").style.display = "none";
+            document.getElementById("videos_hoverable").classList.toggle("active-text");
+            document.getElementById("hoverable_buyers").classList.remove("active-text");
+        });
+
+        document.getElementById("hide_videos_buyers").addEventListener("mouseover", function () {
+            clearTimeout(timeoutVideos); // Clear the timeout
+        });
+
+        document.getElementById("hide_videos_buyers").addEventListener("mouseout", function (event) {
+            // Check if the mouse is leaving to a region not covered by the #hide_initial_menu
+            if (!event.relatedTarget || !event.relatedTarget.closest("#hide_videos_buyers")) {
+                document.getElementById("hide_videos_buyers").style.display = "none";
+                document.getElementById("hide_models_buyers").style.display = "none";
+                document.getElementById("videos_hoverable").classList.remove("active-text");
+                document.getElementById("hoverable_buyers").classList.remove("active-text");
+            }
+        });
+
+
+        // Service container
+        document.getElementById("hoverable_quality_care").addEventListener("mouseover", function () {
+            clearTimeout(ServiceTimeout); // Clear any existing timeout
+            document.getElementById("quality_care").style.display = "block";
+            // document.getElementById("hide_models_buyers").style.display = "none";
+            document.getElementById("hoverable_quality_care").classList.add("active-text");
+            // document.getElementById("hoverable_buyers").classList.remove("active-text");
+            ServiceTimeout = setTimeout(function () {
+                document.getElementById("quality_care").style.display = "none";
+                // document.getElementById("hide_models_buyers").style.display = "none";
+                document.getElementById("hoverable_quality_care").classList.remove("active-text");
+                // document.getElementById("hoverable_buyers").classList.remove("active-text");
+            }, 3000); // Hide after 1 second (changed for testing)
+        });
+
+        document.getElementById("hoverable_quality_care").addEventListener("click", function () {
+            clearTimeout(ServiceTimeout); // Clear any existing timeout
+            document.getElementById("quality_care").style.display = "block";
+            // document.getElementById("hide_models_buyers").style.display = "none";
+            document.getElementById("hoverable_quality_care").classList.toggle("active-text");
+            // document.getElementById("hoverable_buyers").classList.remove("active-text");
+        });
+
+        document.getElementById("quality_care").addEventListener("mouseover", function () {
+            clearTimeout(ServiceTimeout); // Clear the timeout
+        });
+
+        document.getElementById("quality_care").addEventListener("mouseout", function (event) {
+            // Check if the mouse is leaving to a region not covered by the #hide_initial_menu
+            if (!event.relatedTarget || !event.relatedTarget.closest("#quality_care")) {
+                document.getElementById("quality_care").style.display = "none";
+                // document.getElementById("hide_models_buyers").style.display = "none";
+                document.getElementById("hoverable_quality_care").classList.remove("active-text");
+                // document.getElementById("hoverable_buyers").classList.remove("active-text");
+            }
+        });
+
+    // services container
+    </script>
+    </header>
+    <header id="header_component_mobile">
+        <div class="header-mobile-row">
+            <div>
+                <a id="showmenu">
+                    <img src="/theme/v4/images/icons/jam_menu.svg" alt="">
+                </a>
+            </div>
+            <div>
+                <img src="https://www.yamaha-motor-india.com/theme/v3/image/header-footer/yamaha-motor.png" alt="">
+            </div>
+            <div>
+                <a>
+                    <img src="/theme/v4/images/icons/search.svg" alt="">
+                </a>
+            </div>
         </div>
-        
+        <nav id="menu" class="left">
+            <ul>
+                <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Products <i class="fa-solid fa-chevron-down chev"></i></a>
+                    <ul>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Motorcycles <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul class="mobilesumenu">
+                                <li><a href="#"
+                                        onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.singleid'); if (icon) { icon.classList.toggle('fa-plus'); icon.classList.toggle('fa-minus'); }">R-Series
+                                        <i class="fa-solid fa-plus singleid"></i></a>
+                                    <ul>
+                                        <li>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/R3.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                            </div>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15v4.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/R_Series/Thumbnail/r15s.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.singleid'); if (icon) { icon.classList.toggle('fa-plus'); icon.classList.toggle('fa-minus'); }">MT-Series <i class="fa-solid fa-plus singleid"></i></a>
+                                    <ul>
+                                        <li>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/mt03cyan (2) (1).webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.singleid'); if (icon) { icon.classList.toggle('fa-plus'); icon.classList.toggle('fa-minus'); }">FZ-Series <i class="fa-solid fa-plus singleid"></i></a>
+                                    <ul>
+                                        <li>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZ-X.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi (1).webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                            </div>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI-DLX.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi-v3.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                            </div>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/FZ_Series/Thumbnail/FZS-FI.webp"
+                                                        alt="">
+                                                    <p>R3</p>
+                                                </a>
+                                                <a href="">
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submobileitemms">
+                                    <a href="">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+                                            </div>
+    
+                                            <!-- Image Sliders -->
+                                            <div class="carousel-inner">
+                                                <!-- Image one-->
+                                                <div class="carousel-item active">
+                                                    <img src="/theme/v4/images/header-footer/fzs-fi-v4-dlx.jpeg"
+                                                        class="d-block " alt="...">
+                                                </div>
+    
+                                                <!-- image two -->
+                                                <div class="carousel-item">
+                                                    <img src="/theme/v4/images/header-footer/fzs-fi-v4-dlx.jpeg"
+                                                        class="d-block " alt="...">
+                                                </div>
+    
+                                                <!-- Image Three -->
+                                                <div class="carousel-item">
+                                                    <img src="/theme/v4/images/header-footer/fzs-fi-v4-dlx.jpeg"
+                                                        class="d-block " alt="...">
+                                                </div>
+    
+    
+                                            </div>
+    
+                                            <!-- Carousel Controls -->
+                                            <section>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+    
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </section>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Scooters <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul class="mobilesumenu">
+                                <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.singleid'); if (icon) { icon.classList.toggle('fa-plus'); icon.classList.toggle('fa-minus'); }">Maxi <i class="fa-solid fa-plus singleid"></i></a>
+                                    <ul>
+                                        <li>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox.webp"
+                                                        alt="">
+                                                    <p>Aerox 155 Version S</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/Maxi/Thumbnail/Aerox155 (4) (1).webp"
+                                                        alt="">
+                                                    <p>Aerox 155</p>
+                                                </a>
+                                            </div>
+    
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.singleid'); if (icon) { icon.classList.toggle('fa-plus'); icon.classList.toggle('fa-minus'); }">Street <i class="fa-solid fa-plus singleid"></i></a>
+                                    <ul>
+                                        <li>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RazZR.webp"
+                                                        alt="">
+                                                    <p>Aerox 155 Version S</p>
+                                                </a>
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/Street/Thumbnail/RZ-Street-Rally.webp"
+                                                        alt="">
+                                                    <p>Aerox 155</p>
+                                                </a>
+                                            </div>
+    
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.singleid'); if (icon) { icon.classList.toggle('fa-plus'); icon.classList.toggle('fa-minus'); }">Fashion <i class="fa-solid fa-plus singleid"></i></a>
+                                    <ul>
+                                        <li>
+                                            <div class="submobileitemm">
+                                                <a href=""><img
+                                                        src="/theme/v4/images/home/select_your_bike/Fashion/Thumbnail/Fascino.webp"
+                                                        alt="">
+                                                    <p>Aerox 155 Version S</p>
+                                                </a>
+    
+                                            </div>
+    
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submobileitemms">
+                                    <a href="">
+                                        <div id="carouselExampleIndicatorsy" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsy"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsy"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsy"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+                                            </div>
+    
+                                            <!-- Image Sliders -->
+                                            <div class="carousel-inner">
+                                                <!-- Image one-->
+                                                <div class="carousel-item active">
+                                                    <img src="/theme/v4/images/header-footer/fzs-fi-v4-dlx.jpeg"
+                                                        class="d-block " alt="...">
+                                                </div>
+    
+                                                <!-- image two -->
+                                                <div class="carousel-item">
+                                                    <img src="/theme/v4/images/header-footer/fzs-fi-v4-dlx.jpeg"
+                                                        class="d-block " alt="...">
+                                                </div>
+    
+                                                <!-- Image Three -->
+                                                <div class="carousel-item">
+                                                    <img src="/theme/v4/images/header-footer/fzs-fi-v4-dlx.jpeg"
+                                                        class="d-block " alt="...">
+                                                </div>
+    
+    
+                                            </div>
+    
+                                            <!-- Carousel Controls -->
+                                            <section>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleIndicatorsy" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+    
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleIndicatorsy" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </section>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="buyerguide"><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Buyer’s Guide <i class="fa-solid fa-chevron-down chev"></i></a>
+                    <ul class="mobilesumenu">
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Buyer’s Guide <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Videos <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="buyerguide"> <a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Services <i class="fa-solid fa-chevron-down chev"></i></a>
+                    <ul class="mobilesumenu">
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Yamaha Lifetime Quality Care <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Time Commitment Service</a></li>
+                                <li><a href="">Extended Warranty</a></li>
+                                <li><a href="">Annual Maintenance Contract (AMC)</a></li>
+                                <li><a href="">Road Side Assistance</a></li>
+                                <li><a href="">Pickup & Drop Service</a></li>
+                                <li><a href="">Insurance Renewal</a></li>
+                                <li><a href="">Lady Supervisor</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Maintenance <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Skill Development <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="buyerguide"><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Events <i class="fa-solid fa-chevron-down chev"></i></a>
+                    <ul class="mobilesumenu">
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Overnight Tour <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Kolkata</a></li>
+                                <li><a href="">Vijayawada</a></li>
+    
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Call of the Blue Weekend <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="event.preventDefault(); var icon = event.currentTarget.querySelector('.chev'); if (icon) { icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up'); }">Rides <i class="fa-solid fa-chevron-down chev"></i></a>
+                            <ul>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                                <li><a href="">Model Comparision</a></li>
+                                <li><a href="">Getting Started</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Dealers</a></li>
+                <li><a href="#">Parts</a></li>
+                <li><a href="#">MotoGP</a></li>
+                <li><a href="#">Contest</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
         <div class="product_hero_slider_container">
@@ -131,6 +1203,40 @@
                 <video class="product_slider_video" autoplay muted loop>
                     <source src="/theme/v4/videos/MT03.mp4" type="video/mp4">
                 </video>
+            </div>
+            <div class="click-now-container">
+                <!-- <div id="fixed-click-now-button" class="hero-slider-click-now">
+                    <p>Click<br />Now</p>
+                </div>
+                <div class="click-now-slider">
+                    <div class="click-now-slider-button">
+                        <p class="">Enquiry<br /> Now</p>
+                    </div>
+                    <div class="click-now-slider-button">
+                        <p>Buy<br /> Now</p>
+                    </div>
+                </div> -->
+                <div class="floatingButtonWrap">
+                    <div class="floatingButtonInner">
+                        <a href="#" class="floatingButton" style="background-color: #0001a0;" id="bg-color"
+                            onclick="changeText()">
+                            <!-- <i class="fa fa-plus icon-default"></i> -->
+                            <span id="buttonText" style="color: white;">Click Now</span>
+                        </a>
+                        <ul class="floatingMenu">
+                            <li>
+                                <a href="#">Enquire Now <div class="icon-menus"><img
+                                            src="/theme/v4/images/icons/headphones.png" alt="">
+                                    </div></a>
+                            </li>
+                            <li>
+                                <a href="#">Buy Now <div class="icon-menus"><img
+                                            src="/theme/v4/images/icons/shopping-cart.png" alt="">
+                                    </div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
