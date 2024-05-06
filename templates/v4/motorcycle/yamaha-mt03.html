@@ -41,6 +41,9 @@
     <link href="../../../theme/v4/css/home/style.css" rel="stylesheet" />
     <script src="../../../theme/v4/js/script.js"></script>
     <script src="../../../theme/v4/js/home/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../theme/v4/css/home/all.min.css">
+    <link rel="stylesheet" href="../../../theme/v4/css/home/slick.min.css">
+    <link rel="stylesheet" href="../../../theme/v4/css/home/slick-theme.min.css">
 </head>
 
 <body>
@@ -1282,19 +1285,19 @@
                                 d="M104.9 5.81048L1.54703 229.81C-1.51024 236.437 3.32971 244 10.6271 244H322.519C326.567 244 330.215 241.559 331.761 237.818L424.292 13.8179C427.011 7.2348 422.172 0 415.05 0H113.98C110.08 0 106.535 2.26841 104.9 5.81048Z"
                                 fill="#EFEDED" fill-opacity="0.39" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
                             class="ellipse_carousel_svg_shape ellipse_carousel_middle_svg">
                             <path
                                 d="M104.9 5.81048L1.54703 229.81C-1.51024 236.437 3.32971 244 10.6271 244H322.519C326.567 244 330.215 241.559 331.761 237.818L424.292 13.8179C427.011 7.2348 422.172 0 415.05 0H113.98C110.08 0 106.535 2.26841 104.9 5.81048Z"
                                 fill="#EFEDED" fill-opacity="0.39" />
-                        </svg>
+                        </svg>-->
         
-                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="20 20 426 244" fill="none"
-                            class="ellipse_carousel_svg_shape ellipse_carousel_top_svg">
-                            <rect x="20" y="20" width="426" height="244" fill="url(#ellipse_img1)" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
+                            class="ellipse_carousel_svg_shape ellipse_carousel_middle_svg">
+                            <path d="M104.9 5.81048L1.54703 229.81C-1.51024 236.437 3.32971 244 10.6271 244H322.519C326.567 244 330.215 241.559 331.761 237.818L424.292 13.8179C427.011 7.2348 422.172 0 415.05 0H113.98C110.08 0 106.535 2.26841 104.9 5.81048Z" fill="url(#ellipse_img1)" />
                             <defs>
                                 <pattern id="ellipse_img1" patternUnits="userSpaceOnUse" width="426" height="244">
-                                    <image href="/theme/v4/images/product/ellipse_carousel/image 43.png" x="20" y="20" width="426"
+                                    <image href="/theme/v4/images/product/ellipse_carousel/image 43.png" x="0" y="0" width="426"
                                         height="244"/>
                                 </pattern>
                             </defs>
@@ -2029,6 +2032,10 @@
     <script src="/theme/v4/js/product/common/accessories.js"></script>
     <script src="/theme/v4/js/product/MT03/ellipse_carousel.js"></script>
     <script src="/theme/v4/js/header.js"></script>
+    <script src="/theme/v4/js/home/jquery.touchSwipe.min.js"></script>
+    <script src="../../../theme/v4/js/home/jquery.min.js"></script>
+    <script src="../../../theme/v4/js/home/slick.min.js"></script>
+    <script src="../../../theme/v4/js/home/select_your.js"></script>
 
 </body>
 
@@ -2321,4 +2328,17 @@ function initializePhotosCarousel() {
     });
 }
 
+$("#showmenu").click(function (e) {
+    e.preventDefault();
+    $("#menu").toggleClass("show");
+});
+
+
+$("#menu a").click(function (event) {
+    event.preventDefault();
+    if ($(this).next('ul').length) {
+        $(this).next().toggle('fast');
+        // $(this).children('i:last-child').toggleClass('fa-chevron-down  fa-chevron-up');
+    }
+});
 </script>
