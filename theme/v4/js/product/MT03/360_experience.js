@@ -164,25 +164,39 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// // Select the first 11 cloudimage-360 elements
-// const images = document.querySelectorAll('.exp_360_rotate_image .cloudimage-360');
+// Get the 360-degree viewer element
+var viewer = document.querySelector('.cloudimage-360');
 
-// // Define the number of images to rotate (first 11 images)
-// const numImagesToRotate = 11;
+// Specify the total number of images (assuming 40 based on data-amount-x attribute)
+var totalImages = parseInt(viewer.getAttribute('data-amount-x'));
 
-// // Register a scroll event listener
-// window.addEventListener('scroll', () => {
-//     // Calculate the current scroll position
-//     const scrollPosition = window.scrollY;
+// Array to hold individual image URLs
+var imageUrls = [];
 
-//     // Iterate over the selected images and apply rotation
-//     images.forEach((image, index) => {
-//         if (index < numImagesToRotate) {
-//             // Calculate rotation angle based on scroll position and index
-//             const rotation = (scrollPosition * 0.2 + index * 20) % 360;
+// Generate individual image URLs for the images numbered from 1 to totalImages
+for (var i = 1; i <= totalImages; i++) {
+    var imageUrl = i + '.webp'; // Construct the individual image URL
+    imageUrls.push(imageUrl);
+}
 
-//             // Apply rotation to the image
-//             image.style.transform = `rotateY(${rotation}deg)`;
-//         }
-//     });
-// });
+// Set the data-filename-x attribute with the first image URL initially
+viewer.setAttribute('data-filename-x', imageUrls[0]);
+
+// Function to rotate to the next or previous image
+function rotateImage(direction) {
+var currentImageUrl = viewer.getAttribute('data-filename-x');
+var currentIndex = imageUrls.indexOf(currentImageUrl);
+var nextIndex = (currentIndex + direction + imageUrls.length) % imageUrls.length;
+var nextImageUrl = imageUrls[nextIndex];
+viewer.setAttribute('data-filename-x', nextImageUrl);
+}
+
+// Handle image rotation on clicking the left arrow button
+document.getElementById('exp_360_leftArrowButton').addEventListener('click', function() {
+rotateImage(-1); // Rotate to the previous image
+});
+
+// Handle image rotation on clicking the right arrow button
+document.getElementById('exp_360_rightArrowButton').addEventListener('click', function() {
+rotateImage(1); // Rotate to the next image
+});

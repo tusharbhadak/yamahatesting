@@ -1,5 +1,5 @@
 $color_1: #1d1d1d;
-$color_2: #28348a;
+$color_2: #0002d7;
 $color_3: #444444;
 $color_4: #464646;
 $color_5: #3e3e3e;
@@ -17,7 +17,7 @@ $color_16: rgba(0, 0, 0, 0.4);
 $font-family_1: "Montserrat", sans-serif;
 $font-family_2: "Krona One";
 $font-family_3: 'Montserrat';
-$font-family_4: "Krona One";
+$font-family_4: "Druk Wide";
 $font-family_5: "Krona One";
 $background-color_1: rgba(255, 255, 255, 0.2);
 $background-color_2: #717171;
@@ -218,10 +218,11 @@ body {
   color: $color_4;
   text-align: center;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   white-space: nowrap;
+  font-family: $font-family_3;
 }
 .ellipse_carousel_selection_circle {
   position: absolute;
@@ -259,18 +260,19 @@ body {
 }
 .ellipse_carousel_bike_title {
   color: $color_5;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
   margin: 5px 0;
+  font-family: $font-family_2;
 }
 .ellipse_carousel_heading {
   color: $color_2;
   text-align: center;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #28348a;
-  font-family: $font-family_4;
+  font-family: $font-family_3;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   margin: 0;
@@ -279,12 +281,13 @@ body {
 .ellipse_carousel_sub_heading {
   color: $color_6;
   font-family: $font-family_4;
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 25px;
+  font-weight: 600;
   margin-top: 2%;
   text-align: center;
 }
 .ellipse_carousel_description {
+  font-family: 'Montserrat';
   color: $color_5;
   text-align: center;
   font-size: 16px;
@@ -418,8 +421,8 @@ body {
 .ellipse_carousel_info_value {
   color: $color_2;
   font-family: $font-family_4;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 28.337px;
+  font-weight: 500;
 }
 .ellipse_carousel_info_label {
   color: $color_5;
@@ -509,8 +512,8 @@ body {
   transform: translateX(-50%);
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
+  overflow: hidden;
 }
-
 
 .exp_360_rotate_image_nav {
   position: absolute;
@@ -568,6 +571,30 @@ body {
   transform: translate(-50%, -20%);
   text-align: center;
 }
+
+.exp_background_image {
+  width: 700px; /* Set width of each image container */
+  height: 140px; /* Set height of each image container */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Adjust opacity as desired */
+  display: inline-block;
+  margin: 120px; /* Adjust spacing between images */
+
+  @media screen and (max-width: 768px) {
+    height: 60px; /* Reduce height on smaller screens */
+    margin: 10px; /* Adjust margin for smaller spacing */
+    width: 300px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 50px; /* Further reduce height on smaller screens */
+    margin: 30px; /* Adjust margin for tighter spacing */
+    width: 250px;
+  }
+}
+
+
 .exp_background_text {
   opacity: 0.5;
   background: linear-gradient(
@@ -648,6 +675,7 @@ body {
 .exp_360_price_color {
   font-size: 50px;
   font-weight: 800;
+  font-family: $font-family_2;
 }
 .exp_360_bike_color {
   text-align: center;
@@ -678,9 +706,10 @@ body {
   justify-content: space-evenly;
 }
 .exp_360_color_details {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 25px;
+  font-family: $font-family_3;
 }
 .exp_360_exShowroom {
   color: $color_9;
@@ -691,6 +720,7 @@ body {
 .exp_360_price {
   font-size: 40px;
   font-weight: 600;
+  font-family: $font-family_3;
 }
 .exp_360_disclaimer {
   color: $color_9;
@@ -711,6 +741,7 @@ body {
   width: 70%;
   max-width: 380px;
   margin: 10px 0;
+  font-family: $font-family_3;
 }
 .exp_360_bookNow_btn {
   display: inline-flex;
@@ -949,13 +980,13 @@ body {
 }
 .product_specification_container {
   background-color: $background-color_3;
-  padding: 20px;
+  padding: 80px;
   position: relative;
 }
 .product_specification_title {
   font-family: $font-family_2;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
   text-align: center;
   color: $color_12;
 }
@@ -1003,9 +1034,9 @@ body {
 }
 .product_specification_img_container {
   position: absolute;
-  bottom: 0;
+  top: 200px;
   left: 0;
-  width: 32%;
+  width: 30%;
   img {
     max-width: 100%;
     height: auto;
@@ -1018,10 +1049,10 @@ body {
 .product_accessory_heading {
   color: $color_14;
   text-align: center;
-  font-family: $font-family_4;
-  font-size: 40px;
-  font-weight: 700;
-  margin-top: -3%;
+  font-family: $font-family_2;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 3%;
 }
 .product_accessory_content {
   width: 100%;
@@ -1061,6 +1092,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   img {
     width: 90%;
     margin: auto;
@@ -1582,8 +1614,8 @@ body {
 }
 @media (max-width: 500px) {
   .product_specification_button {
-    padding: 3px 4px;
-    font-size: 11px;
+    padding: 1px 20px;
+    font-size: 10px;
   }
 }
 
@@ -1781,4 +1813,27 @@ box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5); */
   to {
     opacity: 1;
   }
+}
+
+
+.popaccess {
+  display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+}
+
+#product_info_img img{
+  width: 77%;
+  margin-bottom: 45px;
+}
+#product_info_img div{
+  width: 80%;
+}
+
+.modal-content {
+  width: 190%;
+  height: auto;
+  background-color: #000526;
+  color: #fff;
 }

@@ -1,11 +1,25 @@
-// // JavaScript to toggle hamburger menu
-// const hamburgerMenu = document.querySelector("#hamburger_menu");
-// const mainNav = document.querySelector(".side-menu");
-// const closeIcon = document.querySelector(".close-icon");
+let lastScrollTop = 0;
+const navbarContainer = document.getElementById('navbarContainer');
+let headerVisible = true;
+let prevScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-// hamburgerMenu.addEventListener("click", function () {
-//   mainNav.classList.toggle("open");
-// });
-// closeIcon.addEventListener("click", function () {
-//   mainNav.classList.toggle("open");
-// });
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Determine scroll direction
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        if (headerVisible) {
+            navbarContainer.classList.add('hidden');
+            headerVisible = false;
+        }
+    } else {
+        // Scrolling up
+        if (!headerVisible) {
+            navbarContainer.classList.remove('hidden');
+            headerVisible = true;
+        }
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+});

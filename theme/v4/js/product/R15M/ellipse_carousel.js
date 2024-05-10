@@ -1,180 +1,180 @@
 let currentActiveDot = null;
 const ellipseContentMapping = [
   {
-    bikeTitle: "Yamaha R15M",
+    bikeTitle: "R15M",
     heading: "Features",
     featureDetails: [
       {
         subHeading: "Dual Horn",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/features01.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/r15mfeatures/dual_horn.webp",
         description:
           "In city hustle, your horn matters. Let the streets know you're blazing a trail to the future. R15M's split horns roar with higher and lower decibels (Dual Tone), echoing the spirit of a true racer.",
       },
       {
         subHeading: "Aluminium Swingarm",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/Aluminum-Swingarm.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/r15mfeatures/aluminium_swingarm.webp",
         description:
           "The Aluminium Swingarm reduces the unsprung weight, making the bike easier to handle – giving you an added advantage!",
       },
       {
         subHeading: "Color TFT Meter",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/meter/meter-TFT.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/r15mfeatures/tft meter.webp",
         description:
           "R1 Inspired New Color TFT Meter",
       },
       {
         subHeading: "E20 Fuel Compatible",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/e-20-logo.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/r15mfeatures/e20.webp",
         description:
           "The R15M is all about performance and eco-friendliness. It's compatible with E20 Fuel, which means it helps reduce emissions and cut down on pollution.",
       },
     ],
   },
   {
-    bikeTitle: "Yamaha R15M",
+    bikeTitle: "R15M",
     heading: "Design",
     featureDetails: [
       {
         subHeading: "CLASS D BI-FUNCTIONAL HEADLIGHT UNIT",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/design01.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/design/bifunctional.webp",
         description:
           "The new headlight features a single bi-functional LED unit that emits both low and high beams. Plus, it's extra bright (Class-D) and super light with the sleek aerodynamic fairing (cowling) design.",
       },
       {
         subHeading: "LED POSITION LIGHTS",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/design02.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/design/ledheadlight.webp",
         description:
           "Style your ride with these lights on the outer edges, making a bold visual statement and commanding presence.",
       },
       {
         subHeading: "LED FLASHERS",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/design-led-flasher.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/design/led_flasher.webp",
         description:
           "Showcase your unique style with these unmistakable LED flashers, adding flair while keeping you visible.",
       },
       {
         subHeading: "AERODYNAMIC BODY DESIGN",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/design04.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/design/aerodynamics.webp",
         description:
           "Experience improved airflow management that boosts top speed and helps with your stability at high speeds.",
       },
     ],
   },
   {
-    bikeTitle: "Yamaha R15M",
+    bikeTitle: "R15M",
     heading: "Performance",
     featureDetails: [
       {
         subHeading: "155 cc LC4V SOHC FI Engine with VVA",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/performance01.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/perfomance/engine.webp",
         description:
           "Power up with the liquid-cooled single overhead camshaft fuel injected engine, delivering max horsepower of 13.5kW(18.4PS)/10000r/min and maximum torque of 14.2N.m (1.4kgf.m)/7500r/min. Plus, it's equipped with a Traction Control System and Quick Shifter (up-shift).",
       },
       {
         subHeading: "Assist & Slipper Clutch",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/performance02.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/perfomance/shifter.webp",
         description:
           "The A&S clutch lightens the clutch pull for low-stress shifting during deceleration, reducing rider fatigue. It also prevents excessive engine braking, improving chassis behavior. The A&S clutch ensures smooth, enjoyable downshifts.",
       },
       {
         subHeading: "Variable Valve Actuation (VVA)",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/performance03.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/perfomance/variable_valve.webp",
         description:
           "This unique high-performance VVA system delivers torque even at low RPMs for easy use. It features two intake valve cams – one for low to mid-range RPMs and another for high RPMs. They switch at 7,400 RPM to maintain strong power and torque across the full rev range.",
       },
       {
         subHeading: "Traction Control System",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/performance05.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/perfomance/traction_control.webp",
         description:
           "Stay in control with this dedicated electronic system. It reduces the chances of wheelspin and offers a safer ride.",
       },
       {
         subHeading: "Quick Shifter",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/performance04.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/perfomance/quickshifter.webp",
         description:
           "Shift gears without using clutch or throttle, enhancing your riding comfort with the Quick Shifter (up-shift). ",
       },
     ],
   },
   {
-    bikeTitle: "Yamaha R15M",
+    bikeTitle: "R15M",
     heading: "Comfort",
     featureDetails: [
       {
         subHeading: "Upside Down Front Forks",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/comfort01.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/Comfort/comfort1.webp",
         description:
           "The R15M elevates sporty handling on winding roads with an upside-down front suspension fork featuring 37 mm inner tubes. These forks enhance rigidity and stability during high-speed turns and intense braking. ",
       },
       {
         subHeading: "Dual Channel ABS",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/comfort02.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/Comfort/comfort2.webp",
         description:
           "The R15M offers great performance and more control with 282 mm front and 220 mm rear disc brakes plus ABS. Enjoy precise braking and limited wheel lockups at high speeds for a confident ride.",
       },
       {
         subHeading: "Super Wide 140 mm Radial Rear Tyre",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/comfort03.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/Comfort/widetires.webp",
         description:
           "Experience better grip and shock absorption with the Super Wide 140 mm Radial Rear Tyre.",
       },
     ],
   },
   {
-    bikeTitle: "Yamaha R15M",
+    bikeTitle: "R15M",
     heading: "Y-CONNECT APP",
     featureDetails: [
       {
         subHeading: "CALL, SMS, EMAIL ALERTS ",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/connectX-logo.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/Battery.webp",
         description:
           "Stay connected with call, SMS, and email alerts on your instrument cluster screen, keeping you informed on the go. ",
       },
       {
         subHeading: "APP CONNECTIVITY STATUS",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/meter.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/Connectivity.webp",
         description:
           "Keep tabs on whether your bike's hooked up to the Y-Connect app on your phone. ",
       },
       {
         subHeading: "PHONE BATTERY LEVEL STATUS ",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/meter.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/Battery.webp",
         description:
           "Never be in the dark about your phone's battery – check it right on your bike. ",
       },
       {
         subHeading: "Fuel Consumption Tracker ",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/fuel.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/fuel.webp",
         description:
           "Keep an eye on how much fuel you're burning through each day and month.",
       },
       {
         subHeading: "Maintenance Recommendations",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/maintanance.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/maintenance_.webp",
         description:
           "Get smart advice based on your bike's data, like when it's time to give your battery a check. ",
       },
       {
         subHeading: "Last Parking Location",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/parking-location.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/lastparking.webp",
         description:
           "Find out where you left your ride last – it's like a built-in memory for your bike. But remember, if the machine has moved since it was parked, it won’t be tracked.",
       },
       {
         subHeading: "Malfunction Notification",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/malfunction.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/malfunction.webp",
         description:
           "Get a heads-up if your bike's acting up, so you can sort it out quickly.",
       },
       {
         subHeading: "Revs Dashboard",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/revs.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/revdashboard.webp",
         description:
           "See what's going on underneath with real-time stats like Engine RPM and Eco-friendly Riding Indicator.",
       },
       {
         subHeading: "Ranking",
-        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/y-connect/ranking.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/ranking.webp",
         description:
           "Join the Yamaha riders and see how you measure up against others when it comes to racking up miles and being eco-friendly.",
       },
@@ -378,11 +378,21 @@ function debounce(func, delay) {
 const handleNavigationWithDelay = debounce(handleNavigation, 10000);
 
 // Function to handle keyboard arrow keys and mouse scroll
+// function handleNavigation(event) {
+//   if (event.key === "ArrowUp" || event.deltaY < -10) {
+//       // Move to the previous section
+//       moveSection(-1);
+//   } else if (event.key === "ArrowDown" || event.deltaY > -10) {
+//       // Move to the next section
+//       moveSection(1);
+//   }
+// }
+
 function handleNavigation(event) {
-  if (event.key === "ArrowUp" || event.deltaY < 0) {
+  if (event.key === "ArrowUp") {
       // Move to the previous section
       moveSection(-1);
-  } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+  } else if (event.key === "ArrowDown") {
       // Move to the next section
       moveSection(1);
   }

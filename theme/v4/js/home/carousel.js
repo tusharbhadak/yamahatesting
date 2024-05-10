@@ -298,8 +298,20 @@ let bikes_alternate_name_data;
 
 
 function handleClick(element, index, series, model, modelName) {
-    // Remove active class from all dots
-    var dots = document.querySelectorAll('.carousel-dot');
+    // Get the parent div of the clicked dot
+    var parentDiv = element.closest('.sub-tab-container');
+
+    // Remove active class from all dots within the current div
+    var dotsInCurrentDiv = parentDiv.querySelectorAll('.carousel-dot');
+    dotsInCurrentDiv.forEach(function (dot) {
+        dot.classList.remove('active-thumbnail');
+    });
+
+    // Get the series of the clicked dot's parent div
+    var parentSeries = parentDiv.getAttribute('data-series');
+
+    // Remove active class from all dots within the same series
+    var dots = document.querySelectorAll('.carousel-dot[data-series="' + parentSeries + '"]');
     dots.forEach(function (dot) {
         dot.classList.remove('active-thumbnail');
     });
@@ -407,14 +419,409 @@ function handleCarouselDotResize() {
 window.addEventListener('resize', handleCarouselDotResize);
 handleCarouselDotResize();
 
+// const bikeDetaileArr = {
+//     R3: {
+//         power: {
+//             kw: 'Power of 30.9 kW',
+//             rpm: '@10,750 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 29.5 nm',
+//             details: '@9,000 rpm'
+//         },
+//         keyFeature: {
+//             details: '321 CC',
+//             body: 'High Revving Parallel twin engine'
+//         },
+//         designLang: {
+//             details: 'SuperSport design'
+//         }
+//     },
+//     R4: {
+//         power: {
+//             kw: '30.9kW',
+//             power: '42.0PS',
+//             rpm: '10,750 RPM'
+//         },
+//         torque: {
+//             rpm: '9,000 RPM',
+//             torque: '29.5 Nm',
+//             details: '3.0 kgfm'
+//         },
+//         keyFeature: {
+//             details: 'High Revving 321 CC parallel twin engine'
+//         },
+//         designLang: {
+//             details: 'SuperSport design',
+//             info: 'inspired by Yamaha’s iconic race-winning M1 MotoGP® machine'
+//         }
+//     },
+//     Aerox155: {
+//         power: {
+//             kw: 'Power of 11.0 kW',
+//             rpm: '@8,000 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.9 nm',
+//             details: '@6,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Smart Key',
+//         },
+//         designLang: {
+//             details: 'Maxi Sport Design'
+//         }
+//     },
+//     Aerox155N: {
+//         power: {
+//             kw: 'Power of 11.0 kW',
+//             rpm: '@8,000 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.9 nm',
+//             details: '@6,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Y-CONNECT WITH BLUETOOTH',
+//         },
+//         designLang: {
+//             details: 'Maxi Sport Design'
+//         }
+//     },
+//     R156M: {
+//         power: {
+//             kw: '30.9kW',
+//             power: '42.0PS',
+//             rpm: '10,750 RPM'
+//         },
+//         torque: {
+//             rpm: '9,000 RPM',
+//             torque: '29.5 Nm',
+//             details: '3.0 kgfm'
+//         },
+//         keyFeature: {
+//             details: 'High Revving 321 CC parallel twin engine'
+//         },
+//         designLang: {
+//             details: 'SuperSport design',
+//             info: 'inspired by Yamaha’s iconic race-winning M1 MotoGP® machine'
+//         }
+//     },
+//     R15V74: {
+//         power: {
+//             kw: '30.9kW',
+//             power: '42.0PS',
+//             rpm: '10,750 RPM'
+//         },
+//         torque: {
+//             rpm: '9,000 RPM',
+//             torque: '29.5 Nm',
+//             details: '3.0 kgfm'
+//         },
+//         keyFeature: {
+//             details: 'High Revving 321 CC parallel twin engine'
+//         },
+//         designLang: {
+//             details: 'SuperSport design',
+//             info: 'inspired by Yamaha’s iconic race-winning M1 MotoGP® machine'
+//         }
+//     },
+//     R15sS: {
+//         power: {
+//             kw: '30.9kW',
+//             power: '42.0PS',
+//             rpm: '10,750 RPM'
+//         },
+//         torque: {
+//             rpm: '9,000 RPM',
+//             torque: '29.5 Nm',
+//             details: '3.0 kgfm'
+//         },
+//         keyFeature: {
+//             details: 'High Revving 321 CC parallel twin engine'
+//         },
+//         designLang: {
+//             details: 'SuperSport design',
+//             info: 'inspired by Yamaha’s iconic race-winning M1 MotoGP® machine'
+//         }
+//     },
+//     R15M: {
+//         power: {
+//             kw: 'Power of 13.5 kW ',
+//             rpm: '@10,000 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 14.2 nm',
+//             details: '@7,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Color TFT Meter',
+//             body: 'inspired by R1'
+//         },
+//         designLang: {
+//             details: 'SuperSport design'
+//         }
+//     },
+//     MT03: {
+//         power: {
+//             kw: 'Power of 30.9 kW',
+//             rpm: '@10,700 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 29.2 nm',
+//             details: '@9,000 rpm'
+//         },
+//         keyFeature: {
+//             details: '321 CC',
+//             body: 'High Revving parallel twin engine'
+//         },
+//         designLang: {
+//             details: 'Hyper Naked unique MT design'
+//         }
+//     },
+//     RayZR125SR: {
+//         power: {
+//             kw: 'Power of 6.0 kW',
+//             rpm: '@6,500 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 10.3 nm',
+//             details: '@5,000 rpm'
+//         },
+//         keyFeature: {
+//             details: 'FULL DIGITAL INSTRUMENT CLUSTER',
+//             body: 'WITH Y-CONNECT'
+//         },
+//         designLang: {
+//             details: 'Tough Sporty Design',
+//             info: 'with Brush Guard'
+//         }
+//     },
+//     RayZR125: {
+//         power: {
+//             kw: 'Power of 6.0 kW',
+//             rpm: '@6,500 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 10.3 nm',
+//             details: '@5,000 rpm'
+//         },
+//         keyFeature: {
+//             details: '99 Kgs',
+//             body: 'Light Weight'
+//         },
+//         designLang: {
+//             details: 'Tough Sporty Design',
+//             // info: 'with Brush Guard'
+//         }
+//     },
+//     MT15: {
+//         power: {
+//             kw: 'Power of 13.5 kW',
+//             rpm: '@10,000 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 14.1 nm',
+//             details: '@7,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Assist & Slipper Clutch',
+//             body: 'with Variable Valve Actuation (VVA)'
+//         },
+//         designLang: {
+//             details: 'Hyper Naked unique MT design'
+//         }
+//     },
+//     FZX: {
+//         power: {
+//             kw: 'Power of 9.1 kW',
+//             rpm: '@7,250 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.3 nm',
+//             details: '@5,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Tough Metal Body',
+//             // body: 'with Variable Valve Actuation (VVA)'
+//         },
+//         designLang: {
+//             details: 'Neo Retro design'
+//         }
+//     },
+//     FZSV4: {
+//         power: {
+//             kw: 'Power of 9.1 kW',
+//             rpm: '@7,250 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.3 nm',
+//             details: '@5,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Trusted and Efficient 149 CC Engine',
+//             // body: 'with Variable Valve Actuation (VVA)'
+//         },
+//         designLang: {
+//             details: 'Muscular Street Fighter design'
+//         }
+//     },
+//     FZSV3: {
+//         power: {
+//             kw: 'Power of 9.1 kW',
+//             rpm: '@7,250 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.3 nm',
+//             details: '@5,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Negative LCD Instrument Cluster',
+//             body: 'with Bluetooth connectivity'
+//         },
+//         designLang: {
+//             details: 'Muscular Street Fighter design'
+//         }
+//     },
+//     FZFI: {
+//         power: {
+//             kw: 'Power of 9.1 kW',
+//             rpm: '@7,250 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.3 nm',
+//             details: '@5,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Y-Connect with Bluetooth',
+//         },
+//         designLang: {
+//             details: 'Muscular Street Fighter design'
+//         }
+//     },
+//     FZFIV3: {
+//         power: {
+//             kw: 'Power of 9.1 kW',
+//             rpm: '@7,250 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 13.3 nm',
+//             details: '@5,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Negative LCD Instrument Cluster',
+//             body: 'with Bluetooth connectivity'
+//         },
+//         designLang: {
+//             details: 'Muscular Street Fighter design',
+//         }
+//     },
+//     R15V4: {
+//         power: {
+//             kw: 'Power of 13.5 kW',
+//             rpm: '@10,000 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 14.2 nm',
+//             details: '@7,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Assist & Slipper Clutch',
+//             body: 'with Variable Valve Actuation (VVA)'
+//         },
+//         designLang: {
+//             details: 'SuperSport design'
+//         }
+//     },
+//     R15S: {
+//         power: {
+//             kw: 'Power of 13.5 kW',
+//             rpm: '@10,000 rpm'
+//         },
+//         torque: {
+//             torque: 'Torque of 14.2 nm',
+//             details: '@7,500 rpm'
+//         },
+//         keyFeature: {
+//             details: 'Unibody Seat',
+//             // body: 'with Variable Valve Actuation (VVA)'
+//         },
+//         designLang: {
+//             details: 'SuperSport design'
+//         }
+//     },
+
+//     Aerox: {
+//         power: {
+//             kw: '11.0 kW',
+//             power: '15.0 PS',
+//             rpm: '8000 RPM'
+//         },
+//         torque: {
+//             rpm: '6500 RPM',
+//             torque: '13.9 Nm',
+//             details: '1.4 kgfm'
+//         },
+//         keyFeature: {
+//             details: 'Smart Key'
+//         },
+//         designLang: {
+//             details: 'Maxi Sport Design'
+//         }
+//     },
+//     Fascino125: {
+//         power: {
+//             kw: '6.0kW',
+//             power: '8.2PS',
+//             rpm: '6500 RPM'
+//         },
+//         torque: {
+//             rpm: '5000 RPM',
+//             torque: '10.3 Nm',
+//             details: '1.1 kgfm'
+//         },
+//         keyFeature: {
+//             details: 'Light Weight (99Kg)'
+//         },
+//         designLang: {
+//             details: 'European Fashion'
+//         }
+//     },
+// }
+
+
+
+
+// for (const model in bikeDetaileArr) {
+//     if (Object.hasOwnProperty.call(bikeDetaileArr, model)) {
+//         const bike = bikeDetaileArr[model];
+
+//         // Iterate over each property of the bike
+//         for (const prop in bike) {
+//             if (Object.hasOwnProperty.call(bike, prop)) {
+//                 const detail = bike[prop];
+
+//                 // Check if the detail contains 'kw'
+//                 if (detail.hasOwnProperty('kw')) {
+//                     // Wrap 'kW' text in a span tag
+//                     detail.kw = detail.kw.replace('kW', '<span>kW</span>');
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 const bikeDetaileArr = {
     R3: {
         power: {
-            kw: 'Power of 30.9 kW',
+            topInfoP: 'Power',
+            kw: '30.9 kW',
             rpm: '@10,750 rpm'
         },
         torque: {
-            torque: 'Torque of 29.5 nm',
+            topInfoT: 'Torque',
+            torque: '29.5 nm',
             details: '@9,000 rpm'
         },
         keyFeature: {
@@ -422,7 +829,8 @@ const bikeDetaileArr = {
             body: 'High Revving Parallel twin engine'
         },
         designLang: {
-            details: 'SuperSport design'
+            details: 'SuperSport',
+            bottomInfo: 'design' 
         }
     },
     R4: {
@@ -446,34 +854,42 @@ const bikeDetaileArr = {
     },
     Aerox155: {
         power: {
-            kw: 'Power of 11.0 kW',
+            topInfoP: "Power",
+            kw: '11.0 kW',
             rpm: '@8,000 rpm'
         },
         torque: {
-            torque: 'Torque of 13.9 nm',
+            topInfoT: "Torque",
+            torque: '13.9 nm',
             details: '@6,500 rpm'
         },
         keyFeature: {
             details: 'Smart Key',
+            body: 'Convenient & Secure'
         },
         designLang: {
-            details: 'Maxi Sport Design'
+            details: 'Maxi Sport',
+            bottomInfo: 'Design'
         }
     },
     Aerox155N: {
         power: {
-            kw: 'Power of 11.0 kW',
+            topInfoP: "Power",
+            kw: '11.0 kW',
             rpm: '@8,000 rpm'
         },
         torque: {
-            torque: 'Torque of 13.9 nm',
+            topInfoT: "Torque",
+            torque: '13.9 nm',
             details: '@6,500 rpm'
         },
         keyFeature: {
-            details: 'Y-CONNECT WITH BLUETOOTH',
+            details: 'Y-CONNECT',
+            body: 'BLUETOOTH'
         },
         designLang: {
-            details: 'Maxi Sport Design'
+            details: 'Maxi Sport',
+            bottomInfo: 'Design'
         }
     },
     R156M: {
@@ -535,11 +951,13 @@ const bikeDetaileArr = {
     },
     R15M: {
         power: {
-            kw: 'Power of 13.5 kW ',
+            topInfoP: "Power",
+            kw: '13.5 kW ',
             rpm: '@10,000 rpm'
         },
         torque: {
-            torque: 'Torque of 14.2 nm',
+            topInfoT: "Torque",
+            torque: '14.2 nm',
             details: '@7,500 rpm'
         },
         keyFeature: {
@@ -547,16 +965,19 @@ const bikeDetaileArr = {
             body: 'inspired by R1'
         },
         designLang: {
-            details: 'SuperSport design'
+            details: 'SuperSport',
+            bottomInfo: "design"
         }
     },
     MT03: {
         power: {
-            kw: 'Power of 30.9 kW',
+            topInfoP: "Power",
+            kw: '30.9 kW',
             rpm: '@10,700 rpm'
         },
         torque: {
-            torque: 'Torque of 29.2 nm',
+            topInfoT: "Torque",
+            torque: '29.2 nm',
             details: '@9,000 rpm'
         },
         keyFeature: {
@@ -564,16 +985,19 @@ const bikeDetaileArr = {
             body: 'High Revving parallel twin engine'
         },
         designLang: {
-            details: 'Hyper Naked unique MT design'
+            details: 'Hyper Naked',
+            bottomInfo: 'unique MT design'
         }
     },
     RayZR125SR: {
         power: {
-            kw: 'Power of 6.0 kW',
+            topInfoP: "Power",
+            kw: '6.0 kW',
             rpm: '@6,500 rpm'
         },
         torque: {
-            torque: 'Torque of 10.3 nm',
+            topInfoT: "Torque",
+            torque: '10.3 nm',
             details: '@5,000 rpm'
         },
         keyFeature: {
@@ -582,16 +1006,18 @@ const bikeDetaileArr = {
         },
         designLang: {
             details: 'Tough Sporty Design',
-            info: 'with Brush Guard'
+            info: 'Motorcycle like design with Brush Guard'
         }
     },
     RayZR125: {
         power: {
-            kw: 'Power of 6.0 kW',
+            topInfoP: "Power",
+            kw: '6.0 kW',
             rpm: '@6,500 rpm'
         },
         torque: {
-            torque: 'Torque of 10.3 nm',
+            topInfoT: "Torque",
+            torque: '10.3 nm',
             details: '@5,000 rpm'
         },
         keyFeature: {
@@ -599,17 +1025,19 @@ const bikeDetaileArr = {
             body: 'Light Weight'
         },
         designLang: {
-            details: 'Tough Sporty Design',
-            // info: 'with Brush Guard'
+            details: 'Tough Sporty',
+            info: 'Motorcycle like design'
         }
     },
     MT15: {
         power: {
-            kw: 'Power of 13.5 kW',
+            topInfoP: "Power",
+            kw: '13.5 kW',
             rpm: '@10,000 rpm'
         },
         torque: {
-            torque: 'Torque of 14.1 nm',
+            topInfoT: "Torque",
+            torque: '14.1 nm',
             details: '@7,500 rpm'
         },
         keyFeature: {
@@ -617,50 +1045,60 @@ const bikeDetaileArr = {
             body: 'with Variable Valve Actuation (VVA)'
         },
         designLang: {
-            details: 'Hyper Naked unique MT design'
+            details: 'Hyper Naked',
+            bottomInfo: 'unique MT design'
         }
     },
     FZX: {
         power: {
-            kw: 'Power of 9.1 kW',
+            topInfoP: "Power",
+            kw: '9.1 kW',
             rpm: '@7,250 rpm'
         },
         torque: {
-            torque: 'Torque of 13.3 nm',
+            topInfoT: "Torque",
+            torque: '13.3 nm',
             details: '@5,500 rpm'
         },
         keyFeature: {
-            details: 'Tough Metal Body',
-            // body: 'with Variable Valve Actuation (VVA)'
+            details: 'Metal Body',
+            body: 'Tough & Rugged'
         },
         designLang: {
-            details: 'Neo Retro design'
+            details: 'Neo Retro',
+            bottomInfo: 'design'
         }
     },
     FZSV4: {
         power: {
-            kw: 'Power of 9.1 kW',
+            topInfoP: "Power",
+            kw: '9.1 kW',
             rpm: '@7,250 rpm'
         },
         torque: {
-            torque: 'Torque of 13.3 nm',
+            topInfoT: "Torque",
+            torque: '13.3 nm',
             details: '@5,500 rpm'
         },
         keyFeature: {
-            details: 'Trusted and Efficient 149 CC Engine',
+            details: '149 CC',
             // body: 'with Variable Valve Actuation (VVA)'
+            body: 'Trusted and Efficient Engine'
         },
         designLang: {
-            details: 'Muscular Street Fighter design'
+            details: 'Muscular Street Fighter',
+            bottomInfo: 'design'
         }
     },
     FZSV3: {
         power: {
-            kw: 'Power of 9.1 kW',
+            topInfoP: "Power",
+            kw: '9.1 kW',
             rpm: '@7,250 rpm'
         },
         torque: {
-            torque: 'Torque of 13.3 nm',
+            topInfoT: "Torque",
+            torque: '13.3 nm',
             details: '@5,500 rpm'
         },
         keyFeature: {
@@ -668,32 +1106,39 @@ const bikeDetaileArr = {
             body: 'with Bluetooth connectivity'
         },
         designLang: {
-            details: 'Muscular Street Fighter design'
+            details: 'Muscular Street Fighter',
+            bottomInfo: 'design'
         }
     },
     FZFI: {
         power: {
-            kw: 'Power of 9.1 kW',
+            topInfoP: "Power",
+            kw: '9.1 kW',
             rpm: '@7,250 rpm'
         },
         torque: {
-            torque: 'Torque of 13.3 nm',
+            topInfoT: "Torque",
+            torque: '13.3 nm',
             details: '@5,500 rpm'
         },
         keyFeature: {
-            details: 'Y-Connect with Bluetooth',
+            details: 'Y-Connect',
+            body: 'Bluetooth'
         },
         designLang: {
-            details: 'Muscular Street Fighter design'
+            details: 'Muscular Street Fighter',
+            bottomInfo: 'design'
         }
     },
     FZFIV3: {
         power: {
-            kw: 'Power of 9.1 kW',
+            topInfoP: "Power",
+            kw: '9.1 kW',
             rpm: '@7,250 rpm'
         },
         torque: {
-            torque: 'Torque of 13.3 nm',
+            topInfoT: "Torque",
+            torque: '13.3 nm',
             details: '@5,500 rpm'
         },
         keyFeature: {
@@ -701,16 +1146,19 @@ const bikeDetaileArr = {
             body: 'with Bluetooth connectivity'
         },
         designLang: {
-            details: 'Muscular Street Fighter design',
+            details: 'Muscular Street Fighter',
+            bottomInfo: 'design'
         }
     },
     R15V4: {
         power: {
-            kw: 'Power of 13.5 kW',
+            topInfoP: "Power",
+            kw: '13.5 kW',
             rpm: '@10,000 rpm'
         },
         torque: {
-            torque: 'Torque of 14.2 nm',
+            topInfoT: "Torque",
+            torque: '14.2 nm',
             details: '@7,500 rpm'
         },
         keyFeature: {
@@ -718,24 +1166,28 @@ const bikeDetaileArr = {
             body: 'with Variable Valve Actuation (VVA)'
         },
         designLang: {
-            details: 'SuperSport design'
+            details: 'SuperSport',
+            bottomInfo: 'design'
         }
     },
     R15S: {
         power: {
-            kw: 'Power of 13.5 kW',
+            topInfoP: "Power",
+            kw: '13.5 kW',
             rpm: '@10,000 rpm'
         },
         torque: {
-            torque: 'Torque of 14.2 nm',
+            topInfoT: "Torque",
+            torque: '14.2 nm',
             details: '@7,500 rpm'
         },
         keyFeature: {
             details: 'Unibody Seat',
-            // body: 'with Variable Valve Actuation (VVA)'
+            body: 'Comfort'
         },
         designLang: {
-            details: 'SuperSport design'
+            details: 'SuperSport',
+            bottomInfo: 'design'
         }
     },
 
@@ -751,7 +1203,8 @@ const bikeDetaileArr = {
             details: '1.4 kgfm'
         },
         keyFeature: {
-            details: 'Smart Key'
+            details: 'Smart Key',
+            body: 'Convenient & Secure'
         },
         designLang: {
             details: 'Maxi Sport Design'
@@ -772,30 +1225,11 @@ const bikeDetaileArr = {
             details: 'Light Weight (99Kg)'
         },
         designLang: {
-            details: 'European Fashion'
+            details: 'European Fashion',
+            bottomInfo: 'Design'
         }
     },
 }
-
-// for (const model in bikeDetaileArr) {
-//     if (Object.hasOwnProperty.call(bikeDetaileArr, model)) {
-//         const bike = bikeDetaileArr[model];
-
-//         // Iterate over each property of the bike
-//         for (const prop in bike) {
-//             if (Object.hasOwnProperty.call(bike, prop)) {
-//                 const detail = bike[prop];
-
-//                 // Check if the detail contains 'kw'
-//                 if (detail.hasOwnProperty('kw')) {
-//                     // Wrap 'kW' text in a span tag
-//                     detail.kw = detail.kw.replace('kW', '<span>kW</span>');
-//                 }
-//             }
-//         }
-//     }
-// }
-
 
 for (const model in bikeDetaileArr) {
     if (Object.hasOwnProperty.call(bikeDetaileArr, model)) {
@@ -881,16 +1315,20 @@ function updateRSeriesContent(seriesContainer, bikeName) {
 
     const currentBike = bikeDetaileArr[bike_name_data];
 
+    console.log(currentBike, "CCURR")
+
     // Update power
-    powerContainer.children[0].innerHTML = currentBike.power.kw;
-    powerContainer.children[1].innerHTML = currentBike.power.rpm;
+    powerContainer.children[0].innerHTML = currentBike.power.topInfoP;
+    powerContainer.children[1].innerHTML = currentBike.power.kw;
+    powerContainer.children[2].innerHTML = currentBike.power.rpm;
     powerContainer.classList.remove('fade-in'); // Remove existing fade-in class
     powerContainer.offsetWidth; // Trigger reflow
     powerContainer.classList.add('fade-in'); // Add fade-in animation
 
     // Update torque
-    torqueContainer.children[0].innerHTML = currentBike.torque.torque;
-    torqueContainer.children[1].innerHTML = currentBike.torque.details;
+    torqueContainer.children[0].innerHTML = currentBike.torque.topInfoT;
+    torqueContainer.children[1].innerHTML = currentBike.torque.torque;
+    torqueContainer.children[2].innerHTML = currentBike.torque.details;
     torqueContainer.classList.remove('fade-in'); // Remove existing fade-in class
     torqueContainer.offsetWidth; // Trigger reflow
     torqueContainer.classList.add('fade-in'); // Add fade-in animation
@@ -904,7 +1342,7 @@ function updateRSeriesContent(seriesContainer, bikeName) {
 
     // Update design language
     designLangContainer.children[0].innerHTML = currentBike.designLang.details;
-    designLangContainer.children[1].innerHTML = currentBike.designLang?.info || '';
+    designLangContainer.children[1].innerHTML = (currentBike.designLang?.info || "") || (currentBike.designLang?.bottomInfo || "");
     designLangContainer.classList.remove('fade-in'); // Remove existing fade-in class
     designLangContainer.offsetWidth; // Trigger reflow
     designLangContainer.classList.add('fade-in'); // Add fade-in animation

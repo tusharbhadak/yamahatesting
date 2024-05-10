@@ -120,55 +120,55 @@ const ellipseContentMapping = [
     featureDetails: [
       {
         subHeading: "CALL, SMS, EMAIL ALERTS ",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/connectX-logo.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/Battery.webp",
         description:
           "Stay connected with call, SMS, and email alerts on your instrument cluster screen, keeping you informed on the go. ",
       },
       {
         subHeading: "APP CONNECTIVITY STATUS",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/meter.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/Connectivity.webp",
         description:
           "Keep tabs on whether your bike's hooked up to the Y-Connect app on your phone. ",
       },
       {
         subHeading: "PHONE BATTERY LEVEL STATUS ",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/meter.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/Battery.webp",
         description:
           "Never be in the dark about your phone's battery – check it right on your bike. ",
       },
       {
         subHeading: "Fuel Consumption Tracker ",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/fuel.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/fuel.webp",
         description:
           "Keep an eye on how much fuel you're burning through each day and month.",
       },
       {
         subHeading: "Maintenance Recommendations",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/maintanance.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/maintenance_.webp",
         description:
           "Get smart advice based on your bike's data, like when it's time to give your battery a check. ",
       },
       {
         subHeading: "Last Parking Location",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/parking-location.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/lastparking.webp",
         description:
           "Find out where you left your ride last – it's like a built-in memory for your bike. But remember, if the machine has moved since it was parked, it won’t be tracked.",
       },
       {
         subHeading: "Malfunction Notification",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/malfunction.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/malfunction.webp",
         description:
           "Get a heads-up if your bike's acting up, so you can sort it out quickly.",
       },
       {
         subHeading: "Revs Dashboard",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/revs.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/revdashboard.webp",
         description:
           "See what's going on underneath with real-time stats like Engine RPM and Eco-friendly Riding Indicator.",
       },
       {
         subHeading: "Ranking",
-        imageUrl: "/theme/v4/images/webp images/R series ALL/r15m/y-connect/ranking.webp",
+        imageUrl: "../../../theme/v4/images/webp images/R series ALL/r15m/r15m arc images/y-connect/ranking.webp",
         description:
           "Join the Yamaha riders and see how you measure up against others when it comes to racking up miles and being eco-friendly.",
       },
@@ -372,11 +372,21 @@ function debounce(func, delay) {
 const handleNavigationWithDelay = debounce(handleNavigation, 10000);
 
 // Function to handle keyboard arrow keys and mouse scroll
+// function handleNavigation(event) {
+//   if (event.key === "ArrowUp" || event.deltaY < 0) {
+//       // Move to the previous section
+//       moveSection(-1);
+//   } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+//       // Move to the next section
+//       moveSection(1);
+//   }
+// }
+
 function handleNavigation(event) {
-  if (event.key === "ArrowUp" || event.deltaY < 0) {
+  if (event.key === "ArrowUp") {
       // Move to the previous section
       moveSection(-1);
-  } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+  } else if (event.key === "ArrowDown") {
       // Move to the next section
       moveSection(1);
   }

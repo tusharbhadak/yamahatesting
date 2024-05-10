@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Product</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- cdn library imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- fonts style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/theme/v4/css/style.css" rel="stylesheet" />
+    <link href="/theme/v4/css/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/theme/v4/css/headerMobile.css">
+    <link href="/theme/v4/css/footer.css" rel="stylesheet" />
+    <link href="/theme/v4/css/product/style.css" rel="stylesheet" />
+    <link href="../../../theme/v4/css/responsive.css" rel="stylesheet" />
+    <link href="../../../theme/v4/css/home/style.css" rel="stylesheet" />
+    <script src="../../../theme/v4/js/home/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../../../theme/v4/css/home/all.min.css">
+    <link rel="stylesheet" href="../../../theme/v4/css/home/slick.min.css">
+    <link rel="stylesheet" href="../../../theme/v4/css/home/slick-theme.min.css">
+    <link rel="stylesheet" href="/theme/v4/css/headerMobile.css">
+</head>
+
+<body>
+    <header id="header_component"></header>
+    <header id="header_component_mobile"></header>
+
+    <section>
+        <div class="product_hero_slider_container">
+            <div class="product_hero_slider_track">
+                <div class="slide">
+                    <img class="product_slider_img" src="../../../theme/v4/images/webp images/MOTOGP ALL/motogpeditions/kv01_pc.webp" alt="Image 1">
+                </div>
+            </div>
+            <div class="click-now-container">
+                <!-- <div id="fixed-click-now-button" class="hero-slider-click-now">
+                    <p>Click<br />Now</p>
+                </div>
+                <div class="click-now-slider">
+                    <div class="click-now-slider-button">
+                        <p class="">Enquiry<br /> Now</p>
+                    </div>
+                    <div class="click-now-slider-button">
+                        <p>Buy<br /> Now</p>
+                    </div>
+                </div> -->
+                <div class="floatingButtonWrap">
+                    <div class="floatingButtonInner">
+                        <a href="#" class="floatingButton" style="background-color: #0001a0;" id="bg-color"
+                            onclick="changeText()">
+                            <!-- <i class="fa fa-plus icon-default"></i> -->
+                            <span id="buttonText" style="color: white;">Click Now</span>
+                        </a>
+                        <ul class="floatingMenu">
+                            <li>
+                                <a href="#">Enquire Now <div class="icon-menus"><img
+                                            src="/theme/v4/images/icons/headphones.png" alt="">
+                                    </div></a>
+                            </li>
+                            <li>
+                                <a href="#">Buy Now <div class="icon-menus"><img
+                                            src="/theme/v4/images/icons/shopping-cart.png" alt="">
+                                    </div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ellipse_carousel_section">
+        <div class="ellipse_carousel_section">
+            <div class="ellipse_carousel_info_conataier">
+                <div>
+                    <div class="ellipse_carousel_info_upper">
+                        <div class="ellipse_carousel_info_value">Assist & Slipper Clutch</div>
+                        <span class="ellipse_carousel_info_label">with Variable Valve Actuation(VVA)</span>
+                    </div>
+                    <div class="ellipse_carousel_info_lower">
+                        <div class="ellipse_carousel_info_value">Hyper Naked</div>
+                        <span class="ellipse_carousel_info_label">Unique MT design</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="ellipse_carousel_info_upper">
+                        <span class="ellipse_carousel_info_label">Torque</span>
+                        <div class="ellipse_carousel_info_value">14.1 nm</div>
+                        <span class="ellipse_carousel_info_label">@7,500 rpm</span>
+                    </div>
+                    <div class="ellipse_carousel_info_lower">
+                        <span class="ellipse_carousel_info_label">Power</span>
+                        <div class="ellipse_carousel_info_value">13.5 kW</div>
+                        <span class="ellipse_carousel_info_label">@10,000 rpm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ellipse_carousel_selection_circle"></div>
+            <div class="ellipse_carousel_content_container">
+                <h3 class="ellipse_carousel_bike_title">Yamaha R3</h3>
+                <h2 class="ellipse_carousel_heading">Y-Connect APp</h2>
+                <div class="exp_360_background_text_container">
+                    <div class="exp_background_text">The Dark Side</div>
+                    <div class="exp_background_text"> of Japan</div>
+                    <!-- <div class="exp_background_text"></div> -->
+                </div>
+                <div class="ellipse_carousel_img_container_wrapper">
+                    <div class="ellipse_carousel_center_img_container">
+                        <!-- <img src="/images/product/y_connect_app/meter 1.png" alt="center-image"
+                            class="ellipse_carousel_centered_image" /> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
+                            class="ellipse_carousel_svg_shape ellipse_carousel_bottom_svg">
+                            <!-- <path
+                                d="M104.9 5.81048L1.54703 229.81C-1.51024 236.437 3.32971 244 10.6271 244H322.519C326.567 244 330.215 241.559 331.761 237.818L424.292 13.8179C427.011 7.2348 422.172 0 415.05 0H113.98C110.08 0 106.535 2.26841 104.9 5.81048Z"
+                                fill="#EFEDED" fill-opacity="0.39" /> -->
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
+                            class="ellipse_carousel_svg_shape ellipse_carousel_middle_svg">
+                            <!-- <path
+                                d="M104.9 5.81048L1.54703 229.81C-1.51024 236.437 3.32971 244 10.6271 244H322.519C326.567 244 330.215 241.559 331.761 237.818L424.292 13.8179C427.011 7.2348 422.172 0 415.05 0H113.98C110.08 0 106.535 2.26841 104.9 5.81048Z"
+                                fill="#EFEDED" fill-opacity="0.39" /> -->
+                        </svg>
+        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="426" height="244" viewBox="0 0 426 244" fill="none"
+                            class="ellipse_carousel_svg_shape ellipse_carousel_top_svg">
+                            <rect x="0" y="0" width="426" height="244" fill="url(#ellipse_img1)" />
+                            <defs>
+                                <pattern id="ellipse_img1" patternUnits="userSpaceOnUse" width="426" height="244">
+                                    <image href="/theme/v4/images/product/ellipse_carousel/image 43.png" x="0" y="0" width="426"
+                                        height="244"/>
+                                </pattern>
+                            </defs>
+                        </svg>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="426" height="246" viewBox="0 0 426 246" fill="none"
+                            class="ellipse_carousel_svg_shape overlay">
+                            <path
+                                d="M104.9 6.81048L1.54703 230.81C-1.51024 237.437 3.32971 245 10.6271 245H322.519C326.567 245 330.215 242.559 331.761 238.818L424.292 14.8179C427.011 8.2348 422.172 1 415.05 1H113.98C110.08 1 106.535 3.26841 104.9 6.81048Z"
+                                stroke="white" stroke-opacity="0.39" />
+                        </svg> -->
+                    </div>
+                </div>
+                <div class="ellipse_carousel_sub_heading">Instrument Cluster</div>
+                <div class="ellipse_carousel_description">The Yamaha Y-Connect App displays phone notifications on your
+                    instrument cluster screen.</div>
+                <div class="ellipse_carousel_inner_nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 693 2" fill="none">
+                        <path d="M0 1H693" stroke="url(#paint0_linear_1833_2023)" stroke-width="2" />
+                        <defs>
+                            <linearGradient id="paint0_linear_1833_2023" x1="0" y1="1.5" x2="693" y2="1.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.062974" stop-color="#6C647A" stop-opacity="0" />
+                                <stop offset="0.173676" stop-color="#6C647A" />
+                                <stop offset="0.51" stop-color="#6C647A" />
+                                <stop offset="0.808693" stop-color="#6C647A" />
+                                <stop offset="0.931561" stop-color="#6C647A" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="ellipse_carousel_select_dots_container">
+                        <div class="ellipse_carousel_select_dot">
+                            <span class="ellipse_carousel_dot_out"><span class="ellipse_carousel_dot_inner"></span></span>
+                        </div>
+                        <div class="ellipse_carousel_select_dot">
+                            <span class="ellipse_carousel_dot_out"><span class="ellipse_carousel_dot_inner"></span></span>
+                        </div>
+                        <div class="ellipse_carousel_select_dot">
+                            <span class="ellipse_carousel_dot_out"><span class="ellipse_carousel_dot_inner"></span></span>
+                        </div>
+                        <div class="ellipse_carousel_select_dot">
+                            <span class="ellipse_carousel_dot_out"><span class="ellipse_carousel_dot_inner"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ellipse_carousel_bottom_bg_container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1366 509"
+                    preserveAspectRatio="none" fill="none">
+                    <path d="M0 0H1366V509H841L802.916 499.544C724.157 479.99 641.821 479.899 563.019 499.281L523.5 509H0V0Z"
+                        fill="url(#paint0_linear_1833_1395)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1833_1395" x1="683" y1="0" x2="683" y2="509"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.13998" stop-color="white" stop-opacity="0" />
+                            <stop offset="0.46431" stop-color="white" stop-opacity="0.66" />
+                            <stop offset="0.857974" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>        
+    </section>
+    <!-- <section class="connect_section">
+        <section id="y-connect-app-section"></section>
+        <section id="yamaha_motorcycle_connect"></section>
+    </section> -->
+    <section id="360_experience">
+        <div class="exp_360_container">
+            <div class="">
+                <div class="exp_360_name_heading_container">
+                    <!-- <div class="exp_360_bike_name">
+                        
+                    </div> -->
+                    <div class="exp_360_price_color">
+                        MotoGP Edition Color & Price
+                    </div>
+                </div>
+        
+                <div class="exp_360_info_container">
+                    <div class="exp_360_heading_container">
+                        <div class="exp_360_bike_color bike_color_mey1">
+                            <img src="/theme/v4/images/webp images/MOTOGP ALL/motogpeditions/color/r15-motogp.webp" alt="MotoGP Edition specification">
+                        </div>
+                        <div class="exp_360_bike_color bike_color_mey2 d-none">
+                            <img src="/theme/v4/images/webp images/MOTOGP ALL/motogpeditions/color/mt15-motogp.webp" alt="MotoGP Edition specification">
+                        </div>
+                        <div class="exp_360_bike_color bike_color_mey3 d-none">
+                            <img src="/theme/v4/images/webp images/MOTOGP ALL/motogpeditions/color/Zr-Moto-Black.webp" alt="MotoGP Edition specification">
+                        </div>
+                        <div class="exp_360_bike_color bike_color_mey4 d-none">
+                            <img src="/theme/v4/images/webp images/MOTOGP ALL/motogpeditions/color/aerox-motogp.webp" alt="MotoGP Edition specification">
+                        </div>
+                    </div>
+                    <div class="exp_360_content_container">
+                        <!-- Initial color details -->
+                        <div class="exp_360_select_color_btns_">
+                            <div class="exp_360_select_color_btn active" id="button_mey1" onclick="changeColor(this, 'mey1')">
+                                <span class="exp_360_color_dot_out mey1"><span class="exp_360_color_dot_inner mey1"></span></span>
+                            </div>
+                            <div class="exp_360_select_color_btn" id="button_mey2" onclick="changeColor(this, 'mey2')">
+                                <span class="exp_360_color_dot_out mey2"><span class="exp_360_color_dot_inner mey2"></span></span>
+                            </div>
+                            <div class="exp_360_select_color_btn" id="button_mey3" onclick="changeColor(this, 'mey3')">
+                                <span class="exp_360_color_dot_out mey3"><span class="exp_360_color_dot_inner mey3"></span></span>
+                            </div>
+                            <div class="exp_360_select_color_btn" id="button_mey4" onclick="changeColor(this, 'mey4')">
+                                <span class="exp_360_color_dot_out mey4"><span class="exp_360_color_dot_inner mey4"></span></span>
+                            </div>
+                        </div>
+                        <div class="exp_360_color_details" id="mey1_color_details">
+                            <span>Monster Energy Yamaha MotoGP Edition</span><br>
+                            <span>As per VAHAN Portal : BLACK METALLIC X</span>
+                        </div>
+                        <!-- Placeholder for other color details -->
+                        <div class="exp_360_color_details" id="mey2_color_details" style="display: none;">
+                            <span>Monster Energy Yamaha MotoGP Edition</span><br>
+                            <span>As per VAHAN Portal : BLACK METALLIC X</span>
+                        </div>
+                        <div class="exp_360_color_details" id="mey3_color_details" style="display: none;">
+                            <span>Monster Energy Yamaha MotoGP Edition</span><br>
+                            <span>As per VAHAN Portal : BLACK METALLIC X</span>
+                        </div>
+                        <div class="exp_360_color_details" id="mey4_color_details" style="display: none;">
+                            <span>Monster Energy Yamaha MotoGP Edition</span><br>
+                            <span>As per VAHAN Portal : BLACK METALLIC X</span>
+                        </div>
+                        <div class="exp_360_exShowroom">
+                            Ex-Showroom Price in Delhi
+                        </div>
+                        <div class="exp_360_price">
+                            ₹ 1,97,700*
+                        </div>
+                        <div class="exp_360_disclaimer">
+                            *Price may change without prior notice <br>
+                            *Variant & Color is subject to availability
+                        </div>
+                        <div class="exp_360_location_selector">
+                            <select id="exp_360_city_selector" name="city">
+                                <option value="" disabled="">-- Select State --</option>
+                                <option value="andaman-nicobar">Andaman &amp; Nicobar</option>
+                                <option value="andhra-pradesh">Andhra Pradesh</option>
+                                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                <option value="assam">Assam</option>
+                                <option value="bihar">Bihar</option>
+                                <option value="chandigarh">Chandigarh</option>
+                                <option value="chhattisgarh">Chhattisgarh</option>
+                                <option value="delhi" selected="">Delhi</option>
+                                <option value="goa">Goa</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="haryana">Haryana</option>
+                                <option value="himachal-pradesh">Himachal Pradesh</option>
+                                <option value="jammu-kashmir">Jammu &amp; Kashmir</option>
+                                <option value="jharkhand">Jharkhand</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="madhya-pradesh">Madhya Pradesh</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="manipur">Manipur</option>
+                                <option value="meghalaya">Meghalaya</option>
+                                <option value="mizoram">Mizoram</option>
+                                <option value="nagaland">Nagaland</option>
+                                <option value="orissa">Orissa</option>
+                                <option value="puducherry">Puducherry</option>
+                                <option value="punjab">Punjab</option>
+                                <option value="rajasthan">Rajasthan</option>
+                                <option value="sikkim">Sikkim</option>
+                                <option value="tamilnadu">Tamilnadu</option>
+                                <option value="telangana">Telangana</option>
+                                <option value="tripura">Tripura</option>
+                                <option value="uttar-pradesh">Uttar Pradesh</option>
+                                <option value="uttarakhand">Uttarakhand</option>
+                                <option value="west-bengal">West Bengal</option>
+                            </select>
+                        </div>
+                        <div class="exp_360_bookingNowbtn">
+                            <button class="exp_360_bookNow_btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/theme/v4/js/lib/product_360_lib.js"></script>        
+    </section>
+    <!-- <section id="specification_section"></section>
+    <section id="product_gallery_carousel"></section>
+    <section id="accessory_section"></section>  -->
+    <section id="footer_component"></section>
+    <section id="footer_component_mobile"></section>
+
+    <script>
+        fetch('/templates/v4/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header_component').innerHTML = html;
+                const scripts = Array.from(new DOMParser().parseFromString(html, 'text/html').querySelectorAll('script'));
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.innerHTML = script.innerHTML;
+                    document.body.appendChild(newScript);
+                });
+            })
+            .catch(error => console.error('Error fetching hero content:', error));
+
+        fetch('/templates/v4/headerMobile.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header_component_mobile').innerHTML = html;
+                const scripts = Array.from(new DOMParser().parseFromString(html, 'text/html').querySelectorAll('script'));
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.innerHTML = script.innerHTML;
+                    document.body.appendChild(newScript);
+                });
+            })
+            .catch(error => console.error('Error fetching hero content:', error));
+
+        fetch('/templates/v4/footerMobile.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer_component_mobile').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching hero content:', error));
+
+        fetch('/templates/v4/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer_component').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching hero content:', error));
+    </script>
+
+    <script src="/theme/v4/js/header.js"></script>
+    <script src="/theme/v4/js/home/gallery_carousel.js"></script>
+    <script src="/theme/v4/js/product/MotoGP Edition/360_experience.js"></script>
+    <script src="/theme/v4/js/product/MotoGP Edition/specification.js"></script>
+    <script src="/theme/v4/js/product/common/accessories.js"></script>
+    <script src="/theme/v4/js/product/MotoGP Edition/ellipse_carousel.js"></script>
+    <script src="/theme/v4/js/home/jquery.touchSwipe.min.js"></script>
+    <script src="../../../theme/v4/js/home/jquery.min.js"></script>
+    <script src="../../../theme/v4/js/home/slick.min.js"></script>
+
+
+    <script>
+        // Fetch and insert hero content
+        $(document).ready(function () {
+
+
+            // document.getElementById("motorcycle_mt_series_select").innerHTML = " ";
+            // document.getElementById("motorcycle_fz_series_select").innerHTML = " ";
+            $('.floatingButton').on('click',
+            function (e) {
+                e.preventDefault();
+                $(this).toggleClass('open');
+                if ($(this).children('.fa').hasClass('fa-plus')) {
+                $(this).children('.fa').removeClass('fa-plus');
+                $(this).children('.fa').addClass('fa-close');
+                }
+                else if ($(this).children('.fa').hasClass('fa-close')) {
+                $(this).children('.fa').removeClass('fa-close');
+                $(this).children('.fa').addClass('fa-plus');
+                }
+                $('.floatingMenu').stop().slideToggle();
+                $('.floatingMenu').stop().animate({
+                right: $(this).hasClass('open') ? '50px' : '-270px'
+                }, 400);
+            }
+            );
+            $(this).on('click', function (e) {
+            
+            var container = $(".floatingButton");
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) {
+                if (container.hasClass('open')) {
+                container.removeClass('open');
+                }
+                if (container.children('.fa').hasClass('fa-close')) {
+                container.children('.fa').removeClass('fa-close');
+                container.children('.fa').addClass('fa-plus');
+                }
+                // $('.floatingMenu').hide();
+            }
+            
+            // if the target of the click isn't the container and a descendant of the menu
+            if (!container.is(e.target) && ($('.floatingMenu').has(e.target).length > 0)) {
+                $('.floatingButton').removeClass('open');
+                // $('.floatingMenu').stop().slideToggle();
+            }
+            });
+            });
+            
+            
+            function changeText() {
+            var buttonText = document.getElementById("buttonText");
+            var bg = document.getElementById('bg-color')
+            buttonText.innerHTML = buttonText.innerHTML === 'Click Now' ? "<img src='/theme/v4/images/icons/Group 2.png' />" : 'Click Now';
+            bg.style.backgroundColor = buttonText.innerHTML === "Click Now" ? "#0001a0" : "white"
+            buttonText.style.color = buttonText.innerHTML === "Click Now" ? "white" : "#0001a0"
+            // button.classList.add("clicked");
+            
+            
+            }
+            
+            function toggleGallery(type) {
+                const gallerySlides = document.querySelectorAll('.gallery-slides');
+                const galleryButtons = document.querySelectorAll('.gallery-button');
+                const carouselControlImgs = document.querySelector('.carousel-control-imgs');
+                const videos = document.querySelectorAll('.video-container video');
+            
+                gallerySlides.forEach(slide => {
+                    if (slide.classList.contains(type)) {
+                        slide.style.display = 'flex';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+            
+                galleryButtons.forEach(button => {
+                    if (button.innerText.toLowerCase() === type.toLowerCase()) {
+                        button.classList.add('gallery-active');
+                    } else {
+                        button.classList.remove('gallery-active');
+                    }
+                });
+            
+                // Show or hide carousel control images based on the gallery type
+                if (type === 'photos') {
+                    carouselControlImgs.style.display = 'flex';
+                    // Reinitialize JavaScript specific to photos if not already initialized
+                    if (carouselControlImgs.dataset.initialized !== 'true') {
+                        initializePhotosCarousel();
+                        carouselControlImgs.dataset.initialized = 'true';
+                    }
+                } else {
+                    carouselControlImgs.style.display = 'none';
+                }
+            }
+            
+            // Function to initialize JavaScript specific to photos
+            function initializePhotosCarousel() {
+                const prev = document.getElementById('gallery_prev');
+                const next = document.getElementById('gallery_next');
+                
+                prev.addEventListener('click', () => {
+                    // Logic for previous slide in photos carousel
+                    console.log('Previous slide clicked in photos carousel');
+                });
+                
+                next.addEventListener('click', () => {
+                    // Logic for next slide in photos carousel
+                    console.log('Next slide clicked in photos carousel');
+                });
+            }
+    </script>
+</body>
+</html>

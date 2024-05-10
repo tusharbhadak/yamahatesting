@@ -29,7 +29,7 @@
         border-radius: 2px;
     } */
 
-    .header-mobile-row>div:nth-child(2)>img {
+    .header-mobile-row>div:nth-child(2)>a>img {
         width: 90px;
     }
 
@@ -188,6 +188,23 @@
 }
 
 #carouselExampleIndicators .carousel-indicators .active {
+    background-color: #0018CE;
+}
+
+#carouselExampleIndicatorss .carousel-indicators [data-bs-target] {
+    width: 200px;
+    height: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #bbb;
+}
+
+.carousel-indicatorss [data-bs-target]{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#carouselExampleIndicatorss .carousel-indicators .active {
     background-color: #0018CE;
 }
 

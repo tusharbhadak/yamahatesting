@@ -134,15 +134,16 @@
 .navbar-container {
   background: rgba(0, 0, 0, 0.70);
   padding: 0 1rem;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   display: flex;
   flex-direction: column;
   z-index: 999999;
 }
+
 
 .brand-and-icon {
   display: flex;
@@ -381,7 +382,7 @@
     background: #FFFFFF;
     left: -6500px;
     display: grid;
-    grid-template-columns: 280px 200px 3fr 1.5fr;
+    grid-template-columns: 280px 200px 3fr 330px;
     gap: 20px;
     padding: 0 0rem 0 2rem;
     transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
@@ -403,7 +404,102 @@
     left: 0;
   }
 
-  .series-grid-row>div>img {
+  .buyer_guide:hover .chev-menu-hover>i {
+    transform: rotate(180deg) !important;
+  }
+
+  .services_hover:hover .chev-menu-hover>i {
+    transform: rotate(180deg) !important;
+  }
+
+  .img-header-menu-carousel {
+    height: 200px !important;
+    object-fit: cover;
+    object-position: top;
+  }
+
+
+  .products_hover,
+  .chev-menu-hover>i,
+  .buyer_guide,
+  .services_hover {
+    transition: .4s ease-in;
+  }
+
+  .products_hover:hover .chev-menu-hover>i {
+    transform: rotate(180deg) !important;
+  }
+
+  .header-carousel-content-menu {
+    font-size: 16px;
+    color: #606060;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    padding: 10px 15px 0px 15px;
+  }
+
+
+  #carouselExampleIndicatorss .carousel-control-next,
+  .carousel-control-prev {
+    /* border: 1px solid #0001a0; */
+    background-color: #0001a0;
+    color: #0001a0;
+    bottom: 15px;
+    height: 25px;
+    top: initial;
+    border-radius: 100px;
+    width: 25px;
+  }
+
+
+  /* #carouselExampleIndicatorss .carousel-control-prev-icon {
+    background-image: none;
+    position: relative;
+
+  }
+
+  #carouselExampleIndicatorss .carousel-control-prev-icon::before {
+    position: absolute;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-family: FontAwesome;
+    color: #0001a0;
+    top: 0;
+    left: 0;
+  } */
+
+  #carouselExampleIndicatorss .carousel-control-next {
+    right: 25px;
+  }
+
+
+  #carouselExampleIndicatorss .carousel-control-prev {
+    left: 25px;
+  }
+
+  #carouselExampleIndicatorss .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .header-carousel-content-menu-desc {
+    color: #1F1E1E;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    padding: 0px 15px;
+  }
+
+  #carouselExampleIndicatorss {
+    background-color: #F5F5F5;
+  }
+
+  .series-grid-row>div>a>img {
     width: 120px;
   }
 
@@ -531,6 +627,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
+  max-width: fit-content;
 }
 
 
@@ -549,14 +646,13 @@
 #hoverable_fz_series,
 #hoverbale_maxi,
 #hoverable_steet,
-#hoverable_fashion,#hoverable_buyers,#videos_hoverable,#hoverable_quality_care {
+#hoverable_fashion,
+#hoverable_buyers,
+#videos_hoverable,
+#hoverable_quality_care {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: space-between !important;
   width: 100% !important;
-}
-
-.product-link {
-  width: 120px;
 }

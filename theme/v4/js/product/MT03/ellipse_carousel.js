@@ -6,25 +6,25 @@ const ellipseContentMapping = [
     featureDetails: [
       {
         subHeading: "Torque-rich 321cc Twin Cylinder Engine",
-        imageUrl: "/theme/v4/images/product/MT03/mtf1.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Features/321cc_twin_cylinder_engine.webp",
         description:
           "Feel the thrill of lightweight forged pistons and carburized con rods delivering thrilling torque. The light clutch makes city riding pleasure, and the instant throttle response ensures exhilarating performance.",
       },
       {
         subHeading: "37mm Upside Down Front Forks",
-        imageUrl: "/theme/v4/images/product/MT03/mt2.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Features/upside_down_front_forks.webp",
         description:
           "Get a smooth and confident ride with flex-resistant tubes and a cast aluminium upper triple clamp, perfect for braking and cornering.",
       },
       {
         subHeading: "Advanced LCD Meter Console",
-        imageUrl: "/theme/v4/images/product/MT03/mtf3.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Features/advanced_lcd_meter_console.webp",
         description:
           "Always be in the know with LCD meter console. Gear position, fuel capacity, real-time & average fuel economy, water temp, clock, oil change indicator, and trip meter—all at your command. Its sleek design adds a touch of modernity to your ride.",
       },
       {
         subHeading: "Long Swingarm With Optimal Shock Settings",
-        imageUrl: "/theme/v4/images/product/MT03/mtf4.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Features/long_swingarm_with_optimal_shock_settings.webp",
         description:
           "The MT-03 features a 573 mm long asymmetrical swingarm, ensuring a stable ride during braking, cornering, and acceleration. For an enhanced ride, the rear shock comes with ideal pre-load and damping settings.",
       },
@@ -36,25 +36,25 @@ const ellipseContentMapping = [
     featureDetails: [
       {
         subHeading: "LED headlight with Dual eye positions lights",
-        imageUrl: "/theme/v4/images/product/MT03/mtd1.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Design/led_headlight_with_dual_eye_.webp",
         description:
           "Light up the night with a powerful projector type Bi-functional LED headlight, and dual slant – eye position lights add an aggressive edge to your ride.",
       },
       {
         subHeading: "Aggressive & Dynamic Body Design",
-        imageUrl: "/theme/v4/images/product/MT03/mtd2.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Design/aggressive_dynamic_body_design.webp",
         description:
           "MT–03's Hyper Naked design boasts an aggressive stance and muscular bodywork. The headlight assembly adds mystery, while the sculpted fuel tank cover fits the rider perfectly. Lightweight air scoops enhance the dynamic MT look. naked bodywork, sculpted fuel tank, and lightweight air scoops, all designed for maximum attitude.",
       },
       {
         subHeading: "LED Flashers - Front & Rear",
-        imageUrl: "/theme/v4/images/product/MT03/mtd3.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Design/led_flashers_front_rear.webp",
         description:
           "Stand out with LED flashers, ensuring visibility and style on any ride, day or night.",
       },
       {
         subHeading: "Ergonomic riding position",
-        imageUrl: "/theme/v4/images/product/MT03/mtd4.png",
+        imageUrl: "/theme/v4/images/webp images/MT Series/mt03/MT03 arc images/Design/ergonomic_riding_position.webp",
         description:
           "Engineered with a compact body, low seat height of 780mm, wide upper section, and meticulously sculpted knee area, the MT-03 ensures unparalleled control and confidence whether you are carving through corners or cruising down the highway.",
       },
@@ -254,12 +254,22 @@ function debounce(func, delay) {
 // Function to handle keyboard arrow keys and mouse scroll with delay
 const handleNavigationWithDelay = debounce(handleNavigation, 10000);
 
-// Function to handle keyboard arrow keys and mouse scroll
+// // Function to handle keyboard arrow keys and mouse scroll
+// function handleNavigation(event) {
+//   if (event.key === "ArrowUp" || event.deltaY < 0) {
+//       // Move to the previous section
+//       moveSection(-1);
+//   } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+//       // Move to the next section
+//       moveSection(1);
+//   }
+// }
+
 function handleNavigation(event) {
-  if (event.key === "ArrowUp" || event.deltaY < 0) {
+  if (event.key === "ArrowUp") {
       // Move to the previous section
       moveSection(-1);
-  } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+  } else if (event.key === "ArrowDown") {
       // Move to the next section
       moveSection(1);
   }

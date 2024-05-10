@@ -101,26 +101,26 @@ function changeColor(button, color) {
     });
     
     // Show the color details container corresponding to the selected color
-    var colorDetailsContainer = document.getElementById(color + '_color_details');
-    if (colorDetailsContainer) {
-        colorDetailsContainer.style.display = 'block';
-    }
-    
-    // Hide all bike color containers and apply fade animation
-    var bikeColorContainers = document.querySelectorAll('.exp_360_bike_color');
-    bikeColorContainers.forEach(function(bikeColor) {
-        bikeColor.classList.add('d-none'); // Hide all images
-        bikeColor.querySelector('img').classList.add('hidden'); // Apply fade out effect
-    });
+  var colorDetailsContainer = document.getElementById(color + '_color_details');
+  if (colorDetailsContainer) {
+      colorDetailsContainer.style.display = 'block';
+  }
+  
+  // Hide all bike color containers and apply fade animation
+  var bikeColorContainers = document.querySelectorAll('.exp_360_bike_color');
+  bikeColorContainers.forEach(function(bikeColor) {
+      bikeColor.classList.add('d-none'); // Hide all images
+      bikeColor.querySelector('img').classList.add('hidden'); // Apply fade out effect
+  });
 
-    // Show the bike color container corresponding to the selected color with fade in effect
-    var selectedBikeColor = document.querySelector('.bike_color_' + color);
-    if (selectedBikeColor) {
-        selectedBikeColor.classList.remove('d-none'); // Show selected image container
-        setTimeout(() => {
-            selectedBikeColor.querySelector('img').classList.remove('hidden'); // Apply fade in effect
-        }, 10); // Set a timeout to ensure CSS class is applied after display change
-    }
+  // Show the bike color container corresponding to the selected color with fade in effect
+  var selectedBikeColor = document.querySelector('.bike_color_' + color);
+  if (selectedBikeColor) {
+      selectedBikeColor.classList.remove('d-none'); // Show selected image container
+      setTimeout(() => {
+          selectedBikeColor.querySelector('img').classList.remove('hidden'); // Apply fade in effect
+      }, 10); // Set a timeout to ensure CSS class is applied after display change
+  }
 }
 
 

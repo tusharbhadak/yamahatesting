@@ -305,11 +305,21 @@ function debounce(func, delay) {
 const handleNavigationWithDelay = debounce(handleNavigation, 10000);
 
 // Function to handle keyboard arrow keys and mouse scroll
+// function handleNavigation(event) {
+//   if (event.key === "ArrowUp" || event.deltaY < 0) {
+//       // Move to the previous section
+//       moveSection(-1);
+//   } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+//       // Move to the next section
+//       moveSection(1);
+//   }
+// }
+
 function handleNavigation(event) {
-  if (event.key === "ArrowUp" || event.deltaY < 0) {
+  if (event.key === "ArrowUp") {
       // Move to the previous section
       moveSection(-1);
-  } else if (event.key === "ArrowDown" || event.deltaY > 0) {
+  } else if (event.key === "ArrowDown") {
       // Move to the next section
       moveSection(1);
   }
